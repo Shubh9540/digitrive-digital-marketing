@@ -12,7 +12,16 @@
         "exploreButtonUrl": "/tour-packages"
       }
     },
-    "breadcrumbs": {},
+    "breadcrumbs": {
+      "AboutBreadcrumb": {
+        "title": "About Us",
+        "paths": [
+          { "label": "Home", "url": "/" },
+          { "label": "About" }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      }
+    },
     "Footer": {
       "topSection": {
         "callTitle": "Call Us 24/7",
@@ -311,6 +320,13 @@
           "pages": {
             "home": {
               "components": []
+            },
+            "about": {
+              "components": [
+                { "key": "AboutBreadcrumb", "component": "Breadcrumb" },
+                { "key": "DigitalAbout1", "component": "AboutUs" },
+                { "key": "DigitalWhyChooseUs1", "component": "WhyChooseUsSection" }
+              ]
             }
           }
         }
@@ -435,6 +451,41 @@
                   "delay": "2s"
                 }
               ]
+            }
+          }
+        },
+        "WhyChooseUs": {
+          "variants": {
+            "DigitalWhyChooseUs1": {
+              "subtitle": "WHY CHOOSE US",
+              "titlePart1": "Here's Why Brands\nTrust",
+              "titlePart2": "Our Expertise",
+              "description": "It is a long established fact that a reader will be distracted by the\nreadable content of a page when looking at its layout. The point of\nusing Lorem Ipsum is that it has a more-or-less normal.",
+              "features": [
+                {
+                  "id": "f1",
+                  "icon": "FaCog",
+                  "title": "Long-Term Support",
+                  "description": "It is a long established fact that a reader will\nbe distracted by the readable content of a\npage when looking at its layout."
+                },
+                {
+                  "id": "f2",
+                  "icon": "FaChartLine",
+                  "title": "Data-Driven Strategy",
+                  "description": "It is a long established fact that a reader will\nbe distracted by the readable content of a\npage when looking at its layout."
+                }
+              ],
+              "teamImages": [
+                "/team/c1.webp",
+                "/team/c2.webp",
+                "/team/c3.webp",
+                "/team/c4.webp"
+              ],
+              "teamRedirectUrl": "/team",
+              "customersText": "500+ Happy Customers",
+              "badgePercentage": "92%",
+              "badgeText": "Satisfied Clients\nReturning Often",
+              "mainImage": "/choose/1.jpg"
             }
           }
         },

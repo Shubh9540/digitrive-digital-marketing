@@ -1317,6 +1317,7 @@ export interface WanderlyTemplateData {
         WhyChooseUs?: {
           variants: {
             WanderlyWhyChooseUs1: WhyChooseUsData;
+            DigitalWhyChooseUs1: DigitalWhyChooseUsData;
           };
         };
         PartnerSlider?: {
@@ -1711,6 +1712,27 @@ export interface DigitalTeamData {
   footerText: string;
   footerButtonText: string;
   footerButtonUrl: string;
+}
+
+export interface DigitalWhyChooseUsFeature {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface DigitalWhyChooseUsData {
+  subtitle: string;
+  titlePart1: string;
+  titlePart2: string;
+  description: string;
+  features: DigitalWhyChooseUsFeature[];
+  teamImages: string[];
+  teamRedirectUrl: string;
+  customersText: string;
+  badgePercentage: string;
+  badgeText: string;
+  mainImage: string;
 }
 
 export interface DigitalBlogItem {

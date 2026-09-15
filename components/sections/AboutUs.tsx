@@ -14,7 +14,7 @@ const renderIcon = (iconName: string) => {
   }
 };
 
-export const AboutUs = ({ data }: { data?: DigitalAboutUsData }) => {
+export const AboutUs = ({ data, hideButton }: { data?: DigitalAboutUsData; hideButton?: boolean }) => {
   if (!data) return null;
 
   return (
@@ -90,11 +90,13 @@ export const AboutUs = ({ data }: { data?: DigitalAboutUsData }) => {
               })}
             </div>
 
-            <div>
-              <Button href={data.buttonUrl} variant="solid">
-                {data.buttonText}
-              </Button>
-            </div>
+            {!hideButton && (
+              <div>
+                <Button href={data.buttonUrl} variant="solid">
+                  {data.buttonText}
+                </Button>
+              </div>
+            )}
 
           </div>
         </div>
