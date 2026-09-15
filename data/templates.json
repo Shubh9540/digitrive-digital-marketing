@@ -1,0 +1,736 @@
+{
+  "common": {
+    "globalUI": {
+      "loading": "Loading...",
+      "notFound": {
+        "title": "Oops!",
+        "subtitle": "Page Not Found",
+        "description": "Looks like you've taken a wrong turn.<br />Let's get you back to where you want to go.",
+        "homeButtonText": "Back to Home",
+        "exploreButtonText": "Explore Destinations",
+        "homeButtonUrl": "/",
+        "exploreButtonUrl": "/tour-packages"
+      }
+    },
+    "breadcrumbs": {},
+    "Footer": {
+      "topSection": {
+        "callTitle": "Call Us 24/7",
+        "phone": "+1 (123) 456-7890",
+        "callSubtext": "We are always here to help you!",
+        "subscribeTitle": "Subscribe Us",
+        "subscribeSubtext": "Get latest updates and offers straight to your inbox.",
+        "emailPlaceholder": "Enter your email"
+      },
+      "middleSection": {
+        "logo": "/main logo/footer-logo.png",
+        "description": "We provide fast, reliable and affordable mobile repair solutions with quality parts and expert technicians you can trust.",
+        "socialLinks": [
+          {
+            "id": "fb",
+            "icon": "FaFacebookF",
+            "url": "/contact"
+          },
+          {
+            "id": "ig",
+            "icon": "FaInstagram",
+            "url": "/contact"
+          },
+          {
+            "id": "yt",
+            "icon": "FaYoutube",
+            "url": "/contact"
+          },
+          {
+            "id": "in",
+            "icon": "FaLinkedinIn",
+            "url": "/contact"
+          }
+        ],
+        "exploreTitle": "Explore",
+        "exploreLinks": [
+          {
+            "id": "ex-1",
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "id": "ex-2",
+            "label": "About Us",
+            "url": "/about"
+          },
+          {
+            "id": "ex-3",
+            "label": "Services",
+            "url": "/services"
+          },
+          {
+            "id": "ex-4",
+            "label": "Tour Packages",
+            "url": "/tour-packages"
+          },
+          {
+            "id": "ex-5",
+            "label": "Testimonials",
+            "url": "/testimonials"
+          },
+          {
+            "id": "ex-6",
+            "label": "Gallery",
+            "url": "/gallery"
+          },
+          {
+            "id": "ex-7",
+            "label": "FAQs",
+            "url": "/faq"
+          },
+          {
+            "id": "ex-8",
+            "label": "Contact Us",
+            "url": "/contact"
+          }
+        ],
+        "contactTitle": "Contact Us",
+        "address": "123 Repair Street, Tech City, CA 90210, USA",
+        "phoneLines": [
+          "+1 (123) 456-7890",
+          "+1 (123) 555-0123"
+        ],
+        "email": "info@fixaro.com",
+        "workingHours": [
+          "Mon - Sat: 9:00 AM - 8:00 PM",
+          "Sunday: 10:00 AM - 6:00 PM"
+        ],
+        "recentPostsTitle": "Recent Posts",
+        "recentPosts": [
+          {
+            "id": "top-10-beaches-you-must-visit-in-thailand",
+            "title": "Top 10 Beaches You Must Visit in Thailand",
+            "date": "May 18, 2024",
+            "image": "/blog/blog1.webp",
+            "url": "/blog/top-10-beaches-you-must-visit-in-thailand"
+          },
+          {
+            "id": "a-complete-guide-to-exploring-swiss-alps",
+            "title": "A Complete Guide to Exploring Swiss Alps",
+            "date": "May 18, 2024",
+            "image": "/blog/blog2.webp",
+            "url": "/blog/a-complete-guide-to-exploring-swiss-alps"
+          },
+          {
+            "id": "hot-air-balloon-experience-in-cappadocia",
+            "title": "Hot Air Balloon Experience in Cappadocia",
+            "date": "May 18, 2024",
+            "image": "/blog/blog3.webp",
+            "url": "/blog/hot-air-balloon-experience-in-cappadocia"
+          }
+        ]
+      },
+      "bottomSection": {
+        "copyright": "Â©Copyright 2026 Wanderly All Rights Reserved. Powered by Lestow",
+        "bottomLinks": [
+          {
+            "id": "bl-1",
+            "label": "Privacy Policy",
+            "url": "/privacy-policy"
+          },
+          {
+            "id": "bl-2",
+            "label": "Terms & Conditions",
+            "url": "/terms-conditions"
+          },
+          {
+            "id": "bl-3",
+            "label": "Sitemap",
+            "url": "/sitemap"
+          }
+        ],
+        "paymentImage": "/main logo/fopay.webp"
+      }
+    },
+    "DigitalFooter": {
+      "logo": "/main logo/header-logo.png",
+      "tagline": "Accelerate Your Growth",
+      "description": "We help businesses grow with innovative\\ndigital solutions, creative ideas, and\\nresult-driven strategies.",
+      "emailLabel": "Email Us",
+      "email": "needhelp@company.com",
+      "phoneLabel": "Call Us",
+      "phone": "(+123) 456 789 00",
+      "followUsText": "Follow Us",
+      "socialLinks": [
+        {
+          "id": "x",
+          "icon": "FaXTwitter",
+          "url": "#"
+        },
+        {
+          "id": "fb",
+          "icon": "FaFacebookF",
+          "url": "#"
+        },
+        {
+          "id": "in",
+          "icon": "FaLinkedinIn",
+          "url": "#"
+        },
+        {
+          "id": "ig",
+          "icon": "FaInstagram",
+          "url": "#"
+        },
+        {
+          "id": "pin",
+          "icon": "FaPinterestP",
+          "url": "#"
+        }
+      ],
+      "columns": [
+        {
+          "id": "quick-links",
+          "title": "Quick Links",
+          "links": [
+            {
+              "id": "ql1",
+              "label": "About Us",
+              "url": "#"
+            },
+            {
+              "id": "ql2",
+              "label": "Our Team",
+              "url": "#"
+            },
+            {
+              "id": "ql3",
+              "label": "Careers",
+              "url": "#"
+            },
+            {
+              "id": "ql4",
+              "label": "Blog",
+              "url": "#"
+            },
+            {
+              "id": "ql5",
+              "label": "Contact Us",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "id": "our-solutions",
+          "title": "Our Solutions",
+          "links": [
+            {
+              "id": "os1",
+              "label": "Web Development",
+              "url": "#"
+            },
+            {
+              "id": "os2",
+              "label": "UI/UX Design",
+              "url": "#"
+            },
+            {
+              "id": "os3",
+              "label": "Mobile Application",
+              "url": "#"
+            },
+            {
+              "id": "os4",
+              "label": "Cloud Service",
+              "url": "#"
+            },
+            {
+              "id": "os5",
+              "label": "Cyber Security",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "id": "resources",
+          "title": "Resources",
+          "links": [
+            {
+              "id": "rs1",
+              "label": "Case Studies",
+              "url": "#"
+            },
+            {
+              "id": "rs2",
+              "label": "Latest Blog",
+              "url": "#"
+            },
+            {
+              "id": "rs3",
+              "label": "Help Center",
+              "url": "#"
+            },
+            {
+              "id": "rs4",
+              "label": "Services",
+              "url": "#"
+            },
+            {
+              "id": "rs5",
+              "label": "FAQs",
+              "url": "#"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Digitrive Digital Marketing All Rights Reserved. Powered by Lestow",
+      "bottomLinks": [
+        {
+          "id": "bl1",
+          "label": "Privacy Policy",
+          "url": "#"
+        },
+        {
+          "id": "bl2",
+          "label": "Terms & Conditions",
+          "url": "#"
+        },
+        {
+          "id": "bl3",
+          "label": "Sitemap",
+          "url": "#"
+        }
+      ]
+    }
+  },
+  "categories": {
+    "Wanderly": {
+      "templateComponents": {
+        "Wanderly": {
+          "shared": {
+            "Topbar": "WanderlyTopBar1",
+            "Header": "WanderlyHeader1",
+            "Footer": "Footer"
+          },
+          "pages": {
+            "home": {
+              "components": []
+            }
+          }
+        }
+      },
+      "sections": {
+        "TopBar": {
+          "variants": {
+            "WanderlyTopBar1": {}
+          }
+        },
+        "Header": {
+          "variants": {
+            "WanderlyHeader1": {
+              "contactButton": {
+                "icon": "FaArrowRight",
+                "url": "/get-a-quote",
+                "text": "Get a Quote"
+              },
+              "imageAlt": "Digitrive Logo",
+              "navLinks": [
+                {
+                  "label": "Home",
+                  "url": "/",
+                  "id": "home"
+                },
+                {
+                  "label": "About Us",
+                  "url": "/about-us",
+                  "id": "about"
+                },
+                {
+                  "label": "Services",
+                  "url": "/services",
+                  "id": "services",
+                  "subLinks": [
+                    {
+                      "label": "Digital Marketing",
+                      "url": "/services/digital-marketing",
+                      "id": "service1"
+                    }
+                  ]
+                },
+                {
+                  "label": "Industries",
+                  "url": "/industries",
+                  "id": "industries",
+                  "subLinks": [
+                    {
+                      "label": "Tech",
+                      "url": "/industries/tech",
+                      "id": "ind1"
+                    }
+                  ]
+                },
+                {
+                  "label": "Case Studies",
+                  "url": "/case-studies",
+                  "id": "case-studies"
+                },
+                {
+                  "label": "Blog",
+                  "url": "/blog",
+                  "id": "blog"
+                },
+                {
+                  "label": "Careers",
+                  "url": "/careers",
+                  "id": "careers"
+                },
+                {
+                  "label": "Contact Us",
+                  "url": "/contact-us",
+                  "id": "contact"
+                }
+              ],
+              "image": "/main logo/header-logo.png"
+            }
+          }
+        },
+        "HeroSection": {
+          "variants": {
+            "DigitalHero1": {
+              "bgImage": "/banner/hero_bg_1.jpg",
+              "subtitle": "CREATIVE MIND, CREATIVE WORKS",
+              "titlePart1": "DIGITAL",
+              "titlePart2": "AGENCY",
+              "heading2": "WE BUILD SOLUTIONS THAT\\nGROW YOUR BRAND",
+              "description": "We are a team of creative thinkers and digital experts helping brands stand out, connect & grow in the digital world.",
+              "buttonText": "DISCOVER US",
+              "buttonUrl": "/about",
+              "floatingIcons": [
+                {
+                  "id": "icon1",
+                  "icon": "FaChartLine",
+                  "label": "Analytics",
+                  "x": "50%",
+                  "y": "15%",
+                  "delay": "0s"
+                },
+                {
+                  "id": "icon2",
+                  "icon": "FaUsers",
+                  "label": "Team",
+                  "x": "10%",
+                  "y": "50%",
+                  "delay": "1.5s"
+                },
+                {
+                  "id": "icon3",
+                  "icon": "FaBullseye",
+                  "label": "Target",
+                  "x": "90%",
+                  "y": "60%",
+                  "delay": "0.7s"
+                },
+                {
+                  "id": "icon4",
+                  "icon": "FaGlobe",
+                  "label": "Global",
+                  "x": "40%",
+                  "y": "85%",
+                  "delay": "2s"
+                }
+              ]
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "DigitalAbout1": {
+              "image": "/about/about1.jpg",
+              "subtitle": "About Us",
+              "titlePart1": "A Creative Digital\\nAgency Focused on",
+              "titlePart2": "Real Results",
+              "description": "We are a team of strategists, marketers, designers, and innovators who love turning ideas into impactful digital experiences. Our mission is simple — deliver measurable results that drive your business forward.",
+              "features": [
+                {
+                  "id": "feat1",
+                  "icon": "FaLightbulb",
+                  "title": "Creativity Meets Strategy",
+                  "description": "Unique ideas backed by data and deep market insights."
+                },
+                {
+                  "id": "feat2",
+                  "icon": "FaRocket",
+                  "title": "Innovative Development",
+                  "description": "Cutting-edge solutions that keep you ahead of competitors."
+                },
+                {
+                  "id": "feat3",
+                  "icon": "FaPen",
+                  "title": "Design. Develop. Deliver",
+                  "description": "Beautiful designs, powerful development, timely delivery."
+                },
+                {
+                  "id": "feat4",
+                  "icon": "FaChartBar",
+                  "title": "Unleashing Digital Power",
+                  "description": "Performance-driven campaigns that maximize your ROI."
+                }
+              ],
+              "buttonText": "Discover More",
+              "buttonUrl": "/about"
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "DigitalServices1": {
+              "subtitle": "SERVICE",
+              "titlePart1": "Helping You Succeed Through\\n",
+              "titlePart2": "Creative & Digital",
+              "description": "We combine creativity, technology, and data-driven strategies to deliver\\npowerful digital solutions that help your business grow, scale, and lead.",
+              "image": "/service/serviceright1.webp",
+              "services": [
+                {
+                  "id": "srv1",
+                  "icon": "FaPenNib",
+                  "number": "01.",
+                  "title": "UI/UX Design",
+                  "description": "We design intuitive, engaging, and user-friendly interfaces that create lasting impressions.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/ui-ux-design"
+                },
+                {
+                  "id": "srv2",
+                  "icon": "FaChessKnight",
+                  "number": "02.",
+                  "title": "Brand Strategy",
+                  "description": "We craft powerful brand strategies that resonate with your audience and drive meaningful growth.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/brand-strategy"
+                },
+                {
+                  "id": "srv3",
+                  "icon": "FaCode",
+                  "number": "03.",
+                  "title": "Web Development",
+                  "description": "We build responsive, fast, and scalable websites using the latest technologies that perform.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/web-development"
+                },
+                {
+                  "id": "srv4",
+                  "icon": "FaMobileAlt",
+                  "number": "04.",
+                  "title": "App Development",
+                  "description": "We build feature-rich, secure, and scalable mobile apps tailored to your business goals.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/app-development"
+                },
+                {
+                  "id": "srv5",
+                  "icon": "FaSearch",
+                  "number": "05.",
+                  "title": "Search Optimization",
+                  "description": "We improve your search rankings, drive organic traffic, and increase your online visibility.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/seo"
+                },
+                {
+                  "id": "srv6",
+                  "icon": "FaBullhorn",
+                  "number": "06.",
+                  "title": "Digital Marketing",
+                  "description": "We run data-driven campaigns that boost brand awareness, generate leads, and maximize ROI.",
+                  "linkText": "Learn More",
+                  "linkUrl": "/services/digital-marketing"
+                }
+              ]
+            }
+          }
+        },
+        "CaseStudies": {
+          "variants": {
+            "DigitalCaseStudies1": {
+              "subtitle": "OUR CASE STUDIES",
+              "titlePart1": "Our Recently Completed\\n",
+              "titlePart2": "Latest",
+              "titlePart3": " Projects",
+              "description": "We take pride in delivering digital solutions that drive real results.\\nHere are some of our recent projects.",
+              "buttonText": "View All Projects",
+              "buttonUrl": "/portfolio",
+              "studies": [
+                {
+                  "id": "case1",
+                  "number": "01",
+                  "image": "/case/case1.jpg",
+                  "title": "E-Commerce Growth Platform",
+                  "industry": "E-Commerce",
+                  "description": "We developed a high-converting e-commerce platform that improved user experience and boosted sales by 120%.",
+                  "linkText": "View Case Study",
+                  "linkUrl": "/portfolio/ecommerce"
+                },
+                {
+                  "id": "case2",
+                  "number": "02",
+                  "image": "/case/case2.jpg",
+                  "title": "Brand & Website Redesign",
+                  "industry": "Technology",
+                  "description": "Redesigned the brand identity and website for a tech company, resulting in a 65% increase in engagement.",
+                  "linkText": "View Case Study",
+                  "linkUrl": "/portfolio/brand-redesign"
+                },
+                {
+                  "id": "case3",
+                  "number": "03",
+                  "image": "/case/case3.jpg",
+                  "title": "Local Business SEO Campaign",
+                  "industry": "Local Business",
+                  "description": "Executed an SEO strategy that improved local rankings and increased organic leads by 180%.",
+                  "linkText": "View Case Study",
+                  "linkUrl": "/portfolio/seo"
+                }
+              ]
+            }
+          }
+        },
+        "Counter": {
+          "variants": {
+            "DigitalCounter1": {
+              "counters": [
+                {
+                  "id": "cnt1",
+                  "icon": "FaChartBar",
+                  "value": 50,
+                  "suffix": "+",
+                  "title": "Projects Completed",
+                  "subtitle": "Across diverse industries"
+                },
+                {
+                  "id": "cnt2",
+                  "icon": "FaUsers",
+                  "value": 98,
+                  "suffix": "%",
+                  "title": "Client Satisfaction",
+                  "subtitle": "We ensure client success"
+                },
+                {
+                  "id": "cnt3",
+                  "icon": "FaChartLine",
+                  "value": 120,
+                  "suffix": "%",
+                  "title": "Average Growth",
+                  "subtitle": "Results-driven strategies"
+                },
+                {
+                  "id": "cnt4",
+                  "icon": "FaTrophy",
+                  "value": 5,
+                  "suffix": "+",
+                  "title": "Years Experience",
+                  "subtitle": "Delivering digital excellence"
+                }
+              ]
+            }
+          }
+        },
+        "Team": {
+          "variants": {
+            "DigitalTeam1": {
+              "subtitle": "OUR TEAM",
+              "titlePart1": "Meet the People\\nBehind ",
+              "titlePart2": "DigiTrive",
+              "description": "A passionate team of innovators, strategists and problem solvers\\ndriving real results for businesses worldwide.",
+              "footerText": "We're a close-knit team of problem solvers,\\ncreators and innovators.",
+              "footerButtonText": "Work With Us",
+              "footerButtonUrl": "/careers",
+              "members": [
+                {
+                  "id": "team1",
+                  "image": "/team/team-1.jpg",
+                  "name": "Jenny Wilson",
+                  "role": "Developer",
+                  "isLead": false,
+                  "linkedinUrl": "#",
+                  "specialtyIcon": "FaCode",
+                  "specialtyTitle": "Frontend Development",
+                  "experience": "6+ Years Experience",
+                  "profileUrl": "/team/jenny-wilson"
+                },
+                {
+                  "id": "team2",
+                  "image": "/team/team-2.jpg",
+                  "name": "Kristin Watson",
+                  "role": "Developer",
+                  "isLead": true,
+                  "linkedinUrl": "#",
+                  "specialtyIcon": "FaCode",
+                  "specialtyTitle": "Full Stack Development",
+                  "experience": "8+ Years Experience",
+                  "profileUrl": "/team/kristin-watson"
+                },
+                {
+                  "id": "team3",
+                  "image": "/team/team-3.jpg",
+                  "name": "Bessie Cooper",
+                  "role": "Developer",
+                  "isLead": false,
+                  "linkedinUrl": "#",
+                  "specialtyIcon": "FaPalette",
+                  "specialtyTitle": "UI/UX Design",
+                  "experience": "5+ Years Experience",
+                  "profileUrl": "/team/bessie-cooper"
+                }
+              ]
+            }
+          }
+        },
+        "Blogs": {
+          "variants": {
+            "DigitalBlog1": {
+              "subtitle": "OUR BLOG",
+              "titlePart1": "Check Out Latest\\nNews ",
+              "titlePart2": "Updates & Articles",
+              "description": "Insights, tips and stories to help you grow your brand,\\nimprove your strategy and stay ahead.",
+              "footerButtonText": "View All Articles",
+              "footerButtonUrl": "/blog",
+              "blogs": [
+                {
+                  "id": "blog1",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/1"
+                },
+                {
+                  "id": "blog2",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/2"
+                },
+                {
+                  "id": "blog3",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/3"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

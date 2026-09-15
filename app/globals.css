@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-primary: var(--font-poppins), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+
+  /* Global Colors based on new Digital Agency Design */
+  --color-bg-main: #060b13; /* Deep dark navy background */
+  --color-bg-card: #0d1620; /* Slightly lighter dark for cards */
+  --color-primary: #00c2c7; /* Bright cyan/teal for buttons and highlights */
+  --color-accent: #00a4a8; /* Slightly darker teal for hover states */
+  --color-text: #ffffff;
+  --color-text-light: #a0aab5;
+  --color-border: #1a2735;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg-main);
+}
