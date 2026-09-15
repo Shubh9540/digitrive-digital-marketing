@@ -87,8 +87,8 @@ export const HeroSection = ({ data }: { data?: DigitalHeroData }) => {
                   d="M 50 15 Q 25 30 10 50" 
                   fill="transparent" 
                   stroke="rgba(0, 194, 199, 0.5)" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,8"
+                  strokeWidth="0.3" 
+                  strokeDasharray="1.5, 2.5"
                   strokeLinecap="round"
                   className="animate-dash-anim"
                 />
@@ -97,8 +97,8 @@ export const HeroSection = ({ data }: { data?: DigitalHeroData }) => {
                   d="M 10 50 Q 50 35 90 60" 
                   fill="transparent" 
                   stroke="rgba(0, 194, 199, 0.5)" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,8"
+                  strokeWidth="0.3" 
+                  strokeDasharray="1.5, 2.5"
                   strokeLinecap="round"
                   className="animate-dash-anim"
                 />
@@ -107,8 +107,8 @@ export const HeroSection = ({ data }: { data?: DigitalHeroData }) => {
                   d="M 10 50 Q 20 75 40 85" 
                   fill="transparent" 
                   stroke="rgba(0, 194, 199, 0.5)" 
-                  strokeWidth="2" 
-                  strokeDasharray="4,8"
+                  strokeWidth="0.3" 
+                  strokeDasharray="1.5, 2.5"
                   strokeLinecap="round"
                   className="animate-dash-anim"
                 />
