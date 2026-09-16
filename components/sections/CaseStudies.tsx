@@ -5,7 +5,7 @@ import { DigitalCaseStudiesData } from '@/types/templates.types';
 import { Button } from '@/components/ui/Button';
 import { FaBuilding, FaArrowRight } from 'react-icons/fa';
 
-export const CaseStudies = ({ data }: { data?: DigitalCaseStudiesData }) => {
+export const CaseStudies = ({ data, hideButton, centerHeading }: { data?: DigitalCaseStudiesData; hideButton?: boolean; centerHeading?: boolean }) => {
   if (!data) return null;
 
   return (
@@ -14,10 +14,10 @@ export const CaseStudies = ({ data }: { data?: DigitalCaseStudiesData }) => {
 
         {/* Top Header Area */}
         <div className="mb-12">
-          <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-6">
+          <div className={`flex flex-col ${centerHeading ? 'items-center text-center' : 'lg:flex-row justify-between items-start lg:items-center'} gap-8 mb-6`}>
 
             <div className="flex-1">
-              <div className="flex items-center gap-2 mb-4">
+              <div className={`flex items-center gap-2 mb-4 ${centerHeading ? 'justify-center' : ''}`}>
                 <span className="w-2 h-2 rounded-full bg-[var(--color-primary)]"></span>
                 <p className="text-[var(--color-primary)] font-medium text-sm tracking-wider uppercase">
                   {data.subtitle}
@@ -36,17 +36,19 @@ export const CaseStudies = ({ data }: { data?: DigitalCaseStudiesData }) => {
               </h2>
             </div>
 
-            <div className="flex-shrink-0">
-              <Button href={data.buttonUrl} variant="outline">
-                {data.buttonText}
-              </Button>
-            </div>
+            {!hideButton && (
+              <div className="flex-shrink-0">
+                <Button href={data.buttonUrl} variant="outline">
+                  {data.buttonText}
+                </Button>
+              </div>
+            )}
 
           </div>
 
-          <span className="block w-16 h-[2px] bg-[var(--color-primary)] mb-6"></span>
+          <span className={`block w-16 h-[2px] bg-[var(--color-primary)] mb-6 ${centerHeading ? 'mx-auto' : ''}`}></span>
 
-          <p className="text-gray-400 text-base leading-relaxed max-w-2xl">
+          <p className={`text-gray-400 text-base leading-relaxed max-w-2xl ${centerHeading ? 'text-center mx-auto' : ''}`}>
             {data.description.replace(/\\n/g, '\n').split('\n').map((line, i, arr) => (
               <React.Fragment key={i}>
                 {line}

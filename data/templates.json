@@ -111,6 +111,109 @@
           }
         ],
         "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "CaseStudiesBreadcrumb": {
+        "title": "Case Studies",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Case Studies"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "CaseStudyDetailBreadcrumb": {
+        "title": "Case Study Detail",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Case Studies",
+            "url": "/case-studies"
+          },
+          {
+            "label": "Case Study Detail"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "TeamBreadcrumb": {
+        "title": "Our Team",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Team"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "TeamDetailBreadcrumb": {
+        "title": "Team Member",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Team",
+            "url": "/team"
+          },
+          {
+            "label": "Team Member"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "TestimonialsBreadcrumb": {
+        "title": "Testimonials",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Testimonials"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "IndustriesBreadcrumb": {
+        "title": "Industries We Serve",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Industries We Serve"
+          }
+        ],
+        "bgImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+      },
+      "IndustryDetailBreadcrumb": {
+        "title": "Industry Detail",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Industries We Serve",
+            "url": "/industries"
+          },
+          {
+            "label": "Industry Detail"
+          }
+        ],
+        "bgImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
       }
     },
     "Footer": {
@@ -567,6 +670,20 @@
                       "label": "Mission & Vision",
                       "url": "/mission-vision",
                       "id": "sub-mission-vision"
+                    },
+                    {
+                      "id": "sub-team",
+                      "label": "Our Team",
+                      "url": "/team"
+                    },
+                    {
+                      "id": "sub-team-detail",
+                      "label": "Team Details"
+                    },
+                    {
+                      "id": "sub-testimonials",
+                      "label": "Testimonials",
+                      "url": "/testimonials"
                     }
                   ]
                 },
@@ -593,9 +710,14 @@
                   "id": "industries",
                   "subLinks": [
                     {
-                      "label": "Tech",
-                      "url": "/industries/tech",
-                      "id": "ind1"
+                      "id": "sub-ind-all",
+                      "label": "All Industries",
+                      "url": "/industries"
+                    },
+                    {
+                      "id": "sub-ind-detail",
+                      "label": "Industry Detail",
+                      "url": "/industries/retail"
                     }
                   ]
                 },
@@ -617,14 +739,29 @@
                   ]
                 },
                 {
-                  "label": "Blog",
-                  "url": "/blog",
-                  "id": "blog"
-                },
-                {
-                  "label": "Careers",
-                  "url": "/careers",
-                  "id": "careers"
+                  "label": "Other",
+                  "url": "",
+                  "id": "other",
+                  "subLinks": [
+                    {
+                      "id": "sub-case-studies",
+                      "label": "Case Studies",
+                      "url": "/case-studies"
+                    },
+                    {
+                      "id": "sub-case-study-detail",
+                      "label": "Case Study Detail"
+                    },
+                    {
+                      "id": "sub-blog",
+                      "label": "Blog",
+                      "url": "/blog"
+                    },
+                    {
+                      "id": "sub-blog-detail",
+                      "label": "Blog Details"
+                    }
+                  ]
                 },
                 {
                   "label": "Contact Us",
@@ -758,6 +895,118 @@
                   "location": "Hyderabad, India",
                   "rating": 5,
                   "reviewText": "We loved the app they built for us. It was delivered on time and exceeded our expectations in terms of design and functionality."
+                },
+                {
+                  "id": "t-dummy-0",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma 1",
+                  "location": "New Delhi, India",
+                  "rating": 5,
+                  "reviewText": "Great service! My phone screen was replaced quickly and at a very reasonable price. The staff was professional and kept me updated throughout. Highly recommended!"
+                },
+                {
+                  "id": "t-dummy-1",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta 2",
+                  "location": "Mumbai, India",
+                  "rating": 5,
+                  "reviewText": "Excellent experience! I got my battery replaced here and the service was super fast. Transparent pricing and very friendly staff. Will definitely visit again!"
+                },
+                {
+                  "id": "t-dummy-2",
+                  "image": "/team/c3.webp",
+                  "name": "Amit Patel 3",
+                  "location": "Ahmedabad, India",
+                  "rating": 5,
+                  "reviewText": "Outstanding digital marketing results. Our traffic increased by 200% in just 3 months. The team really knows what they are doing!"
+                },
+                {
+                  "id": "t-dummy-3",
+                  "image": "/team/c4.webp",
+                  "name": "Sneha Reddy 4",
+                  "location": "Hyderabad, India",
+                  "rating": 5,
+                  "reviewText": "We loved the app they built for us. It was delivered on time and exceeded our expectations in terms of design and functionality."
+                },
+                {
+                  "id": "t-dummy-4",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma 5",
+                  "location": "New Delhi, India",
+                  "rating": 5,
+                  "reviewText": "Great service! My phone screen was replaced quickly and at a very reasonable price. The staff was professional and kept me updated throughout. Highly recommended!"
+                },
+                {
+                  "id": "t-dummy-5",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta 6",
+                  "location": "Mumbai, India",
+                  "rating": 5,
+                  "reviewText": "Excellent experience! I got my battery replaced here and the service was super fast. Transparent pricing and very friendly staff. Will definitely visit again!"
+                },
+                {
+                  "id": "t-dummy-6",
+                  "image": "/team/c3.webp",
+                  "name": "Amit Patel 7",
+                  "location": "Ahmedabad, India",
+                  "rating": 5,
+                  "reviewText": "Outstanding digital marketing results. Our traffic increased by 200% in just 3 months. The team really knows what they are doing!"
+                },
+                {
+                  "id": "t-dummy-7",
+                  "image": "/team/c4.webp",
+                  "name": "Sneha Reddy 8",
+                  "location": "Hyderabad, India",
+                  "rating": 5,
+                  "reviewText": "We loved the app they built for us. It was delivered on time and exceeded our expectations in terms of design and functionality."
+                },
+                {
+                  "id": "t-dummy-8",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma 9",
+                  "location": "New Delhi, India",
+                  "rating": 5,
+                  "reviewText": "Great service! My phone screen was replaced quickly and at a very reasonable price. The staff was professional and kept me updated throughout. Highly recommended!"
+                },
+                {
+                  "id": "t-dummy-9",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta 10",
+                  "location": "Mumbai, India",
+                  "rating": 5,
+                  "reviewText": "Excellent experience! I got my battery replaced here and the service was super fast. Transparent pricing and very friendly staff. Will definitely visit again!"
+                },
+                {
+                  "id": "t-dummy-10",
+                  "image": "/team/c3.webp",
+                  "name": "Amit Patel 11",
+                  "location": "Ahmedabad, India",
+                  "rating": 5,
+                  "reviewText": "Outstanding digital marketing results. Our traffic increased by 200% in just 3 months. The team really knows what they are doing!"
+                },
+                {
+                  "id": "t-dummy-11",
+                  "image": "/team/c4.webp",
+                  "name": "Sneha Reddy 12",
+                  "location": "Hyderabad, India",
+                  "rating": 5,
+                  "reviewText": "We loved the app they built for us. It was delivered on time and exceeded our expectations in terms of design and functionality."
+                },
+                {
+                  "id": "t-dummy-12",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma 13",
+                  "location": "New Delhi, India",
+                  "rating": 5,
+                  "reviewText": "Great service! My phone screen was replaced quickly and at a very reasonable price. The staff was professional and kept me updated throughout. Highly recommended!"
+                },
+                {
+                  "id": "t-dummy-13",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta 14",
+                  "location": "Mumbai, India",
+                  "rating": 5,
+                  "reviewText": "Excellent experience! I got my battery replaced here and the service was super fast. Transparent pricing and very friendly staff. Will definitely visit again!"
                 }
               ]
             }
@@ -936,7 +1185,7 @@
               "titlePart3": " Projects",
               "description": "We take pride in delivering digital solutions that drive real results.\\nHere are some of our recent projects.",
               "buttonText": "View All Projects",
-              "buttonUrl": "/portfolio",
+              "buttonUrl": "/case-studies",
               "studies": [
                 {
                   "id": "case1",
@@ -946,7 +1195,7 @@
                   "industry": "E-Commerce",
                   "description": "We developed a high-converting e-commerce platform that improved user experience and boosted sales by 120%.",
                   "linkText": "View Case Study",
-                  "linkUrl": "/portfolio/ecommerce"
+                  "linkUrl": "/case-studies/case1"
                 },
                 {
                   "id": "case2",
@@ -956,7 +1205,7 @@
                   "industry": "Technology",
                   "description": "Redesigned the brand identity and website for a tech company, resulting in a 65% increase in engagement.",
                   "linkText": "View Case Study",
-                  "linkUrl": "/portfolio/brand-redesign"
+                  "linkUrl": "/case-studies/case2"
                 },
                 {
                   "id": "case3",
@@ -966,7 +1215,7 @@
                   "industry": "Local Business",
                   "description": "Executed an SEO strategy that improved local rankings and increased organic leads by 180%.",
                   "linkText": "View Case Study",
-                  "linkUrl": "/portfolio/seo"
+                  "linkUrl": "/case-studies/case3"
                 }
               ]
             }
@@ -1033,7 +1282,7 @@
                   "specialtyIcon": "FaCode",
                   "specialtyTitle": "Frontend Development",
                   "experience": "6+ Years Experience",
-                  "profileUrl": "/team/jenny-wilson"
+                  "profileUrl": "/team/member1"
                 },
                 {
                   "id": "team2",
@@ -1045,7 +1294,7 @@
                   "specialtyIcon": "FaCode",
                   "specialtyTitle": "Full Stack Development",
                   "experience": "8+ Years Experience",
-                  "profileUrl": "/team/kristin-watson"
+                  "profileUrl": "/team/member2"
                 },
                 {
                   "id": "team3",
@@ -1057,7 +1306,7 @@
                   "specialtyIcon": "FaPalette",
                   "specialtyTitle": "UI/UX Design",
                   "experience": "5+ Years Experience",
-                  "profileUrl": "/team/bessie-cooper"
+                  "profileUrl": "/team/member3"
                 }
               ]
             }
@@ -2059,6 +2308,3041 @@
                   {
                     "id": "f4",
                     "text": "Problem solving"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "CaseStudyDetail": {
+          "variants": {
+            "case1": {
+              "tag": "CASE STUDY",
+              "title": "Social Media Growth for a Lifestyle Brand",
+              "titleHighlight": "Lifestyle Brand",
+              "description": "How DigiTrive helped a premium lifestyle brand grow its social media presence, increase engagement by 250%, and drive significant sales through a data-driven social media strategy.",
+              "heroImage": "/case/case1.jpg",
+              "client": "LuxeLiving",
+              "industry": "Lifestyle & Home Decor",
+              "duration": "6 Months",
+              "websiteUrl": "#",
+              "websiteText": "Visit Website",
+              "sections": [
+                {
+                  "id": "overview",
+                  "number": "01",
+                  "title": "Overview",
+                  "icon": "social",
+                  "iconLabel": "Social Growth",
+                  "text": "DigiTrive partnered with LuxeLiving, a premium lifestyle brand, to strengthen their social media presence and create a consistent brand voice across platforms. The goal was to increase brand awareness, drive engagement, and generate more traffic to their website, ultimately boosting online sales.",
+                  "hasIconImage": true,
+                  "iconImage": "/case/social-growth.png"
+                },
+                {
+                  "id": "challenge",
+                  "number": "02",
+                  "title": "The Challenge",
+                  "text": "Despite having high-quality products, LuxeLiving struggled with low social media engagement, inconsistent posting, and limited brand visibility. Their content lacked a clear strategy, resulting in minimal reach, low follower growth, and fewer website conversions.",
+                  "bullets": [
+                    {
+                      "id": "c1",
+                      "text": "Low brand awareness on social platforms"
+                    },
+                    {
+                      "id": "c2",
+                      "text": "Inconsistent content and posting schedule"
+                    },
+                    {
+                      "id": "c3",
+                      "text": "Low engagement rate and follower growth"
+                    },
+                    {
+                      "id": "c4",
+                      "text": "Limited website traffic from social media"
+                    },
+                    {
+                      "id": "c5",
+                      "text": "No clear strategy to convert followers into customers"
+                    }
+                  ]
+                },
+                {
+                  "id": "solution",
+                  "number": "03",
+                  "title": "Our Solution",
+                  "text": "Our team at DigiTrive developed a comprehensive social media strategy tailored to LuxeLiving brand and target audience. We created engaging content, implemented a consistent posting schedule, ran targeted ad campaigns, and leveraged influencer collaborations to maximize reach and engagement.",
+                  "bullets": [
+                    {
+                      "id": "s1",
+                      "text": "Defined a clear social media strategy and content plan"
+                    },
+                    {
+                      "id": "s2",
+                      "text": "Created high-quality, on-brand visuals and videos"
+                    },
+                    {
+                      "id": "s3",
+                      "text": "Implemented targeted ad campaigns (Meta & Pinterest)"
+                    },
+                    {
+                      "id": "s4",
+                      "text": "Collaborated with lifestyle influencers"
+                    },
+                    {
+                      "id": "s5",
+                      "text": "Monitored performance and optimized campaigns regularly"
+                    }
+                  ]
+                },
+                {
+                  "id": "results",
+                  "number": "04",
+                  "title": "The Results",
+                  "text": "In just 6 months, DigiTrive helped LuxeLiving achieve remarkable growth across all social media platforms. The brand saw a 250% increase in engagement, a 300% growth in followers, and a significant boost in website traffic and online sales.",
+                  "metrics": [
+                    {
+                      "id": "r1",
+                      "value": "300%",
+                      "label": "Increase in Followers",
+                      "icon": "FaUsers"
+                    },
+                    {
+                      "id": "r2",
+                      "value": "250%",
+                      "label": "Higher Engagement",
+                      "icon": "FaHeart"
+                    },
+                    {
+                      "id": "r3",
+                      "value": "180%",
+                      "label": "More Website Traffic",
+                      "icon": "FaGlobe"
+                    },
+                    {
+                      "id": "r4",
+                      "value": "120%",
+                      "label": "Growth in Online Sales",
+                      "icon": "FaShoppingCart"
+                    }
+                  ]
+                }
+              ]
+            },
+            "case2": {
+              "tag": "CASE STUDY",
+              "title": "Brand & Website Redesign That Tripled Conversions",
+              "titleHighlight": "Tripled Conversions",
+              "description": "How DigiTrive redesigned a brand identity and website from the ground up, resulting in a 3x increase in conversion rate.",
+              "heroImage": "/case/case2.jpg",
+              "client": "NovaTech",
+              "industry": "SaaS / Technology",
+              "duration": "4 Months",
+              "websiteUrl": "#",
+              "websiteText": "Visit Website",
+              "sections": [
+                {
+                  "id": "overview",
+                  "number": "01",
+                  "title": "Overview",
+                  "text": "DigiTrive collaborated with NovaTech, a growing SaaS company, to revamp their brand identity and website. The goal was to create a modern, trustworthy digital presence that clearly communicates their value proposition and converts visitors into customers.",
+                  "hasIconImage": false
+                },
+                {
+                  "id": "challenge",
+                  "number": "02",
+                  "title": "The Challenge",
+                  "text": "NovaTech had an outdated website and inconsistent branding that was failing to communicate their product value. Visitors were leaving quickly and conversion rates were very low.",
+                  "bullets": [
+                    {
+                      "id": "c1",
+                      "text": "Outdated visual design and poor UX"
+                    },
+                    {
+                      "id": "c2",
+                      "text": "High bounce rate and low session duration"
+                    },
+                    {
+                      "id": "c3",
+                      "text": "Weak brand identity and messaging"
+                    },
+                    {
+                      "id": "c4",
+                      "text": "Low conversion rate on key landing pages"
+                    },
+                    {
+                      "id": "c5",
+                      "text": "No clear calls-to-action or user journey"
+                    }
+                  ]
+                },
+                {
+                  "id": "solution",
+                  "number": "03",
+                  "title": "Our Solution",
+                  "text": "We redesigned the full brand identity and built a conversion-optimized website with a clear user journey, compelling copy, and modern design.",
+                  "bullets": [
+                    {
+                      "id": "s1",
+                      "text": "Full brand identity redesign (logo, colors, typography)"
+                    },
+                    {
+                      "id": "s2",
+                      "text": "UX research and wireframing"
+                    },
+                    {
+                      "id": "s3",
+                      "text": "Conversion-optimized landing pages"
+                    },
+                    {
+                      "id": "s4",
+                      "text": "Clear messaging and value proposition"
+                    },
+                    {
+                      "id": "s5",
+                      "text": "A/B testing to maximize results"
+                    }
+                  ]
+                },
+                {
+                  "id": "results",
+                  "number": "04",
+                  "title": "The Results",
+                  "text": "Within 4 months of launch, NovaTech saw dramatic improvements across all key metrics.",
+                  "metrics": [
+                    {
+                      "id": "r1",
+                      "value": "3x",
+                      "label": "Conversion Rate",
+                      "icon": "FaChartLine"
+                    },
+                    {
+                      "id": "r2",
+                      "value": "65%",
+                      "label": "Bounce Rate Reduced",
+                      "icon": "FaArrowDown"
+                    },
+                    {
+                      "id": "r3",
+                      "value": "200%",
+                      "label": "More Leads Generated",
+                      "icon": "FaUsers"
+                    },
+                    {
+                      "id": "r4",
+                      "value": "140%",
+                      "label": "Revenue Growth",
+                      "icon": "FaDollarSign"
+                    }
+                  ]
+                }
+              ]
+            },
+            "case3": {
+              "tag": "CASE STUDY",
+              "title": "Local Business SEO Campaign That Dominated Google",
+              "titleHighlight": "Dominated Google",
+              "description": "How DigiTrive helped a local business rank #1 on Google for high-intent keywords, driving massive organic traffic and leads.",
+              "heroImage": "/case/case3.jpg",
+              "client": "QuickFix Plumbing",
+              "industry": "Home Services",
+              "duration": "3 Months",
+              "websiteUrl": "#",
+              "websiteText": "Visit Website",
+              "sections": [
+                {
+                  "id": "overview",
+                  "number": "01",
+                  "title": "Overview",
+                  "text": "DigiTrive executed a targeted local SEO campaign for QuickFix Plumbing, a home services business looking to dominate local search results and drive more phone calls and bookings through organic search.",
+                  "hasIconImage": false
+                },
+                {
+                  "id": "challenge",
+                  "number": "02",
+                  "title": "The Challenge",
+                  "text": "QuickFix was invisible on Google despite offering excellent services. Competitors were dominating local search and capturing all the leads.",
+                  "bullets": [
+                    {
+                      "id": "c1",
+                      "text": "Ranking on page 3+ for all key search terms"
+                    },
+                    {
+                      "id": "c2",
+                      "text": "No Google Business Profile optimization"
+                    },
+                    {
+                      "id": "c3",
+                      "text": "Zero backlinks from local directories"
+                    },
+                    {
+                      "id": "c4",
+                      "text": "Poor on-page SEO and slow website speed"
+                    },
+                    {
+                      "id": "c5",
+                      "text": "No review management strategy"
+                    }
+                  ]
+                },
+                {
+                  "id": "solution",
+                  "number": "03",
+                  "title": "Our Solution",
+                  "text": "We executed a comprehensive local SEO strategy targeting high-intent keywords with local modifiers.",
+                  "bullets": [
+                    {
+                      "id": "s1",
+                      "text": "Full technical SEO audit and fixes"
+                    },
+                    {
+                      "id": "s2",
+                      "text": "Optimized Google Business Profile"
+                    },
+                    {
+                      "id": "s3",
+                      "text": "Built citations and local backlinks"
+                    },
+                    {
+                      "id": "s4",
+                      "text": "Created location-specific landing pages"
+                    },
+                    {
+                      "id": "s5",
+                      "text": "Implemented review generation campaigns"
+                    }
+                  ]
+                },
+                {
+                  "id": "results",
+                  "number": "04",
+                  "title": "The Results",
+                  "text": "In just 3 months, QuickFix shot to the top of local search results and saw a dramatic increase in calls and bookings.",
+                  "metrics": [
+                    {
+                      "id": "r1",
+                      "value": "#1",
+                      "label": "Google Local Ranking",
+                      "icon": "FaTrophy"
+                    },
+                    {
+                      "id": "r2",
+                      "value": "400%",
+                      "label": "Organic Traffic Growth",
+                      "icon": "FaChartBar"
+                    },
+                    {
+                      "id": "r3",
+                      "value": "5x",
+                      "label": "More Phone Calls",
+                      "icon": "FaPhone"
+                    },
+                    {
+                      "id": "r4",
+                      "value": "220%",
+                      "label": "More Bookings",
+                      "icon": "FaCalendar"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        "TeamDetail": {
+          "variants": {
+            "member1": {
+              "id": "member1",
+              "name": "Sarah Lee",
+              "role": "Managing Director",
+              "image": "/team/team-1.jpg",
+              "experienceBadge": "8+ YEARS OF EXPERIENCE",
+              "description": "With over 8 years of impactful leadership and proven expertise in business strategy, innovation, and team management, Sarah Lee drives the vision and growth of our company. Her forward-thinking approach and dedication to excellence continue to inspire success and build lasting value.",
+              "contact": {
+                "email": "info@sarahlee.com",
+                "phone": "+0123 456 7890",
+                "website": "www.sarahlee.com",
+                "bloodGroup": "A+",
+                "age": "32 Years",
+                "address": "Chicago, Illinois, USA"
+              },
+              "biography": "Who designing in a powerful way to pull not as only profession, however in a passion for our Company. We have to a tendency to believe the idea that smart looking of any website is the first impression on visitors.Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.\nThere are many variations.",
+              "skillDescription": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+              "skills": [
+                {
+                  "id": "s1",
+                  "name": "Scalable Solutions",
+                  "percentage": "90%"
+                },
+                {
+                  "id": "s2",
+                  "name": "Automation Features",
+                  "percentage": "70%"
+                },
+                {
+                  "id": "s3",
+                  "name": "24/7 Support",
+                  "percentage": "50%"
+                }
+              ]
+            }
+          }
+        },
+        "IndustriesGrid": {
+          "variants": {
+            "DigitriveIndustriesGrid1": {
+              "subtitle": "INDUSTRIES WE SERVE",
+              "titlePart1": "Digital Solutions",
+              "titleHighlight": "Every Industry",
+              "titlePart2": "for",
+              "description": "At Digitrive, we understand that every industry has unique challenges and opportunities. Our tailored digital marketing strategies help businesses across diverse sectors accelerate growth, build brand value, and achieve measurable results.",
+              "signatureText": "Your Growth, Our Expertise",
+              "stats": [
+                {
+                  "id": "s1",
+                  "icon": "FaUsers",
+                  "value": "50+",
+                  "label": "Industries Supported"
+                },
+                {
+                  "id": "s2",
+                  "icon": "FaChartBar",
+                  "value": "500+",
+                  "label": "Successful Campaigns"
+                },
+                {
+                  "id": "s3",
+                  "icon": "FaStar",
+                  "value": "98%",
+                  "label": "Client Satisfaction"
+                }
+              ],
+              "industries": [
+                {
+                  "id": "retail",
+                  "icon": "FaShoppingCart",
+                  "image": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=400&fit=crop",
+                  "title": "Retail & E-commerce",
+                  "description": "Driving online sales with data-backed strategies and performance marketing.",
+                  "url": "/industries/retail",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "healthcare",
+                  "icon": "FaHeartbeat",
+                  "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=400&fit=crop",
+                  "title": "Healthcare",
+                  "description": "Helping healthcare brands build trust and reach more patients online.",
+                  "url": "/industries/healthcare",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "real-estate",
+                  "icon": "FaBuilding",
+                  "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+                  "title": "Real Estate",
+                  "description": "Generating high-quality leads for residential and commercial properties.",
+                  "url": "/industries/real-estate",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "education",
+                  "icon": "FaGraduationCap",
+                  "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop",
+                  "title": "Education",
+                  "description": "Increasing enrollments through targeted digital campaigns.",
+                  "url": "/industries/education",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "travel",
+                  "icon": "FaPlane",
+                  "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
+                  "title": "Travel & Hospitality",
+                  "description": "Inspiring more journeys with engaging and result-driven marketing.",
+                  "url": "/industries/travel",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "food",
+                  "icon": "FaUtensils",
+                  "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
+                  "title": "Food & Beverage",
+                  "description": "Building stronger brand connections and increasing customer engagement.",
+                  "url": "/industries/food",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "fashion",
+                  "icon": "FaTshirt",
+                  "image": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&h=400&fit=crop",
+                  "title": "Fashion & Lifestyle",
+                  "description": "Creating trend-driven campaigns that boost visibility and sales.",
+                  "url": "/industries/fashion",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "finance",
+                  "icon": "FaMoneyBillWave",
+                  "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+                  "title": "Finance & Insurance",
+                  "description": "Building credibility and generating qualified leads through strategic marketing.",
+                  "url": "/industries/finance",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "tech",
+                  "icon": "FaLaptopCode",
+                  "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
+                  "title": "Technology & SaaS",
+                  "description": "Helping tech brands scale with content, SEO, and performance marketing.",
+                  "url": "/industries/tech",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "manufacturing",
+                  "icon": "FaIndustry",
+                  "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+                  "title": "Manufacturing",
+                  "description": "Showcasing industrial expertise and generating qualified business enquiries.",
+                  "url": "/industries/manufacturing",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "beauty",
+                  "icon": "FaLeaf",
+                  "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop",
+                  "title": "Beauty & Personal Care",
+                  "description": "Enhancing brand presence and driving product sales online.",
+                  "url": "/industries/beauty",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "automotive",
+                  "icon": "FaCar",
+                  "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop",
+                  "title": "Automotive",
+                  "description": "Accelerating brand awareness and enquiries with digital campaigns.",
+                  "url": "/industries/automotive",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "it",
+                  "icon": "FaUsersCog",
+                  "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop",
+                  "title": "IT & Professional Services",
+                  "description": "Positioning your brand as an industry leader with targeted marketing.",
+                  "url": "/industries/it",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "media",
+                  "icon": "FaPlayCircle",
+                  "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=400&fit=crop",
+                  "title": "Media & Entertainment",
+                  "description": "Creating impactful campaigns that engage and grow your audience.",
+                  "url": "/industries/media",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "ngo",
+                  "icon": "FaHeart",
+                  "image": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=600&h=400&fit=crop",
+                  "title": "Non-Profit & NGOs",
+                  "description": "Spreading awareness and driving support through meaningful storytelling.",
+                  "url": "/industries/ngo",
+                  "linkText": "View Details"
+                },
+                {
+                  "id": "legal",
+                  "icon": "FaBalanceScale",
+                  "image": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&h=400&fit=crop",
+                  "title": "Legal & Consulting",
+                  "description": "Building authority and generating trusted client enquiries.",
+                  "url": "/industries/legal",
+                  "linkText": "View Details"
+                }
+              ]
+            }
+          }
+        },
+        "IndustryDetail": {
+          "variants": {
+            "retail": {
+              "id": "retail",
+              "title": "Retail & E-commerce",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Retail & E-commerce industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Retail & E-commerce digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "healthcare": {
+              "id": "healthcare",
+              "title": "Healthcare",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Healthcare industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Healthcare digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "real-estate": {
+              "id": "real-estate",
+              "title": "Real Estate",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Real Estate industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Real Estate digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "education": {
+              "id": "education",
+              "title": "Education",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Education industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Education digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "travel": {
+              "id": "travel",
+              "title": "Travel & Hospitality",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Travel & Hospitality industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Travel & Hospitality digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "food": {
+              "id": "food",
+              "title": "Food & Beverage",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Food & Beverage industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Food & Beverage digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "fashion": {
+              "id": "fashion",
+              "title": "Fashion & Lifestyle",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Fashion & Lifestyle industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Fashion & Lifestyle digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "finance": {
+              "id": "finance",
+              "title": "Finance & Insurance",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Finance & Insurance industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Finance & Insurance digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "tech": {
+              "id": "tech",
+              "title": "Technology & SaaS",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Technology & SaaS industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Technology & SaaS digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "manufacturing": {
+              "id": "manufacturing",
+              "title": "Manufacturing",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Manufacturing industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Manufacturing digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "beauty": {
+              "id": "beauty",
+              "title": "Beauty & Personal Care",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Beauty & Personal Care industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Beauty & Personal Care digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "automotive": {
+              "id": "automotive",
+              "title": "Automotive",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Automotive industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Automotive digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "it": {
+              "id": "it",
+              "title": "IT & Professional Services",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The IT & Professional Services industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our IT & Professional Services digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "media": {
+              "id": "media",
+              "title": "Media & Entertainment",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Media & Entertainment industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Media & Entertainment digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "ngo": {
+              "id": "ngo",
+              "title": "Non-Profit & NGOs",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Non-Profit & NGOs industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Non-Profit & NGOs digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
+                  }
+                ]
+              }
+            },
+            "legal": {
+              "id": "legal",
+              "title": "Legal & Consulting",
+              "subtitle": "Driving Online Sales. Building Stronger Brands.",
+              "heroImage": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=1920&h=800&fit=crop",
+              "heroText": "At DigiTrive, we help businesses grow with data-driven digital marketing strategies, creating seamless experiences and increasing customer loyalty.",
+              "heroButtonUrl": "/contact",
+              "heroButtonText": "Get a Free Consultation",
+              "handwritingText": "Sell More Go Further",
+              "sidebar": {
+                "industriesLinks": [
+                  {
+                    "id": "retail",
+                    "label": "Retail & E-commerce",
+                    "url": "/industries/retail"
+                  },
+                  {
+                    "id": "healthcare",
+                    "label": "Healthcare",
+                    "url": "/industries/healthcare"
+                  },
+                  {
+                    "id": "real-estate",
+                    "label": "Real Estate",
+                    "url": "/industries/real-estate"
+                  },
+                  {
+                    "id": "education",
+                    "label": "Education",
+                    "url": "/industries/education"
+                  },
+                  {
+                    "id": "travel",
+                    "label": "Travel & Hospitality",
+                    "url": "/industries/travel"
+                  },
+                  {
+                    "id": "food",
+                    "label": "Food & Beverage",
+                    "url": "/industries/food"
+                  },
+                  {
+                    "id": "fashion",
+                    "label": "Fashion & Lifestyle",
+                    "url": "/industries/fashion"
+                  },
+                  {
+                    "id": "finance",
+                    "label": "Finance & Insurance",
+                    "url": "/industries/finance"
+                  },
+                  {
+                    "id": "tech",
+                    "label": "Technology & SaaS",
+                    "url": "/industries/tech"
+                  },
+                  {
+                    "id": "manufacturing",
+                    "label": "Manufacturing",
+                    "url": "/industries/manufacturing"
+                  },
+                  {
+                    "id": "beauty",
+                    "label": "Beauty & Personal Care",
+                    "url": "/industries/beauty"
+                  },
+                  {
+                    "id": "automotive",
+                    "label": "Automotive",
+                    "url": "/industries/automotive"
+                  },
+                  {
+                    "id": "it",
+                    "label": "IT & Professional Services",
+                    "url": "/industries/it"
+                  },
+                  {
+                    "id": "media",
+                    "label": "Media & Entertainment",
+                    "url": "/industries/media"
+                  },
+                  {
+                    "id": "ngo",
+                    "label": "Non-Profit & NGOs",
+                    "url": "/industries/ngo"
+                  },
+                  {
+                    "id": "legal",
+                    "label": "Legal & Consulting",
+                    "url": "/industries/legal"
+                  }
+                ],
+                "contactCard": {
+                  "titlePart1": "Contact with",
+                  "titleHighlight": "us for any",
+                  "titlePart2": "advice",
+                  "subtitle": "Have a project in mind? Talk to our experts!",
+                  "phone": "+1 12345678920",
+                  "pdfButtonText": "Download PDF File",
+                  "pdfUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                },
+                "promoCard": {
+                  "titlePart1": "Digital Growth",
+                  "titlePart2": "for Modern Brands",
+                  "subtitle": "Empowering Businesses in the Digital Era"
+                }
+              },
+              "overview": {
+                "title": "Service",
+                "titleHighlight": "Overview",
+                "text1": "The Legal & Consulting industry is rapidly evolving, with customers expecting seamless online experiences, personalized recommendations, and quick deliveries. At DigiTrive, we create data-driven digital marketing strategies that help brands increase visibility, drive qualified traffic, and boost online sales.",
+                "text2": "From attracting new customers to improving conversions and building long-term loyalty, our end-to-end digital solutions are tailored to the unique needs of your business. We combine industry insights, advanced tools, and creative strategies to help your brand stand out in a competitive digital marketplace."
+              },
+              "serviceCenter": {
+                "title": "Service",
+                "titleHighlight": "Center",
+                "text": "Our service center is dedicated to delivering result-driven digital marketing solutions. Whether you need SEO for product pages, high-performing ad campaigns, social media marketing, or conversion optimization, our team ensures every strategy is aligned with your business goals. We continuously monitor performance and optimize campaigns to maximize your return on investment.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+                    "title": "Data-Driven Strategies",
+                    "text": "We use data and customer insights to create targeted campaigns that increase traffic, conversions, and revenue."
+                  },
+                  {
+                    "id": "f2",
+                    "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=600&h=400&fit=crop",
+                    "title": "Customer-Centric Approach",
+                    "text": "We focus on creating seamless and engaging shopping experiences that turn visitors into loyal customers."
+                  }
+                ]
+              },
+              "faq": {
+                "title": "Frequently Asked",
+                "titleHighlight": "Question",
+                "text": "Here are some common questions about our Legal & Consulting digital marketing services. If you have any other questions, feel free to reach out to our team.",
+                "questions": [
+                  {
+                    "id": "q1",
+                    "question": "How can digital marketing help my business grow?",
+                    "answer": "Digital marketing increases your online visibility, helps you reach a highly targeted audience, and drives qualified traffic to your website, ultimately leading to higher conversions and revenue."
+                  },
+                  {
+                    "id": "q2",
+                    "question": "Do you provide custom strategies for different platforms?",
+                    "answer": "Yes, we tailor our approach for every platform, whether it is Google Ads, Facebook, Instagram, or LinkedIn, to ensure maximum engagement and ROI."
+                  },
+                  {
+                    "id": "q3",
+                    "question": "How long does it take to see results?",
+                    "answer": "While paid advertising can generate immediate traffic, organic strategies like SEO typically take 3-6 months to show significant results."
                   }
                 ]
               }

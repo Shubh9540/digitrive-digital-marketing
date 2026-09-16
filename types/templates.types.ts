@@ -5,10 +5,10 @@ export interface BreadcrumbData {
 }
 
 export interface TopBarData {
-  phone: string;
-  email: string;
-  address: string;
-  socialLinks: { id: string; icon: string; url: string }[];
+  phone?: string;
+  email?: string;
+  address?: string;
+  socialLinks?: { id: string; icon: string; url: string }[];
 }
 
 export interface HeaderData {
@@ -20,7 +20,8 @@ export interface HeaderData {
 
 export interface DigitalFooterData {
   logo: string;
-  logoAlt: string;
+  logoAlt?: string;
+  tagline: string;
   description: string;
   emailLabel: string;
   email: string;
@@ -99,12 +100,39 @@ export interface DigitalCaseStudiesData {
   }[];
 }
 
+export interface CaseStudySection {
+  id: string;
+  number: string;
+  title: string;
+  text: string;
+  icon?: string;
+  iconLabel?: string;
+  hasIconImage?: boolean;
+  iconImage?: string;
+  bullets?: { id: string; text: string }[];
+  metrics?: { id: string; value: string; label: string; icon: string }[];
+}
+
+export interface CaseStudyDetailData {
+  tag: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  heroImage: string;
+  client: string;
+  industry: string;
+  duration: string;
+  websiteUrl: string;
+  websiteText: string;
+  sections: CaseStudySection[];
+}
+
 export interface DigitalCounterData {
   counters: {
     id: string;
     icon: string;
     value: number;
-    number: string;
+    number?: string;
     suffix: string;
     title: string;
     subtitle: string;
@@ -161,9 +189,9 @@ export interface ProjectsGridData {
 
 export interface DigitalServicesData {
   subtitle: string;
-  title: string;
-  titlePart1: string;
-  titlePart2: string;
+  title?: string;
+  titlePart1?: string;
+  titlePart2?: string;
   description: string;
   image: string;
   services: {
@@ -171,7 +199,7 @@ export interface DigitalServicesData {
     icon: string;
     title: string;
     description: string;
-    url: string;
+    url?: string;
     linkUrl: string;
     linkText: string;
     number: string;
@@ -199,6 +227,30 @@ export interface DigitalTeamData {
     experience: string;
     socials: { icon: string; url: string }[];
   }[];
+}
+
+export interface TeamDetailData {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  experienceBadge: string;
+  description: string;
+  contact: {
+    email: string;
+    phone: string;
+    website: string;
+    bloodGroup: string;
+    age: string;
+    address: string;
+  };
+  biography: string;
+  skills: {
+    id: string;
+    name: string;
+    percentage: string;
+  }[];
+  skillDescription: string;
 }
 
 export interface DigitalTestimonialsData {
@@ -235,6 +287,89 @@ export interface DigitalWhyChooseUsData {
   images: string[];
 }
 
+export interface IndustriesGridData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  titlePart2: string;
+  description: string;
+  stats: {
+    id: string;
+    icon: string;
+    value: string;
+    label: string;
+  }[];
+  signatureText: string;
+  industries: {
+    id: string;
+    icon: string;
+    image: string;
+    title: string;
+    description: string;
+    url: string;
+    linkText: string;
+  }[];
+}
+
+export interface IndustryDetailData {
+  id: string;
+  title: string;
+  subtitle: string;
+  heroImage: string;
+  heroText: string;
+  heroButtonUrl: string;
+  heroButtonText: string;
+  handwritingText: string;
+  
+  sidebar: {
+    industriesLinks: { id: string; label: string; url: string; isActive?: boolean }[];
+    contactCard: {
+      titlePart1: string;
+      titleHighlight: string;
+      titlePart2: string;
+      subtitle: string;
+      phone: string;
+      pdfButtonText: string;
+      pdfUrl: string;
+    };
+    promoCard: {
+      titlePart1: string;
+      titlePart2: string;
+      subtitle: string;
+    };
+  };
+
+  overview: {
+    title: string;
+    titleHighlight: string;
+    text1: string;
+    text2: string;
+  };
+
+  serviceCenter: {
+    title: string;
+    titleHighlight: string;
+    text: string;
+    features: {
+      id: string;
+      image: string;
+      title: string;
+      text: string;
+    }[];
+  };
+
+  faq: {
+    title: string;
+    titleHighlight: string;
+    text: string;
+    questions: {
+      id: string;
+      question: string;
+      answer: string;
+    }[];
+  };
+}
+
 export interface ServiceDetailData {
   heroImage: string;
   overview: { title: string; text1: string; text2?: string };
@@ -259,15 +394,13 @@ export type AboutFirmData = any;
 export type AboutMissionData = any;
 export type AboutApproachData = any;
 export type WhyChooseUsData = DigitalWhyChooseUsData;
-export type IndustriesGridData = any;
-export type IndustryDetailData = any;
 export type SitemapData = any;
 export type EnquiryData = any;
 export type DigitalProjectsGridData = ProjectsGridData;
 
 export interface DigitriveTemplateData {
   common: {
-    TopBar: { variants: Record<string, TopBarData> };
+    TopBar?: { variants: Record<string, TopBarData> };
     breadcrumbs: Record<string, BreadcrumbData>;
     DigitalFooter: DigitalFooterData;
     [key: string]: any;
@@ -282,6 +415,7 @@ export interface DigitriveTemplateData {
         ProjectsGrid: { variants: Record<string, ProjectsGridData> };
         ProjectDetail: { variants: Record<string, ProjectDetailData> };
         ServiceDetail: { variants: Record<string, ServiceDetailData> };
+        CaseStudyDetail: { variants: Record<string, CaseStudyDetailData> };
         [key: string]: any;
       };
     };

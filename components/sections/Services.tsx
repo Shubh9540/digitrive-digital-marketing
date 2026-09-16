@@ -37,7 +37,7 @@ export const Services = ({ data }: { data?: DigitalServicesData }) => {
             </div>
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              {data.titlePart1.replace(/\\n/g, '\n').split('\n').map((line, i, arr) => (
+              {(data.titlePart1 || '').replace(/\\n/g, '\n').split('\n').map((line, i, arr) => (
                 <React.Fragment key={i}>
                   {line}
                   {i < arr.length - 1 && <br />}
