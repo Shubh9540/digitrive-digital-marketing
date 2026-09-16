@@ -31,17 +31,13 @@ export const Footer = ({ data }: { data?: DigitalFooterData }) => {
             
             {/* Logo area */}
             <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12">
+              <div className="relative w-48 h-12">
                 <Image 
                   src={data.logo} 
                   alt="Digitrive Logo" 
                   fill 
-                  className="object-contain"
+                  className="object-contain object-left"
                 />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-white font-bold text-2xl tracking-wide uppercase leading-none mb-1">Digitrive</span>
-                <span className="text-gray-400 text-xs">{data.tagline}</span>
               </div>
             </div>
 

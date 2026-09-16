@@ -1,5 +1,5 @@
 import React from 'react';
-import { WanderlyTemplateData } from '@/types/templates.types';
+import { DigitriveTemplateData } from '@/types/templates.types';
 import rawData from '@/data/templates.json';
 import { TopBar } from '@/components/common/TopBar';
 import { Header } from '@/components/common/Header';
@@ -15,17 +15,17 @@ import { BlogSection } from '@/components/sections/BlogSection';
 export const dynamic = 'force-dynamic';
 
 export default function Home() {
-  // Using WanderlyTemplateData structure as requested to maintain the original JSON format
-  const templateData: WanderlyTemplateData = rawData as any;
-  const sectionData = templateData?.categories?.Wanderly?.sections;
+  // Using DigitriveTemplateData structure as requested to maintain the original JSON format
+  const templateData: DigitriveTemplateData = rawData as any;
+  const sectionData = templateData?.categories?.Digitrive?.sections;
   const commonData = templateData?.common;
 
   if (!sectionData) return <div className="text-white p-10">Loading Data...</div>;
 
   return (
     <main className="bg-[var(--color-bg-main)] min-h-screen flex flex-col">
-      <TopBar data={sectionData.TopBar?.variants?.WanderlyTopBar1} />
-      <Header data={sectionData.Header?.variants?.WanderlyHeader1} />
+      <TopBar data={sectionData.TopBar?.variants?.DigitriveTopBar1} />
+      <Header data={sectionData.Header?.variants?.DigitriveHeader1} />
       <HeroSection data={sectionData.HeroSection?.variants?.DigitalHero1} />
       <AboutUs data={sectionData.AboutUs?.variants?.DigitalAbout1} />
       <Services data={sectionData.Services?.variants?.DigitalServices1} />

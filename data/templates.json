@@ -13,6 +13,36 @@
       }
     },
     "breadcrumbs": {
+      "ServicesBreadcrumb": {
+        "title": "Our Services",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Services"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "ServiceDetailBreadcrumb": {
+        "title": "Service Details",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Services",
+            "url": "/services"
+          },
+          {
+            "label": "Details"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
       "MissionVisionBreadcrumb": {
         "title": "Mission & Vision",
         "paths": [
@@ -48,6 +78,36 @@
           },
           {
             "label": "About"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "ProjectsBreadcrumb": {
+        "title": "Our Projects",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Projects"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "ProjectDetailBreadcrumb": {
+        "title": "Project Details",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Projects",
+            "url": "/projects"
+          },
+          {
+            "label": "Details"
           }
         ],
         "bgImage": "/banner/breadcrumb.jpg"
@@ -167,7 +227,7 @@
         ]
       },
       "bottomSection": {
-        "copyright": "Â©Copyright 2026 Wanderly All Rights Reserved. Powered by Lestow",
+        "copyright": "Â©Copyright 2026 Digitrive All Rights Reserved. Powered by Lestow",
         "bottomLinks": [
           {
             "id": "bl-1",
@@ -340,12 +400,12 @@
     }
   },
   "categories": {
-    "Wanderly": {
+    "Digitrive": {
       "templateComponents": {
-        "Wanderly": {
+        "Digitrive": {
           "shared": {
-            "Topbar": "WanderlyTopBar1",
-            "Header": "WanderlyHeader1",
+            "Topbar": "DigitriveTopBar1",
+            "Header": "DigitriveHeader1",
             "Footer": "Footer"
           },
           "pages": {
@@ -407,6 +467,62 @@
                   "component": "Testimonials"
                 }
               ]
+            },
+            "services": {
+              "components": [
+                {
+                  "key": "ServicesBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "DigitalServices1",
+                  "component": "Services"
+                },
+                {
+                  "key": "DigitalCounter1",
+                  "component": "CounterSection"
+                }
+              ]
+            },
+            "services/[id]": {
+              "components": [
+                {
+                  "key": "ServiceDetailBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ServiceDetailSidebarData",
+                  "component": "ServiceDetailSidebar"
+                },
+                {
+                  "key": "ServiceDetail",
+                  "component": "ServiceDetailPageContent"
+                }
+              ]
+            },
+            "projects": {
+              "components": [
+                {
+                  "key": "ProjectsBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "DigitriveProjectsGrid1",
+                  "component": "ProjectsGridSection"
+                }
+              ]
+            },
+            "projects/[id]": {
+              "components": [
+                {
+                  "key": "ProjectDetailBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "ProjectDetail",
+                  "component": "ProjectDetailContent"
+                }
+              ]
             }
           }
         }
@@ -414,12 +530,12 @@
       "sections": {
         "TopBar": {
           "variants": {
-            "WanderlyTopBar1": {}
+            "DigitriveTopBar1": {}
           }
         },
         "Header": {
           "variants": {
-            "WanderlyHeader1": {
+            "DigitriveHeader1": {
               "contactButton": {
                 "icon": "FaArrowRight",
                 "url": "/get-a-quote",
@@ -456,13 +572,18 @@
                 },
                 {
                   "label": "Services",
-                  "url": "/services",
+                  "url": "",
                   "id": "services",
                   "subLinks": [
                     {
-                      "label": "Digital Marketing",
-                      "url": "/services/digital-marketing",
-                      "id": "service1"
+                      "label": "Our Services",
+                      "url": "/services",
+                      "id": "sub-services"
+                    },
+                    {
+                      "label": "Service Detail",
+                      "url": "/services/app-development",
+                      "id": "sub-service-detail"
                     }
                   ]
                 },
@@ -479,9 +600,21 @@
                   ]
                 },
                 {
-                  "label": "Case Studies",
-                  "url": "/case-studies",
-                  "id": "case-studies"
+                  "label": "Projects",
+                  "id": "projects",
+                  "url": "",
+                  "subLinks": [
+                    {
+                      "label": "Our Projects",
+                      "url": "/projects",
+                      "id": "sub-proj-0"
+                    },
+                    {
+                      "label": "Project Details",
+                      "url": "/projects/project-1",
+                      "id": "sub-proj-1"
+                    }
+                  ]
                 },
                 {
                   "label": "Blog",
@@ -640,9 +773,18 @@
               "titlePart2": "",
               "description": "Our mission is to deliver data-driven digital marketing solutions that help businesses of all sizes grow, connect with their audience, and achieve measurable results. We are committed to innovation, transparency, and long-term partnerships, ensuring our clients succeed in an ever-evolving digital landscape.",
               "features": [
-                { "id": "mf1", "title": "CLIENT\nSUCCESS" },
-                { "id": "mf2", "title": "INNOVATIVE\nSOLUTIONS" },
-                { "id": "mf3", "title": "LONG-TERM\nPARTNERSHIPS" }
+                {
+                  "id": "mf1",
+                  "title": "CLIENT\nSUCCESS"
+                },
+                {
+                  "id": "mf2",
+                  "title": "INNOVATIVE\nSOLUTIONS"
+                },
+                {
+                  "id": "mf3",
+                  "title": "LONG-TERM\nPARTNERSHIPS"
+                }
               ],
               "image": "/mission/mission.webp",
               "imagePosition": "left",
@@ -660,9 +802,18 @@
               "titlePart2": "",
               "description": "Our vision is to become a trusted global partner for businesses seeking digital transformation. We aim to set new standards in creativity, technology, and performance, helping brands worldwide unlock their full potential and create a smarter, more connected future.",
               "features": [
-                { "id": "vf1", "title": "GLOBAL\nPRESENCE" },
-                { "id": "vf2", "title": "CREATIVE\nEXCELLENCE" },
-                { "id": "vf3", "title": "A SMARTER\nTOMORROW" }
+                {
+                  "id": "vf1",
+                  "title": "GLOBAL\nPRESENCE"
+                },
+                {
+                  "id": "vf2",
+                  "title": "CREATIVE\nEXCELLENCE"
+                },
+                {
+                  "id": "vf3",
+                  "title": "A SMARTER\nTOMORROW"
+                }
               ],
               "image": "/mission/vision.webp",
               "imagePosition": "right",
@@ -734,7 +885,7 @@
                   "title": "Brand Strategy",
                   "description": "We craft powerful brand strategies that resonate with your audience and drive meaningful growth.",
                   "linkText": "Learn More",
-                  "linkUrl": "/services/brand-strategy"
+                  "linkUrl": "/services/branding-identity"
                 },
                 {
                   "id": "srv3",
@@ -959,6 +1110,958 @@
                   "linkUrl": "/blog/3"
                 }
               ]
+            }
+          }
+        },
+        "ServiceDetail": {
+          "variants": {
+            "app-development": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "ui-ux-design": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "website-design": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "web-development": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "e-commerce-development": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "branding-identity": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Service Overview",
+                "text1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate, dolor nisi tincidunt mi, eget posuere justo neque id lorem.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            }
+          }
+        },
+        "ProjectsGrid": {
+          "variants": {
+            "DigitriveProjectsGrid1": {
+              "projects": [
+                {
+                  "id": "project-1",
+                  "image": "/project/2.jpg",
+                  "title": "Awesome Project 1",
+                  "category": "Website Design",
+                  "url": "/projects/project-1"
+                },
+                {
+                  "id": "project-2",
+                  "image": "/project/3.jpg",
+                  "title": "Awesome Project 2",
+                  "category": "Website Design",
+                  "url": "/projects/project-2"
+                },
+                {
+                  "id": "project-3",
+                  "image": "/project/4.jpg",
+                  "title": "Awesome Project 3",
+                  "category": "Website Design",
+                  "url": "/projects/project-3"
+                },
+                {
+                  "id": "project-4",
+                  "image": "/project/1.jpg",
+                  "title": "Awesome Project 4",
+                  "category": "Website Design",
+                  "url": "/projects/project-4"
+                },
+                {
+                  "id": "project-5",
+                  "image": "/project/2.jpg",
+                  "title": "Awesome Project 5",
+                  "category": "Website Design",
+                  "url": "/projects/project-5"
+                },
+                {
+                  "id": "project-6",
+                  "image": "/project/3.jpg",
+                  "title": "Awesome Project 6",
+                  "category": "Website Design",
+                  "url": "/projects/project-6"
+                },
+                {
+                  "id": "project-7",
+                  "image": "/project/4.jpg",
+                  "title": "Awesome Project 7",
+                  "category": "Website Design",
+                  "url": "/projects/project-7"
+                },
+                {
+                  "id": "project-8",
+                  "image": "/project/1.jpg",
+                  "title": "Awesome Project 8",
+                  "category": "Website Design",
+                  "url": "/projects/project-8"
+                }
+              ]
+            }
+          }
+        },
+        "ProjectDetail": {
+          "variants": {
+            "project-1": {
+              "heroImage": "/project/2.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-2": {
+              "heroImage": "/project/3.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-3": {
+              "heroImage": "/project/4.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-4": {
+              "heroImage": "/project/1.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-5": {
+              "heroImage": "/project/2.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-6": {
+              "heroImage": "/project/3.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-7": {
+              "heroImage": "/project/4.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
+            },
+            "project-8": {
+              "heroImage": "/project/1.jpg",
+              "meta": {
+                "client": "Brooklyn Simmons",
+                "category": "Website Design",
+                "date": "25 February, 2026",
+                "location": "6391 Elgin St. Celina"
+              },
+              "overview": {
+                "title": "Best Digital Solution",
+                "text1": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure",
+                "text2": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour"
+              },
+              "middleImages": {
+                "image1": "/service/service-d2.jpg",
+                "image2": "/service/service-d2.jpg"
+              },
+              "conclusionText": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam",
+              "facts": {
+                "title": "Interesting Facts In Development",
+                "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth. The master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+                "list": [
+                  {
+                    "id": "f1",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f2",
+                    "text": "Iterative Delivery Approach"
+                  },
+                  {
+                    "id": "f3",
+                    "text": "Efficient Sprint Planning"
+                  },
+                  {
+                    "id": "f4",
+                    "text": "Problem solving"
+                  }
+                ]
+              }
             }
           }
         }
