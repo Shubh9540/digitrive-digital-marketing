@@ -16,7 +16,7 @@ export const Header = ({ data }: { data?: HeaderData }) => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="w-full bg-[var(--color-bg-main)] border-b border-[var(--color-border)] sticky top-0 z-50 relative overflow-hidden">
+    <header className="w-full bg-[var(--color-bg-main)] border-b border-[var(--color-border)] sticky top-0 z-50">
       {/* Subtle glow effect at the bottom spanning full width */}
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[var(--color-primary)]/50 to-transparent shadow-[0_0_15px_3px_rgba(0,194,199,0.3)]"></div>
       
@@ -48,17 +48,25 @@ export const Header = ({ data }: { data?: HeaderData }) => {
               const isActive = pathname === link.url;
               return (
                 <div key={link.id} className="relative group">
-                  <Link 
-                    href={link.url || '#'} 
-                    className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[var(--color-primary)] ${
-                      isActive ? 'text-[var(--color-primary)]' : 'text-white'
-                    }`}
-                  >
-                    {link.label}
-                    {link.subLinks && link.subLinks.length > 0 && (
+                  {link.subLinks && link.subLinks.length > 0 ? (
+                    <div 
+                      className={`flex items-center gap-1 cursor-pointer text-sm font-medium transition-colors hover:text-[var(--color-primary)] ${
+                        isActive ? 'text-[var(--color-primary)]' : 'text-white'
+                      }`}
+                    >
+                      {link.label}
                       <FaChevronDown className="w-3 h-3 ml-1 opacity-70" />
-                    )}
-                  </Link>
+                    </div>
+                  ) : (
+                    <Link 
+                      href={link.url || '#'} 
+                      className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[var(--color-primary)] ${
+                        isActive ? 'text-[var(--color-primary)]' : 'text-white'
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                   
                   {/* Underline for active state */}
                   {isActive && (
@@ -117,13 +125,19 @@ export const Header = ({ data }: { data?: HeaderData }) => {
               return (
                 <div key={link.id} className="flex flex-col">
                   <div className="flex justify-between items-center py-3 border-b border-[var(--color-border)]/50">
-                    <Link 
-                      href={link.url || '#'}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-base font-medium ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}
-                    >
-                      {link.label}
-                    </Link>
+                    {link.subLinks && link.subLinks.length > 0 ? (
+                      <span className={`text-base font-medium ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
+                        {link.label}
+                      </span>
+                    ) : (
+                      <Link 
+                        href={link.url || '#'}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className={`text-base font-medium ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                     {link.subLinks && link.subLinks.length > 0 && (
                       <FaChevronDown className="text-gray-400 w-3 h-3" />
                     )}

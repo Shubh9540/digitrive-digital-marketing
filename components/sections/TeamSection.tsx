@@ -21,13 +21,13 @@ export const TeamSection = ({ data }: { data?: DigitalTeamData }) => {
         
         {/* Header Content */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <span className="w-12 h-[1px] bg-gray-600"></span>
-            <FaUsers className="w-4 h-4 text-[var(--color-primary)]" />
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="w-10 h-[1px] bg-gray-600"></span>
+            <span className="w-2 h-2 rotate-45 bg-[var(--color-primary)]"></span>
             <p className="text-[var(--color-primary)] font-medium text-sm tracking-widest uppercase">
               {data.subtitle}
             </p>
-            <span className="w-12 h-[1px] bg-gray-600"></span>
+            <span className="w-10 h-[1px] bg-gray-600"></span>
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">

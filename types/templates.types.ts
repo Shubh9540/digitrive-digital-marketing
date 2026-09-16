@@ -1475,6 +1475,17 @@ export interface WanderlyTemplateData {
         Testimonials?: {
           variants: {
             WanderlyTestimonials1: TestimonialsData;
+            DigitalTestimonials1: DigitalTestimonialsData;
+          };
+        };
+        Mission?: {
+          variants: {
+            DigitalMission1: MissionVisionSectionData;
+          };
+        };
+        Vision?: {
+          variants: {
+            DigitalVision1: MissionVisionSectionData;
           };
         };
         Partner?: {
@@ -1775,4 +1786,40 @@ export interface DigitalFooterData {
   }[];
   copyright: string;
   bottomLinks: { id: string; label: string; url: string }[];
+}
+
+export interface DigitalTestimonialItem {
+  id: string;
+  image: string;
+  name: string;
+  location: string;
+  rating: number;
+  reviewText: string;
+}
+
+export interface DigitalTestimonialsData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  titlePart2?: string;
+  testimonials: DigitalTestimonialItem[];
+}
+
+export interface MissionVisionFeature {
+  id: string;
+  title: string;
+}
+
+export interface MissionVisionSectionData {
+  id?: string;
+  number: string;
+  subtitle: string;
+  titlePart1: string;
+  titlePart2: string;
+  titleHighlight: string;
+  description: string;
+  features: MissionVisionFeature[];
+  image: string;
+  imagePosition: 'left' | 'right';
+  overlayText: string;
 }

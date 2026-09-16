@@ -13,11 +13,42 @@
       }
     },
     "breadcrumbs": {
+      "MissionVisionBreadcrumb": {
+        "title": "Mission & Vision",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Mission & Vision"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "WhyChooseUsBreadcrumb": {
+        "title": "Why Choose Us",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Why Choose Us"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
       "AboutBreadcrumb": {
         "title": "About Us",
         "paths": [
-          { "label": "Home", "url": "/" },
-          { "label": "About" }
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "About"
+          }
         ],
         "bgImage": "/banner/breadcrumb.jpg"
       }
@@ -323,9 +354,58 @@
             },
             "about": {
               "components": [
-                { "key": "AboutBreadcrumb", "component": "Breadcrumb" },
-                { "key": "DigitalAbout1", "component": "AboutUs" },
-                { "key": "DigitalWhyChooseUs1", "component": "WhyChooseUsSection" }
+                {
+                  "key": "AboutBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "DigitalAbout1",
+                  "component": "AboutUs"
+                },
+                {
+                  "key": "DigitalWhyChooseUs1",
+                  "component": "WhyChooseUsSection"
+                }
+              ]
+            },
+            "why-choose-us": {
+              "components": [
+                {
+                  "key": "WhyChooseUsBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "DigitalWhyChooseUs1",
+                  "component": "WhyChooseUsSection"
+                },
+                {
+                  "key": "DigitalTestimonials1",
+                  "component": "Testimonials"
+                },
+                {
+                  "key": "DigitalCounter1",
+                  "component": "Counter"
+                }
+              ]
+            },
+            "mission-vision": {
+              "components": [
+                {
+                  "key": "MissionVisionBreadcrumb",
+                  "component": "Breadcrumb"
+                },
+                {
+                  "key": "DigitalMission1",
+                  "component": "MissionSection"
+                },
+                {
+                  "key": "DigitalVision1",
+                  "component": "VisionSection"
+                },
+                {
+                  "key": "DigitalTestimonials1",
+                  "component": "Testimonials"
+                }
               ]
             }
           }
@@ -354,8 +434,25 @@
                 },
                 {
                   "label": "About Us",
-                  "url": "/about-us",
-                  "id": "about"
+                  "url": "",
+                  "id": "about",
+                  "subLinks": [
+                    {
+                      "label": "About",
+                      "url": "/about",
+                      "id": "sub-about"
+                    },
+                    {
+                      "label": "Why Choose Us",
+                      "url": "/why-choose-us",
+                      "id": "sub-why-choose-us"
+                    },
+                    {
+                      "label": "Mission & Vision",
+                      "url": "/mission-vision",
+                      "id": "sub-mission-vision"
+                    }
+                  ]
                 },
                 {
                   "label": "Services",
@@ -486,6 +583,90 @@
               "badgePercentage": "92%",
               "badgeText": "Satisfied Clients\nReturning Often",
               "mainImage": "/choose/1.jpg"
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "DigitalTestimonials1": {
+              "subtitle": "TESTIMONIALS",
+              "titlePart1": "What Our",
+              "titleHighlight": "Customers",
+              "titlePart2": "Say",
+              "testimonials": [
+                {
+                  "id": "t1",
+                  "image": "/team/c1.webp",
+                  "name": "Rohit Sharma",
+                  "location": "New Delhi, India",
+                  "rating": 5,
+                  "reviewText": "Great service! My phone screen was replaced quickly and at a very reasonable price. The staff was professional and kept me updated throughout. Highly recommended!"
+                },
+                {
+                  "id": "t2",
+                  "image": "/team/c2.webp",
+                  "name": "Priya Mehta",
+                  "location": "Mumbai, India",
+                  "rating": 5,
+                  "reviewText": "Excellent experience! I got my battery replaced here and the service was super fast. Transparent pricing and very friendly staff. Will definitely visit again!"
+                },
+                {
+                  "id": "t3",
+                  "image": "/team/c3.webp",
+                  "name": "Amit Patel",
+                  "location": "Ahmedabad, India",
+                  "rating": 5,
+                  "reviewText": "Outstanding digital marketing results. Our traffic increased by 200% in just 3 months. The team really knows what they are doing!"
+                },
+                {
+                  "id": "t4",
+                  "image": "/team/c4.webp",
+                  "name": "Sneha Reddy",
+                  "location": "Hyderabad, India",
+                  "rating": 5,
+                  "reviewText": "We loved the app they built for us. It was delivered on time and exceeded our expectations in terms of design and functionality."
+                }
+              ]
+            }
+          }
+        },
+        "Mission": {
+          "variants": {
+            "DigitalMission1": {
+              "number": "01",
+              "subtitle": "OUR MISSION",
+              "titlePart1": "To Empower Businesses\nThrough",
+              "titleHighlight": "Digital Innovation",
+              "titlePart2": "",
+              "description": "Our mission is to deliver data-driven digital marketing solutions that help businesses of all sizes grow, connect with their audience, and achieve measurable results. We are committed to innovation, transparency, and long-term partnerships, ensuring our clients succeed in an ever-evolving digital landscape.",
+              "features": [
+                { "id": "mf1", "title": "CLIENT\nSUCCESS" },
+                { "id": "mf2", "title": "INNOVATIVE\nSOLUTIONS" },
+                { "id": "mf3", "title": "LONG-TERM\nPARTNERSHIPS" }
+              ],
+              "image": "/mission/mission.webp",
+              "imagePosition": "left",
+              "overlayText": "PEOPLE\nIDEAS\nSTRATEGY\nGROWTH"
+            }
+          }
+        },
+        "Vision": {
+          "variants": {
+            "DigitalVision1": {
+              "number": "02",
+              "subtitle": "OUR VISION",
+              "titlePart1": "To Be a Global Leader\nin",
+              "titleHighlight": "Digital Growth",
+              "titlePart2": "",
+              "description": "Our vision is to become a trusted global partner for businesses seeking digital transformation. We aim to set new standards in creativity, technology, and performance, helping brands worldwide unlock their full potential and create a smarter, more connected future.",
+              "features": [
+                { "id": "vf1", "title": "GLOBAL\nPRESENCE" },
+                { "id": "vf2", "title": "CREATIVE\nEXCELLENCE" },
+                { "id": "vf3", "title": "A SMARTER\nTOMORROW" }
+              ],
+              "image": "/mission/vision.webp",
+              "imagePosition": "right",
+              "overlayText": "A\nBRIGHTER\nDIGITAL\nTOMORROW"
             }
           }
         },
