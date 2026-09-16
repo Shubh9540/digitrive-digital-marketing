@@ -206,6 +206,64 @@ export interface DigitalServicesData {
   }[];
 }
 
+export interface PricingFeatureData {
+  id: string;
+  icon: string;
+  title: string;
+  subtitle: string;
+}
+
+export interface PricingPlanData {
+  id: string;
+  icon: string;
+  name: string;
+  description: string;
+  price: string;
+  priceSuffix: string;
+  isPopular?: boolean;
+  popularBadgeText?: string;
+  features: { id: string; text: string; isIncluded: boolean }[];
+  buttonText: string;
+  buttonUrl: string;
+}
+
+export interface PricingData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  topFeatures: PricingFeatureData[];
+  plans: PricingPlanData[];
+}
+
+export interface BlogDetailData {
+  id: string;
+  category: string;
+  title: string;
+  titleHighlight: string;
+  subtitle: string;
+  author: {
+    name: string;
+    date: string;
+    readTime: string;
+    image: string;
+  };
+  heroImage: string;
+  content: string[];
+  blockquote: string;
+  whyItMatters: {
+    subtitle: string;
+    title: string;
+    description: string;
+    grid: { id: string; icon: string; title: string; text: string }[];
+  };
+  bestPractices: {
+    title: string;
+    list: { id: string; icon: string; text: string }[];
+  };
+  conclusion: string[];
+}
+
 export interface DigitalTeamData {
   subtitle: string;
   title: string;
@@ -377,6 +435,89 @@ export interface ServiceDetailData {
   sidebar: { services: any[]; contact: any };
 }
 
+export interface DigitalFaqPageData {
+  subtitle: string;
+  titlePart1: string;
+  titlePart2: string;
+  description: string;
+  faqs: {
+    id: string;
+    question: string;
+    answer: string;
+  }[];
+}
+
+
+
+export interface DigitalContactData {
+  form: {
+    subtitle: string;
+    titlePart1: string;
+    titlePart2: string;
+    titlePart3: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    subjectPlaceholder: string;
+    phonePlaceholder: string;
+    messagePlaceholder: string;
+    submitText: string;
+    resetText: string;
+  };
+  info: {
+    subtitle: string;
+    title: string;
+    description: string;
+    details: {
+      id: string;
+      icon: string;
+      title: string;
+      text: string;
+    }[];
+  };
+  mapUrl: string;
+}
+
+export interface LegalPageData {
+  sections: {
+    id: string;
+    title: string;
+    content: string;
+  }[];
+}
+
+
+
+export interface DigitalQuoteData {
+  leftCol: {
+    subtitle: string;
+    titlePart1: string;
+    titlePart2: string;
+    description: string;
+    features: { id: string; icon: string; title: string; text: string }[];
+    image: string;
+  };
+  form: {
+    titlePart1: string;
+    titlePart2: string;
+    description: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    servicePlaceholder: string;
+    websitePlaceholder: string;
+    messagePlaceholder: string;
+    submitText: string;
+    secureText: string;
+  };
+  contact: {
+    id: string;
+    icon: string;
+    title: string;
+    text: string;
+    subtext: string;
+  }[];
+}
+
 // Fallbacks for any others that might be imported to prevent module missing errors
 export type HeroSliderData = DigitalHeroData;
 export type AboutUsData = DigitalAboutUsData;
@@ -415,7 +556,13 @@ export interface DigitriveTemplateData {
         ProjectsGrid: { variants: Record<string, ProjectsGridData> };
         ProjectDetail: { variants: Record<string, ProjectDetailData> };
         ServiceDetail: { variants: Record<string, ServiceDetailData> };
+        Pricing: { variants: Record<string, PricingData> };
+        BlogDetail: { variants: Record<string, BlogDetailData> };
         CaseStudyDetail: { variants: Record<string, CaseStudyDetailData> };
+        Faq: { variants: Record<string, DigitalFaqPageData> };
+        Contact: { variants: Record<string, DigitalContactData> };
+        Legal: { variants: Record<string, LegalPageData> };
+        Quote: { variants: Record<string, DigitalQuoteData> };
         [key: string]: any;
       };
     };

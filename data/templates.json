@@ -196,7 +196,7 @@
             "label": "Industries We Serve"
           }
         ],
-        "bgImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+        "bgImage": "/banner/breadcrumb.jpg"
       },
       "IndustryDetailBreadcrumb": {
         "title": "Industry Detail",
@@ -213,7 +213,99 @@
             "label": "Industry Detail"
           }
         ],
-        "bgImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "FaqBreadcrumb": {
+        "title": "FAQ",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "FAQ"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "ContactBreadcrumb": {
+        "title": "Contact Us",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Contact Us"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "TermsBreadcrumb": {
+        "title": "Terms & Conditions",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Terms & Conditions"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "PrivacyBreadcrumb": {
+        "title": "Privacy Policy",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Privacy Policy"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "CookieBreadcrumb": {
+        "title": "Cookie Policy",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Cookie Policy"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "DisclaimerBreadcrumb": {
+        "title": "Disclaimer",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Disclaimer"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "QuoteBreadcrumb": {
+        "title": "Get a Quote",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Get a Quote",
+            "url": "/get-a-quote"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -487,12 +579,12 @@
         {
           "id": "bl1",
           "label": "Privacy Policy",
-          "url": "#"
+          "url": "/privacy-policy"
         },
         {
           "id": "bl2",
           "label": "Terms & Conditions",
-          "url": "#"
+          "url": "/terms-conditions"
         },
         {
           "id": "bl3",
@@ -678,7 +770,8 @@
                     },
                     {
                       "id": "sub-team-detail",
-                      "label": "Team Details"
+                      "label": "Team Details",
+                      "url": "/team/member1"
                     },
                     {
                       "id": "sub-testimonials",
@@ -750,7 +843,8 @@
                     },
                     {
                       "id": "sub-case-study-detail",
-                      "label": "Case Study Detail"
+                      "label": "Case Study Detail",
+                      "url": "/case-studies/case1"
                     },
                     {
                       "id": "sub-blog",
@@ -759,13 +853,49 @@
                     },
                     {
                       "id": "sub-blog-detail",
-                      "label": "Blog Details"
+                      "label": "Blog Details",
+                      "url": "/blog/maximize-success-with-mobile-optimization"
+                    },
+                    {
+                      "id": "sub-pricing",
+                      "label": "Pricing",
+                      "url": "/pricing"
+                    },
+                    {
+                      "id": "sub-faq",
+                      "label": "FAQ",
+                      "url": "/faq"
+                    },
+                    {
+                      "id": "sub-privacy",
+                      "label": "Privacy Policy",
+                      "url": "/privacy-policy"
+                    },
+                    {
+                      "id": "sub-cookie",
+                      "label": "Cookie Policy",
+                      "url": "/cookie-policy"
+                    },
+                    {
+                      "id": "sub-disclaimer",
+                      "label": "Disclaimer",
+                      "url": "/disclaimer"
+                    },
+                    {
+                      "id": "sub-terms",
+                      "label": "Terms & Conditions",
+                      "url": "/terms-conditions"
+                    },
+                    {
+                      "id": "sub-quote",
+                      "label": "Get a Quote",
+                      "url": "/get-a-quote"
                     }
                   ]
                 },
                 {
                   "label": "Contact Us",
-                  "url": "/contact-us",
+                  "url": "/contact",
                   "id": "contact"
                 }
               ],
@@ -1332,7 +1462,7 @@
                   "title": "Why Your Brand Needs A Strong Online Presence",
                   "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
                   "linkText": "Read More",
-                  "linkUrl": "/blog/1"
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence"
                 },
                 {
                   "id": "blog2",
@@ -1344,7 +1474,7 @@
                   "title": "Designing User Experiences That Actually Convert",
                   "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
                   "linkText": "Read More",
-                  "linkUrl": "/blog/2"
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert"
                 },
                 {
                   "id": "blog3",
@@ -1356,7 +1486,187 @@
                   "title": "Brand Identity Essentials For Digital Businesses",
                   "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
                   "linkText": "Read More",
-                  "linkUrl": "/blog/3"
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses"
+                },
+                {
+                  "id": "blog4",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence (Part 2)",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence-part-2"
+                },
+                {
+                  "id": "blog5",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert (Part 2)",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert-part-2"
+                },
+                {
+                  "id": "blog6",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses (Part 2)",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses-part-2"
+                },
+                {
+                  "id": "blog7",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence (Part 3)",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence-part-3"
+                },
+                {
+                  "id": "blog8",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert (Part 3)",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert-part-3"
+                },
+                {
+                  "id": "blog9",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses (Part 3)",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses-part-3"
+                },
+                {
+                  "id": "blog10",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence (Part 4)",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence-part-4"
+                },
+                {
+                  "id": "blog11",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert (Part 4)",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert-part-4"
+                },
+                {
+                  "id": "blog12",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses (Part 4)",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses-part-4"
+                },
+                {
+                  "id": "blog13",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence (Part 5)",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence-part-5"
+                },
+                {
+                  "id": "blog14",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert (Part 5)",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert-part-5"
+                },
+                {
+                  "id": "blog15",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses (Part 5)",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses-part-5"
+                },
+                {
+                  "id": "blog16",
+                  "image": "/blog/blog1.jpg",
+                  "day": "20",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Why Your Brand Needs A Strong Online Presence (Part 6)",
+                  "excerpt": "Learn how a powerful online presence builds trust, attracts customers and grows your business.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/why-your-brand-needs-a-strong-online-presence-part-6"
+                },
+                {
+                  "id": "blog17",
+                  "image": "/blog/blog2.jpg",
+                  "day": "05",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Designing User Experiences That Actually Convert (Part 6)",
+                  "excerpt": "Discover design strategies that turn visitors into customers through meaningful and intuitive experiences.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/designing-user-experiences-that-actually-convert-part-6"
+                },
+                {
+                  "id": "blog18",
+                  "image": "/blog/blog3.jpg",
+                  "day": "08",
+                  "month": "MAY",
+                  "categoryIcon": "FaFileAlt",
+                  "category": "Digital Agency",
+                  "title": "Brand Identity Essentials For Digital Businesses (Part 6)",
+                  "excerpt": "Build a strong brand identity that connects with your audience and sets you apart from the competition.",
+                  "linkText": "Read More",
+                  "linkUrl": "/blog/brand-identity-essentials-for-digital-businesses-part-6"
                 }
               ]
             }
@@ -5346,6 +5656,2458 @@
                   }
                 ]
               }
+            }
+          }
+        },
+        "Pricing": {
+          "variants": {
+            "DigitrivePricing1": {
+              "subtitle": "OUR PRICING",
+              "titlePart1": "Plans That Fit",
+              "titleHighlight": "Your Growth",
+              "description": "Flexible and transparent pricing for businesses of all sizes.\\nChoose the plan that matches your goals and start growing with us.",
+              "topFeatures": [
+                {
+                  "id": "tf1",
+                  "icon": "FaCog",
+                  "title": "Result-Driven",
+                  "subtitle": "Strategies"
+                },
+                {
+                  "id": "tf2",
+                  "icon": "FaUsers",
+                  "title": "Expert",
+                  "subtitle": "Team"
+                },
+                {
+                  "id": "tf3",
+                  "icon": "FaShieldAlt",
+                  "title": "Transparent",
+                  "subtitle": "Pricing"
+                },
+                {
+                  "id": "tf4",
+                  "icon": "FaHeadset",
+                  "title": "Ongoing",
+                  "subtitle": "Support"
+                },
+                {
+                  "id": "tf5",
+                  "icon": "FaChartBar",
+                  "title": "Scalable",
+                  "subtitle": "Solutions"
+                }
+              ],
+              "plans": [
+                {
+                  "id": "plan-starter",
+                  "icon": "FaLocationArrow",
+                  "name": "Starter",
+                  "description": "Best for small businesses getting started online.",
+                  "price": "₹ 9,999",
+                  "priceSuffix": "/ month",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "text": "Social Media Management (3 Platforms)",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f2",
+                      "text": "8 Posts per Month",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f3",
+                      "text": "Basic SEO Setup",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f4",
+                      "text": "Monthly Performance Report",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f5",
+                      "text": "Email Support",
+                      "isIncluded": true
+                    }
+                  ],
+                  "buttonText": "Get Started",
+                  "buttonUrl": "/contact-us"
+                },
+                {
+                  "id": "plan-growth",
+                  "icon": "FaChartLine",
+                  "name": "Growth",
+                  "description": "Ideal for growing businesses looking for more reach.",
+                  "price": "₹ 19,999",
+                  "priceSuffix": "/ month",
+                  "isPopular": true,
+                  "popularBadgeText": "MOST POPULAR",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "text": "Social Media Management (5 Platforms)",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f2",
+                      "text": "15 Posts per Month",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f3",
+                      "text": "Advanced SEO Optimization",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f4",
+                      "text": "Google Ads Management",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f5",
+                      "text": "Monthly Performance Report",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f6",
+                      "text": "Priority Support",
+                      "isIncluded": true
+                    }
+                  ],
+                  "buttonText": "Get Started",
+                  "buttonUrl": "/contact-us"
+                },
+                {
+                  "id": "plan-business",
+                  "icon": "FaCrown",
+                  "name": "Business",
+                  "description": "For established brands that want faster results.",
+                  "price": "₹ 29,999",
+                  "priceSuffix": "/ month",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "text": "Social Media Management (All Platforms)",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f2",
+                      "text": "25 Posts per Month",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f3",
+                      "text": "Advanced SEO + Content",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f4",
+                      "text": "Google & Meta Ads Management",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f5",
+                      "text": "Lead Generation Campaigns",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f6",
+                      "text": "Competitor Analysis",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f7",
+                      "text": "Dedicated Account Manager",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f8",
+                      "text": "Monthly Performance Report",
+                      "isIncluded": true
+                    }
+                  ],
+                  "buttonText": "Get Started",
+                  "buttonUrl": "/contact-us"
+                },
+                {
+                  "id": "plan-enterprise",
+                  "icon": "FaBuilding",
+                  "name": "Enterprise",
+                  "description": "Fully customized solutions for large businesses.",
+                  "price": "Custom Pricing",
+                  "priceSuffix": "",
+                  "features": [
+                    {
+                      "id": "f1",
+                      "text": "Everything in Business Plan",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f2",
+                      "text": "Custom Strategy & Roadmap",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f3",
+                      "text": "Multi-Channel Campaigns",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f4",
+                      "text": "Dedicated Team",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f5",
+                      "text": "Advanced Analytics & Reporting",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f6",
+                      "text": "Conversion Rate Optimization",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f7",
+                      "text": "WhatsApp Support",
+                      "isIncluded": true
+                    },
+                    {
+                      "id": "f8",
+                      "text": "On-Demand Consultation",
+                      "isIncluded": true
+                    }
+                  ],
+                  "buttonText": "Contact Us",
+                  "buttonUrl": "/contact-us"
+                }
+              ]
+            }
+          }
+        },
+        "BlogDetail": {
+          "variants": {
+            "maximize-success-with-mobile-optimization": {
+              "id": "maximize-success-with-mobile-optimization",
+              "category": "Digital Marketing",
+              "title": "Maximize Success with Mobile ",
+              "titleHighlight": "Optimization",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence": {
+              "id": "why-your-brand-needs-a-strong-online-presence",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A",
+              "titleHighlight": " Strong Online Presence",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert": {
+              "id": "designing-user-experiences-that-actually-convert",
+              "category": "Digital Agency",
+              "title": "Designing User Experienc",
+              "titleHighlight": "es That Actually Convert",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses": {
+              "id": "brand-identity-essentials-for-digital-businesses",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essential",
+              "titleHighlight": "s For Digital Businesses",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence-part-2": {
+              "id": "why-your-brand-needs-a-strong-online-presence-part-2",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A Stro",
+              "titleHighlight": "ng Online Presence (Part 2)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert-part-2": {
+              "id": "designing-user-experiences-that-actually-convert-part-2",
+              "category": "Digital Agency",
+              "title": "Designing User Experiences T",
+              "titleHighlight": "hat Actually Convert (Part 2)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses-part-2": {
+              "id": "brand-identity-essentials-for-digital-businesses-part-2",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essentials Fo",
+              "titleHighlight": "r Digital Businesses (Part 2)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence-part-3": {
+              "id": "why-your-brand-needs-a-strong-online-presence-part-3",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A Stro",
+              "titleHighlight": "ng Online Presence (Part 3)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert-part-3": {
+              "id": "designing-user-experiences-that-actually-convert-part-3",
+              "category": "Digital Agency",
+              "title": "Designing User Experiences T",
+              "titleHighlight": "hat Actually Convert (Part 3)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses-part-3": {
+              "id": "brand-identity-essentials-for-digital-businesses-part-3",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essentials Fo",
+              "titleHighlight": "r Digital Businesses (Part 3)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence-part-4": {
+              "id": "why-your-brand-needs-a-strong-online-presence-part-4",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A Stro",
+              "titleHighlight": "ng Online Presence (Part 4)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert-part-4": {
+              "id": "designing-user-experiences-that-actually-convert-part-4",
+              "category": "Digital Agency",
+              "title": "Designing User Experiences T",
+              "titleHighlight": "hat Actually Convert (Part 4)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses-part-4": {
+              "id": "brand-identity-essentials-for-digital-businesses-part-4",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essentials Fo",
+              "titleHighlight": "r Digital Businesses (Part 4)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence-part-5": {
+              "id": "why-your-brand-needs-a-strong-online-presence-part-5",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A Stro",
+              "titleHighlight": "ng Online Presence (Part 5)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert-part-5": {
+              "id": "designing-user-experiences-that-actually-convert-part-5",
+              "category": "Digital Agency",
+              "title": "Designing User Experiences T",
+              "titleHighlight": "hat Actually Convert (Part 5)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses-part-5": {
+              "id": "brand-identity-essentials-for-digital-businesses-part-5",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essentials Fo",
+              "titleHighlight": "r Digital Businesses (Part 5)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "why-your-brand-needs-a-strong-online-presence-part-6": {
+              "id": "why-your-brand-needs-a-strong-online-presence-part-6",
+              "category": "Digital Agency",
+              "title": "Why Your Brand Needs A Stro",
+              "titleHighlight": "ng Online Presence (Part 6)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "designing-user-experiences-that-actually-convert-part-6": {
+              "id": "designing-user-experiences-that-actually-convert-part-6",
+              "category": "Digital Agency",
+              "title": "Designing User Experiences T",
+              "titleHighlight": "hat Actually Convert (Part 6)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            },
+            "brand-identity-essentials-for-digital-businesses-part-6": {
+              "id": "brand-identity-essentials-for-digital-businesses-part-6",
+              "category": "Digital Agency",
+              "title": "Brand Identity Essentials Fo",
+              "titleHighlight": "r Digital Businesses (Part 6)",
+              "subtitle": "In today's digital age, having a mobile-optimized website is no longer optional—it's essential for the success of your business.",
+              "author": {
+                "name": "James Carter",
+                "date": "May 20, 2024",
+                "readTime": "8 min read",
+                "image": "/team/team-1.jpg"
+              },
+              "heroImage": "/banner/hero_bg_1.jpg",
+              "content": [
+                "With over half of global web traffic coming from mobile devices, consumers expect fast, seamless, and user-friendly experiences when browsing on their smartphones or tablets.",
+                "A mobile-optimized website ensures that your site is responsive and adapts to any screen size, providing easy navigation, readable content, and fast loading times. This not only improves user experience but also boosts your site's search engine rankings, as search engines like Google prioritize mobile-friendly websites in their results.",
+                "Furthermore, a mobile-optimized site enhances brand credibility, builds customer trust, and increases the likelihood of conversions, as users are more likely to engage with a site that functions smoothly on their devices."
+              ],
+              "blockquote": "Unlock the Full Potential of Your Business with a Mobile-Optimized Website: Enhance User Experience, Boost SEO Rankings, and Increase Conversions to Stay Competitive in the Mobile-First Digital Landscape of Tomorrow.",
+              "whyItMatters": {
+                "subtitle": "WHY IT MATTERS",
+                "title": "Why Mobile Optimization is Crucial for Your Business",
+                "description": "Mobile optimization is crucial for delivering a seamless user experience across all devices. It enhances your site's functionality, improves search engine rankings, and boosts conversions by meeting the growing demand of mobile users.",
+                "grid": [
+                  {
+                    "id": "wm1",
+                    "icon": "FaMobileAlt",
+                    "title": "Enhance User Experience",
+                    "text": "Provide a smooth and enjoyable browsing experience on any device."
+                  },
+                  {
+                    "id": "wm2",
+                    "icon": "FaSearch",
+                    "title": "Boost SEO Rankings",
+                    "text": "Google prioritizes mobile-friendly websites in search results."
+                  },
+                  {
+                    "id": "wm3",
+                    "icon": "FaChartLine",
+                    "title": "Stay Competitive in the Mobile-First Era",
+                    "text": "Keep up with competitors by meeting mobile user expectations."
+                  },
+                  {
+                    "id": "wm4",
+                    "icon": "FaMousePointer",
+                    "title": "Increase Conversions",
+                    "text": "A better mobile experience turns visitors into loyal customers."
+                  },
+                  {
+                    "id": "wm5",
+                    "icon": "FaTachometerAlt",
+                    "title": "Improve Load Times & Performance",
+                    "text": "Faster websites lead to better engagement and lower bounce rates."
+                  },
+                  {
+                    "id": "wm6",
+                    "icon": "FaShieldAlt",
+                    "title": "Future-Proof Your Business",
+                    "text": "Adapt to evolving technology and user behavior for long-term success."
+                  }
+                ]
+              },
+              "bestPractices": {
+                "title": "Best Practices for Mobile Optimization",
+                "list": [
+                  {
+                    "id": "bp1",
+                    "icon": "FaDesktop",
+                    "text": "Responsive Design"
+                  },
+                  {
+                    "id": "bp2",
+                    "icon": "FaTachometerAlt",
+                    "text": "Fast Loading Speed"
+                  },
+                  {
+                    "id": "bp3",
+                    "icon": "FaLocationArrow",
+                    "text": "Easy Navigation"
+                  },
+                  {
+                    "id": "bp4",
+                    "icon": "FaFileAlt",
+                    "text": "Readable Content"
+                  },
+                  {
+                    "id": "bp5",
+                    "icon": "FaHandPointUp",
+                    "text": "Tap-Friendly Elements"
+                  }
+                ]
+              },
+              "conclusion": [
+                "Maximizing your business success starts with optimizing your website for mobile devices. A mobile-optimized site provides users with a smooth, memorable experience, improves rankings, and drives more conversions.",
+                "Don't get left behind—embrace mobile optimization today and unlock new growth opportunities!"
+              ]
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "DigitalFaq1": {
+              "subtitle": "FAQ",
+              "titlePart1": "Frequently Asked ",
+              "titlePart2": "Questions",
+              "description": "Find answers to the most common questions about our services and process.",
+              "faqs": [
+                {
+                  "id": "faq1",
+                  "question": "What services does your digital agency offer?",
+                  "answer": "We offer a full range of digital services including website design and development, UI/UX design, SEO, digital marketing, branding, and ongoing maintenance & support to help your business grow online."
+                },
+                {
+                  "id": "faq2",
+                  "question": "How long have you been in business?",
+                  "answer": "We have been providing top-notch digital solutions for over 10 years, helping hundreds of businesses establish a strong online presence."
+                },
+                {
+                  "id": "faq3",
+                  "question": "What industries do you specialize in?",
+                  "answer": "Our versatile team has experience across various industries including technology, healthcare, e-commerce, real estate, and finance."
+                },
+                {
+                  "id": "faq4",
+                  "question": "Do you design custom websites?",
+                  "answer": "Yes, all our websites are custom-designed from scratch tailored to meet your unique brand identity and business objectives."
+                },
+                {
+                  "id": "faq5",
+                  "question": "How do you approach SEO?",
+                  "answer": "We implement comprehensive on-page and off-page SEO strategies, focusing on quality content, technical optimization, and high-quality backlinks to improve rankings."
+                },
+                {
+                  "id": "faq6",
+                  "question": "What is your typical project timeline?",
+                  "answer": "Project timelines vary based on complexity, but a standard website typically takes 4-8 weeks from initial discovery to final launch."
+                }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "DigitalContact1": {
+              "form": {
+                "subtitle": "Send us a message",
+                "titlePart1": "Feel ",
+                "titlePart2": "free",
+                "titlePart3": " to write",
+                "namePlaceholder": "Enter Your Name",
+                "emailPlaceholder": "Enter Your Email",
+                "subjectPlaceholder": "Enter Subject",
+                "phonePlaceholder": "Enter Your Phone",
+                "messagePlaceholder": "Enter Your Message",
+                "submitText": "Send Message",
+                "resetText": "Reset"
+              },
+              "info": {
+                "subtitle": "Need any help?",
+                "title": "Get in touch with us",
+                "description": "We're here to help! Whether you have a question about our services, need a quote, or just want to say hello, feel free to reach out. Our team will get back to you as soon as possible.",
+                "details": [
+                  {
+                    "id": "c1",
+                    "icon": "FaPhoneAlt",
+                    "title": "Have any question?",
+                    "text": "+1234567890"
+                  },
+                  {
+                    "id": "c2",
+                    "icon": "FaEnvelope",
+                    "title": "Write email",
+                    "text": "info@digitrive.com"
+                  },
+                  {
+                    "id": "c3",
+                    "icon": "FaMapMarkerAlt",
+                    "title": "Visit anytime",
+                    "text": "123, MG Road, Connaught Place,\nNew Delhi, Delhi 110001, India"
+                  }
+                ]
+              },
+              "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.114827184132!2d77.20653216835165!3d28.6289017188172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0xcdef8ef797a314b7!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            }
+          }
+        },
+        "Legal": {
+          "variants": {
+            "TermsConditions": {
+              "sections": [
+                {
+                  "id": "1",
+                  "title": "Introduction",
+                  "content": "Welcome to DigiTrive. These Terms & Conditions ('Terms') govern your access to and use of our website and digital marketing services. By using our website or services, you agree to be bound by these Terms."
+                },
+                {
+                  "id": "2",
+                  "title": "Use of Our Services",
+                  "content": "Our services are intended for legitimate business purposes only. You agree to use our website and services in compliance with all applicable laws and regulations. You must not use our services for any unlawful, harmful, or prohibited activities."
+                },
+                {
+                  "id": "3",
+                  "title": "User Responsibilities",
+                  "content": "You agree to provide accurate, current, and complete information when using our website or services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+                },
+                {
+                  "id": "4",
+                  "title": "Our Services",
+                  "content": "DigiTrive provides digital marketing services including SEO, social media marketing, PPC, content marketing, web development, and related solutions. Service details, timelines, and deliverables will be agreed upon separately in a proposal or contract."
+                },
+                {
+                  "id": "5",
+                  "title": "Payments & Refunds",
+                  "content": "Payment terms, pricing, and refund policies will be clearly outlined in your service agreement or invoice. Unless otherwise stated, all payments are non-refundable once work has commenced."
+                },
+                {
+                  "id": "6",
+                  "title": "Intellectual Property",
+                  "content": "All content on this website, including text, graphics, logos, and designs, is the property of DigiTrive or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written permission."
+                },
+                {
+                  "id": "7",
+                  "title": "Limitation of Liability",
+                  "content": "DigiTrive shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services. We do not guarantee specific results from our digital marketing efforts, as outcomes may vary based on multiple factors."
+                },
+                {
+                  "id": "8",
+                  "title": "Third-Party Links",
+                  "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy practices, or terms of those websites."
+                },
+                {
+                  "id": "9",
+                  "title": "Changes to Terms",
+                  "content": "We may update these Terms & Conditions from time to time. Any changes will be posted on this page with a revised effective date. Continued use of our website or services after changes indicates your acceptance of the updated Terms."
+                },
+                {
+                  "id": "10",
+                  "title": "Contact Us",
+                  "content": "If you have any questions about these Terms & Conditions, please contact us."
+                }
+              ]
+            },
+            "PrivacyPolicy": {
+              "sections": [
+                {
+                  "id": "1",
+                  "title": "Privacy Introduction",
+                  "content": "Welcome to DigiTrive. These Terms & Conditions ('Terms') govern your access to and use of our website and digital marketing services. By using our website or services, you agree to be bound by these Terms."
+                },
+                {
+                  "id": "2",
+                  "title": "Privacy Use of Our Services",
+                  "content": "Our services are intended for legitimate business purposes only. You agree to use our website and services in compliance with all applicable laws and regulations. You must not use our services for any unlawful, harmful, or prohibited activities."
+                },
+                {
+                  "id": "3",
+                  "title": "Privacy User Responsibilities",
+                  "content": "You agree to provide accurate, current, and complete information when using our website or services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+                },
+                {
+                  "id": "4",
+                  "title": "Privacy Our Services",
+                  "content": "DigiTrive provides digital marketing services including SEO, social media marketing, PPC, content marketing, web development, and related solutions. Service details, timelines, and deliverables will be agreed upon separately in a proposal or contract."
+                },
+                {
+                  "id": "5",
+                  "title": "Privacy Payments & Refunds",
+                  "content": "Payment terms, pricing, and refund policies will be clearly outlined in your service agreement or invoice. Unless otherwise stated, all payments are non-refundable once work has commenced."
+                },
+                {
+                  "id": "6",
+                  "title": "Privacy Intellectual Property",
+                  "content": "All content on this website, including text, graphics, logos, and designs, is the property of DigiTrive or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written permission."
+                },
+                {
+                  "id": "7",
+                  "title": "Privacy Limitation of Liability",
+                  "content": "DigiTrive shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services. We do not guarantee specific results from our digital marketing efforts, as outcomes may vary based on multiple factors."
+                },
+                {
+                  "id": "8",
+                  "title": "Privacy Third-Party Links",
+                  "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy practices, or terms of those websites."
+                },
+                {
+                  "id": "9",
+                  "title": "Privacy Changes to Terms",
+                  "content": "We may update these Terms & Conditions from time to time. Any changes will be posted on this page with a revised effective date. Continued use of our website or services after changes indicates your acceptance of the updated Terms."
+                },
+                {
+                  "id": "10",
+                  "title": "Privacy Contact Us",
+                  "content": "If you have any questions about these Terms & Conditions, please contact us."
+                }
+              ]
+            },
+            "CookiePolicy": {
+              "sections": [
+                {
+                  "id": "1",
+                  "title": "Cookie Introduction",
+                  "content": "Welcome to DigiTrive. These Terms & Conditions ('Terms') govern your access to and use of our website and digital marketing services. By using our website or services, you agree to be bound by these Terms."
+                },
+                {
+                  "id": "2",
+                  "title": "Cookie Use of Our Services",
+                  "content": "Our services are intended for legitimate business purposes only. You agree to use our website and services in compliance with all applicable laws and regulations. You must not use our services for any unlawful, harmful, or prohibited activities."
+                },
+                {
+                  "id": "3",
+                  "title": "Cookie User Responsibilities",
+                  "content": "You agree to provide accurate, current, and complete information when using our website or services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+                },
+                {
+                  "id": "4",
+                  "title": "Cookie Our Services",
+                  "content": "DigiTrive provides digital marketing services including SEO, social media marketing, PPC, content marketing, web development, and related solutions. Service details, timelines, and deliverables will be agreed upon separately in a proposal or contract."
+                },
+                {
+                  "id": "5",
+                  "title": "Cookie Payments & Refunds",
+                  "content": "Payment terms, pricing, and refund policies will be clearly outlined in your service agreement or invoice. Unless otherwise stated, all payments are non-refundable once work has commenced."
+                },
+                {
+                  "id": "6",
+                  "title": "Cookie Intellectual Property",
+                  "content": "All content on this website, including text, graphics, logos, and designs, is the property of DigiTrive or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written permission."
+                },
+                {
+                  "id": "7",
+                  "title": "Cookie Limitation of Liability",
+                  "content": "DigiTrive shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services. We do not guarantee specific results from our digital marketing efforts, as outcomes may vary based on multiple factors."
+                },
+                {
+                  "id": "8",
+                  "title": "Cookie Third-Party Links",
+                  "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy practices, or terms of those websites."
+                },
+                {
+                  "id": "9",
+                  "title": "Cookie Changes to Terms",
+                  "content": "We may update these Terms & Conditions from time to time. Any changes will be posted on this page with a revised effective date. Continued use of our website or services after changes indicates your acceptance of the updated Terms."
+                },
+                {
+                  "id": "10",
+                  "title": "Cookie Contact Us",
+                  "content": "If you have any questions about these Terms & Conditions, please contact us."
+                }
+              ]
+            },
+            "Disclaimer": {
+              "sections": [
+                {
+                  "id": "1",
+                  "title": "Disclaimer Introduction",
+                  "content": "Welcome to DigiTrive. These Terms & Conditions ('Terms') govern your access to and use of our website and digital marketing services. By using our website or services, you agree to be bound by these Terms."
+                },
+                {
+                  "id": "2",
+                  "title": "Disclaimer Use of Our Services",
+                  "content": "Our services are intended for legitimate business purposes only. You agree to use our website and services in compliance with all applicable laws and regulations. You must not use our services for any unlawful, harmful, or prohibited activities."
+                },
+                {
+                  "id": "3",
+                  "title": "Disclaimer User Responsibilities",
+                  "content": "You agree to provide accurate, current, and complete information when using our website or services. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account."
+                },
+                {
+                  "id": "4",
+                  "title": "Disclaimer Our Services",
+                  "content": "DigiTrive provides digital marketing services including SEO, social media marketing, PPC, content marketing, web development, and related solutions. Service details, timelines, and deliverables will be agreed upon separately in a proposal or contract."
+                },
+                {
+                  "id": "5",
+                  "title": "Disclaimer Payments & Refunds",
+                  "content": "Payment terms, pricing, and refund policies will be clearly outlined in your service agreement or invoice. Unless otherwise stated, all payments are non-refundable once work has commenced."
+                },
+                {
+                  "id": "6",
+                  "title": "Disclaimer Intellectual Property",
+                  "content": "All content on this website, including text, graphics, logos, and designs, is the property of DigiTrive or its licensors and is protected by intellectual property laws. You may not reproduce, distribute, or use any content without prior written permission."
+                },
+                {
+                  "id": "7",
+                  "title": "Disclaimer Limitation of Liability",
+                  "content": "DigiTrive shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use of our website or services. We do not guarantee specific results from our digital marketing efforts, as outcomes may vary based on multiple factors."
+                },
+                {
+                  "id": "8",
+                  "title": "Disclaimer Third-Party Links",
+                  "content": "Our website may contain links to third-party websites. We are not responsible for the content, privacy practices, or terms of those websites."
+                },
+                {
+                  "id": "9",
+                  "title": "Disclaimer Changes to Terms",
+                  "content": "We may update these Terms & Conditions from time to time. Any changes will be posted on this page with a revised effective date. Continued use of our website or services after changes indicates your acceptance of the updated Terms."
+                },
+                {
+                  "id": "10",
+                  "title": "Disclaimer Contact Us",
+                  "content": "If you have any questions about these Terms & Conditions, please contact us."
+                }
+              ]
+            }
+          }
+        },
+        "Quote": {
+          "variants": {
+            "DigitalQuote1": {
+              "leftCol": {
+                "subtitle": "GET A QUOTE",
+                "titlePart1": "Let's Grow Your ",
+                "titlePart2": "Business Online",
+                "description": "Share your project details with us and get a customized digital marketing quote tailored to your needs. No obligations, just real solutions.",
+                "features": [
+                  {
+                    "id": "q1",
+                    "icon": "FaBullseye",
+                    "title": "Targeted Strategies",
+                    "text": "Get data-driven strategies designed to reach your ideal audience."
+                  },
+                  {
+                    "id": "q2",
+                    "icon": "FaChartBar",
+                    "title": "Better ROI",
+                    "text": "Turn your online presence into measurable business growth."
+                  },
+                  {
+                    "id": "q3",
+                    "icon": "FaLightbulb",
+                    "title": "Expert Support",
+                    "text": "Work with a dedicated team that understands your goals."
+                  }
+                ],
+                "image": "/choose/get.webp"
+              },
+              "form": {
+                "titlePart1": "Request a ",
+                "titlePart2": "Quote",
+                "description": "Fill out the form below and we'll get back to you with a customized proposal.",
+                "namePlaceholder": "Your Name*",
+                "emailPlaceholder": "Your Email*",
+                "phonePlaceholder": "Your Phone*",
+                "servicePlaceholder": "Select Service*",
+                "websitePlaceholder": "Website URL (Optional)",
+                "messagePlaceholder": "Tell us about your project / requirements*",
+                "submitText": "Get My Free Quote",
+                "secureText": "Your information is 100% secure and will never be shared."
+              },
+              "contact": [
+                {
+                  "id": "c1",
+                  "icon": "FaPhoneAlt",
+                  "title": "Call Us",
+                  "text": "+1234567890",
+                  "subtext": "Mon - Sat, 9:00 AM - 6:00 PM"
+                },
+                {
+                  "id": "c2",
+                  "icon": "FaEnvelope",
+                  "title": "Mail Us",
+                  "text": "info@digitrive.com",
+                  "subtext": "We reply within 24 hours"
+                },
+                {
+                  "id": "c3",
+                  "icon": "FaMapMarkerAlt",
+                  "title": "Our Office",
+                  "text": "123, MG Road, Connaught Place,\nNew Delhi, Delhi 110001, India",
+                  "subtext": "Visit us anytime."
+                }
+              ]
             }
           }
         }
