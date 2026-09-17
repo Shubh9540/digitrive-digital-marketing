@@ -104,8 +104,8 @@ export const QuotePageContent = ({ data }: { data?: DigitalQuoteData }) => {
                     <input type="tel" placeholder={data.form.phonePlaceholder} className="w-full bg-[#030b17] border border-gray-800/80 rounded-xl py-4 pl-12 pr-4 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[var(--color-primary)] transition-colors" />
                   </div>
                   <div className="relative">
-                    <select className="w-full bg-[#030b17] border border-gray-800/80 rounded-xl py-4 pl-4 pr-12 text-sm text-gray-400 appearance-none focus:outline-none focus:border-[var(--color-primary)] transition-colors">
-                      <option value="" disabled selected>{data.form.servicePlaceholder}</option>
+                    <select defaultValue="" className="w-full bg-[#030b17] border border-gray-800/80 rounded-xl py-4 pl-4 pr-12 text-sm text-gray-400 appearance-none focus:outline-none focus:border-[var(--color-primary)] transition-colors">
+                      <option value="" disabled>{data.form.servicePlaceholder}</option>
                       <option value="seo">SEO</option>
                       <option value="web">Web Development</option>
                       <option value="marketing">Digital Marketing</option>

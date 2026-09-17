@@ -477,6 +477,16 @@ export interface DigitalContactData {
   mapUrl: string;
 }
 
+export interface DigitalClientsData {
+  subtitle: string;
+  titlePart1: string;
+  titleHighlight: string;
+  description: string;
+  image: string;
+  itemsPerPage: number;
+  logos: { id: string; name: string; image: string }[];
+}
+
 export interface LegalPageData {
   sections: {
     id: string;
@@ -518,6 +528,17 @@ export interface DigitalQuoteData {
   }[];
 }
 
+export interface DigitalNotFoundData {
+  image: string;
+  titlePart1: string;
+  titleHighlight: string;
+  titlePart2: string;
+  description: string;
+  buttonUrl: string;
+  buttonText: string;
+  buttonIcon: string;
+}
+
 // Fallbacks for any others that might be imported to prevent module missing errors
 export type HeroSliderData = DigitalHeroData;
 export type AboutUsData = DigitalAboutUsData;
@@ -535,7 +556,24 @@ export type AboutFirmData = any;
 export type AboutMissionData = any;
 export type AboutApproachData = any;
 export type WhyChooseUsData = DigitalWhyChooseUsData;
-export type SitemapData = any;
+export interface SitemapLink {
+  id: string;
+  label: string;
+  url: string;
+}
+
+export interface SitemapCategory {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+  links: SitemapLink[];
+}
+
+export interface DigitalSitemapData {
+  categories: SitemapCategory[];
+}
+
 export type EnquiryData = any;
 export type DigitalProjectsGridData = ProjectsGridData;
 
@@ -563,6 +601,7 @@ export interface DigitriveTemplateData {
         Contact: { variants: Record<string, DigitalContactData> };
         Legal: { variants: Record<string, LegalPageData> };
         Quote: { variants: Record<string, DigitalQuoteData> };
+        NotFound: { variants: Record<string, DigitalNotFoundData> };
         [key: string]: any;
       };
     };

@@ -306,6 +306,32 @@
           }
         ],
         "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "ClientsBreadcrumb": {
+        "title": "Our Clients",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Our Clients"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
+      },
+      "SitemapBreadcrumb": {
+        "title": "Sitemap",
+        "paths": [
+          {
+            "label": "Home",
+            "url": "/"
+          },
+          {
+            "label": "Sitemap"
+          }
+        ],
+        "bgImage": "/banner/breadcrumb.jpg"
       }
     },
     "Footer": {
@@ -486,59 +512,59 @@
           "links": [
             {
               "id": "ql1",
-              "label": "About Us",
-              "url": "#"
+              "label": "Home",
+              "url": "/"
             },
             {
               "id": "ql2",
-              "label": "Our Team",
-              "url": "#"
+              "label": "About Us",
+              "url": "/about"
             },
             {
               "id": "ql3",
-              "label": "Careers",
-              "url": "#"
+              "label": "Services",
+              "url": "/services"
             },
             {
               "id": "ql4",
-              "label": "Blog",
-              "url": "#"
+              "label": "Case Studies",
+              "url": "/case-studies"
             },
             {
               "id": "ql5",
               "label": "Contact Us",
-              "url": "#"
+              "url": "/contact"
             }
           ]
         },
         {
-          "id": "our-solutions",
-          "title": "Our Solutions",
+          "id": "company",
+          "title": "Company",
           "links": [
             {
-              "id": "os1",
-              "label": "Web Development",
-              "url": "#"
+              "id": "c1",
+              "label": "Our Team",
+              "url": "/team"
             },
             {
-              "id": "os2",
-              "label": "UI/UX Design",
-              "url": "#"
+              "id": "c2",
+              "label": "Mission & Vision",
+              "url": "/mission-vision"
             },
             {
-              "id": "os3",
-              "label": "Mobile Application",
-              "url": "#"
+              "id": "c3",
+              "label": "Why Choose Us",
+              "url": "/why-choose-us"
             },
             {
-              "id": "os4",
-              "label": "Cloud Service",
-              "url": "#"
+              "id": "c4",
+              "label": "Testimonials",
+              "url": "/testimonials"
             },
             {
-              "id": "os5",
-              "label": "Cyber Security",
-              "url": "#"
+              "id": "c5",
+              "label": "Our Clients",
+              "url": "/clients"
             }
           ]
         },
@@ -548,28 +574,28 @@
           "links": [
             {
               "id": "rs1",
-              "label": "Case Studies",
-              "url": "#"
+              "label": "Blog",
+              "url": "/blog"
             },
             {
               "id": "rs2",
-              "label": "Latest Blog",
-              "url": "#"
+              "label": "FAQs",
+              "url": "/faq"
             },
             {
               "id": "rs3",
-              "label": "Help Center",
-              "url": "#"
+              "label": "Pricing",
+              "url": "/pricing"
             },
             {
               "id": "rs4",
-              "label": "Services",
-              "url": "#"
+              "label": "Get a Quote",
+              "url": "/get-a-quote"
             },
             {
               "id": "rs5",
-              "label": "FAQs",
-              "url": "#"
+              "label": "Projects",
+              "url": "/projects"
             }
           ]
         }
@@ -589,7 +615,7 @@
         {
           "id": "bl3",
           "label": "Sitemap",
-          "url": "#"
+          "url": "/sitemap"
         }
       ]
     }
@@ -777,6 +803,11 @@
                       "id": "sub-testimonials",
                       "label": "Testimonials",
                       "url": "/testimonials"
+                    },
+                    {
+                      "id": "sub-clients",
+                      "label": "Our Clients",
+                      "url": "/clients"
                     }
                   ]
                 },
@@ -890,6 +921,11 @@
                       "id": "sub-quote",
                       "label": "Get a Quote",
                       "url": "/get-a-quote"
+                    },
+                    {
+                      "id": "sub-404",
+                      "label": "404 Page",
+                      "url": "/404"
                     }
                   ]
                 },
@@ -8106,6 +8142,340 @@
                   "title": "Our Office",
                   "text": "123, MG Road, Connaught Place,\nNew Delhi, Delhi 110001, India",
                   "subtext": "Visit us anytime."
+                }
+              ]
+            }
+          }
+        },
+        "NotFound": {
+          "variants": {
+            "DigitalNotFound1": {
+              "image": "/other/error.webp",
+              "titlePart1": "PAGE",
+              "titleHighlight": "NOT",
+              "titlePart2": "FOUND!",
+              "description": "Sorry, we can't find that page! The page you are looking for was never existed.",
+              "buttonUrl": "/",
+              "buttonText": "Back To Home",
+              "buttonIcon": "FaHome"
+            }
+          }
+        },
+        "Clients": {
+          "variants": {
+            "DigitalClients1": {
+              "subtitle": "OUR CLIENTS",
+              "titlePart1": "Trusted by",
+              "titleHighlight": "Growing Brands",
+              "description": "We are proud to partner with businesses of all sizes, helping them achieve measurable growth through results-driven digital marketing strategies.",
+              "image": "/other/clients-hero.webp",
+              "itemsPerPage": 10,
+              "logos": [
+                {
+                  "id": "client-google",
+                  "name": "Google",
+                  "image": "/partner/google.webp"
+                },
+                {
+                  "id": "client-microsoft",
+                  "name": "Microsoft",
+                  "image": "/partner/microsoft.webp"
+                },
+                {
+                  "id": "client-amazon",
+                  "name": "Amazon",
+                  "image": "/partner/amazon.webp"
+                },
+                {
+                  "id": "client-adobe",
+                  "name": "Adobe",
+                  "image": "/partner/adobe.webp"
+                },
+                {
+                  "id": "client-ibm",
+                  "name": "IBM",
+                  "image": "/partner/ibm (1).webp"
+                },
+                {
+                  "id": "client-meta",
+                  "name": "Meta",
+                  "image": "/partner/meta.webp"
+                },
+                {
+                  "id": "client-spotify",
+                  "name": "Spotify",
+                  "image": "/partner/spotify.webp"
+                },
+                {
+                  "id": "client-paypal",
+                  "name": "PayPal",
+                  "image": "/partner/paypal.webp"
+                },
+                {
+                  "id": "client-airbnb",
+                  "name": "Airbnb",
+                  "image": "/partner/airbnb.webp"
+                },
+                {
+                  "id": "client-uber",
+                  "name": "Uber",
+                  "image": "/partner/uber.webp"
+                },
+                {
+                  "id": "client-flipkart",
+                  "name": "Flipkart",
+                  "image": "/partner/flipkart.webp"
+                },
+                {
+                  "id": "client-swiggy",
+                  "name": "Swiggy",
+                  "image": "/partner/swiggy.webp"
+                },
+                {
+                  "id": "client-zomato",
+                  "name": "Zomato",
+                  "image": "/partner/zomato.webp"
+                },
+                {
+                  "id": "client-tata",
+                  "name": "Tata",
+                  "image": "/partner/tata.webp"
+                },
+                {
+                  "id": "client-hdfc",
+                  "name": "HDFC Bank",
+                  "image": "/partner/hdfc.webp"
+                },
+                {
+                  "id": "client-icici",
+                  "name": "ICICI Bank",
+                  "image": "/partner/icici.webp"
+                },
+                {
+                  "id": "client-pharmeasy",
+                  "name": "PharmEasy",
+                  "image": "/partner/pharmeasy.webp"
+                },
+                {
+                  "id": "client-byju",
+                  "name": "BYJU'S",
+                  "image": "/partner/byju.webp"
+                },
+                {
+                  "id": "client-unacademy",
+                  "name": "Unacademy",
+                  "image": "/partner/unacdemy.webp"
+                },
+                {
+                  "id": "client-makemytrip",
+                  "name": "MakeMyTrip",
+                  "image": "/partner/makemytrip.webp"
+                }
+              ]
+            }
+          }
+        },
+        "Sitemap": {
+          "variants": {
+            "DigitalSitemap1": {
+              "categories": [
+                {
+                  "id": "cat-main",
+                  "icon": "FaHome",
+                  "title": "Main Pages",
+                  "description": "Learn more about our company, values, and how we work.",
+                  "links": [
+                    {
+                      "id": "link-home",
+                      "label": "Home",
+                      "url": "/"
+                    },
+                    {
+                      "id": "link-about",
+                      "label": "About Us",
+                      "url": "/about"
+                    },
+                    {
+                      "id": "link-why-choose",
+                      "label": "Why Choose Us",
+                      "url": "/why-choose-us"
+                    },
+                    {
+                      "id": "link-mission",
+                      "label": "Mission & Vision",
+                      "url": "/mission-vision"
+                    },
+                    {
+                      "id": "link-team",
+                      "label": "Our Team",
+                      "url": "/team"
+                    },
+                    {
+                      "id": "link-team-detail",
+                      "label": "Team Detail",
+                      "url": "/team/john-doe"
+                    },
+                    {
+                      "id": "link-testi",
+                      "label": "Testimonials",
+                      "url": "/testimonials"
+                    },
+                    {
+                      "id": "link-clients",
+                      "label": "Clients",
+                      "url": "/clients"
+                    }
+                  ]
+                },
+                {
+                  "id": "cat-services",
+                  "icon": "FaCog",
+                  "title": "Our Services",
+                  "description": "Discover our digital marketing services and solutions.",
+                  "links": [
+                    {
+                      "id": "link-services",
+                      "label": "Services",
+                      "url": "/services"
+                    },
+                    {
+                      "id": "link-service-det",
+                      "label": "Service Details",
+                      "url": "/services/seo"
+                    },
+                    {
+                      "id": "link-industries",
+                      "label": "Industries We Serve",
+                      "url": "/industries"
+                    },
+                    {
+                      "id": "link-industry-det",
+                      "label": "Industry Detail",
+                      "url": "/industries/healthcare"
+                    },
+                    {
+                      "id": "link-cases",
+                      "label": "Case Studies",
+                      "url": "/case-studies"
+                    },
+                    {
+                      "id": "link-case-det",
+                      "label": "Case Study Details",
+                      "url": "/case-studies/growth"
+                    },
+                    {
+                      "id": "link-pricing",
+                      "label": "Pricing",
+                      "url": "/pricing"
+                    },
+                    {
+                      "id": "link-quote-2",
+                      "label": "Get a Quote",
+                      "url": "/get-a-quote"
+                    }
+                  ]
+                },
+                {
+                  "id": "cat-resources",
+                  "icon": "FaFileAlt",
+                  "title": "Resources",
+                  "description": "Explore our latest insights, blogs, and helpful resources.",
+                  "links": [
+                    {
+                      "id": "link-blog",
+                      "label": "Blog",
+                      "url": "/blog"
+                    },
+                    {
+                      "id": "link-blog-det",
+                      "label": "Blog Detail",
+                      "url": "/blog/first-post"
+                    },
+                    {
+                      "id": "link-faq",
+                      "label": "FAQ",
+                      "url": "/faq"
+                    },
+                    {
+                      "id": "link-sitemap",
+                      "label": "Sitemap",
+                      "url": "/sitemap"
+                    },
+                    {
+                      "id": "link-404",
+                      "label": "404 Page",
+                      "url": "/404"
+                    }
+                  ]
+                },
+                {
+                  "id": "cat-work",
+                  "icon": "FaBullseye",
+                  "title": "Our Work",
+                  "description": "See how we have helped businesses grow through strategic digital solutions.",
+                  "links": [
+                    {
+                      "id": "link-project",
+                      "label": "Project",
+                      "url": "/projects"
+                    },
+                    {
+                      "id": "link-cases-2",
+                      "label": "Case Studies",
+                      "url": "/case-studies"
+                    },
+                    {
+                      "id": "link-case-det-2",
+                      "label": "Case Study Details",
+                      "url": "/case-studies/growth"
+                    }
+                  ]
+                },
+                {
+                  "id": "cat-policies",
+                  "icon": "FaShieldAlt",
+                  "title": "Policies",
+                  "description": "Read our policies and compliance information.",
+                  "links": [
+                    {
+                      "id": "link-privacy",
+                      "label": "Privacy Policy",
+                      "url": "/privacy-policy"
+                    },
+                    {
+                      "id": "link-cookie",
+                      "label": "Cookie Policy",
+                      "url": "/cookie-policy"
+                    },
+                    {
+                      "id": "link-disclaimer",
+                      "label": "Disclaimer",
+                      "url": "/disclaimer"
+                    },
+                    {
+                      "id": "link-terms",
+                      "label": "Terms & Conditions",
+                      "url": "/terms-conditions"
+                    }
+                  ]
+                },
+                {
+                  "id": "cat-contact",
+                  "icon": "FaEnvelope",
+                  "title": "Get in Touch",
+                  "description": "Have a question? We are here to help you.",
+                  "links": [
+                    {
+                      "id": "link-contact",
+                      "label": "Contact Us",
+                      "url": "/contact"
+                    },
+                    {
+                      "id": "link-quote",
+                      "label": "Get a Quote",
+                      "url": "/get-a-quote"
+                    }
+                  ]
                 }
               ]
             }
