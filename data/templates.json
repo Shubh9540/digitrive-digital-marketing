@@ -1032,7 +1032,7 @@
               "testimonials": [
                 {
                   "id": "t1",
-                  "image": "/team/c1.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Rohit Sharma",
                   "location": "New Delhi, India",
                   "rating": 5,
@@ -1040,7 +1040,7 @@
                 },
                 {
                   "id": "t2",
-                  "image": "/team/c2.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Priya Mehta",
                   "location": "Mumbai, India",
                   "rating": 5,
@@ -1048,7 +1048,7 @@
                 },
                 {
                   "id": "t3",
-                  "image": "/team/c3.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Amit Patel",
                   "location": "Ahmedabad, India",
                   "rating": 5,
@@ -1056,7 +1056,7 @@
                 },
                 {
                   "id": "t4",
-                  "image": "/team/c4.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Sneha Reddy",
                   "location": "Hyderabad, India",
                   "rating": 5,
@@ -1064,7 +1064,7 @@
                 },
                 {
                   "id": "t-dummy-0",
-                  "image": "/team/c1.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Rohit Sharma 1",
                   "location": "New Delhi, India",
                   "rating": 5,
@@ -1072,7 +1072,7 @@
                 },
                 {
                   "id": "t-dummy-1",
-                  "image": "/team/c2.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Priya Mehta 2",
                   "location": "Mumbai, India",
                   "rating": 5,
@@ -1080,7 +1080,7 @@
                 },
                 {
                   "id": "t-dummy-2",
-                  "image": "/team/c3.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Amit Patel 3",
                   "location": "Ahmedabad, India",
                   "rating": 5,
@@ -1088,7 +1088,7 @@
                 },
                 {
                   "id": "t-dummy-3",
-                  "image": "/team/c4.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Sneha Reddy 4",
                   "location": "Hyderabad, India",
                   "rating": 5,
@@ -1096,7 +1096,7 @@
                 },
                 {
                   "id": "t-dummy-4",
-                  "image": "/team/c1.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Rohit Sharma 5",
                   "location": "New Delhi, India",
                   "rating": 5,
@@ -1104,7 +1104,7 @@
                 },
                 {
                   "id": "t-dummy-5",
-                  "image": "/team/c2.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Priya Mehta 6",
                   "location": "Mumbai, India",
                   "rating": 5,
@@ -1112,7 +1112,7 @@
                 },
                 {
                   "id": "t-dummy-6",
-                  "image": "/team/c3.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Amit Patel 7",
                   "location": "Ahmedabad, India",
                   "rating": 5,
@@ -1120,7 +1120,7 @@
                 },
                 {
                   "id": "t-dummy-7",
-                  "image": "/team/c4.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Sneha Reddy 8",
                   "location": "Hyderabad, India",
                   "rating": 5,
@@ -1128,7 +1128,7 @@
                 },
                 {
                   "id": "t-dummy-8",
-                  "image": "/team/c1.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Rohit Sharma 9",
                   "location": "New Delhi, India",
                   "rating": 5,
@@ -1136,7 +1136,7 @@
                 },
                 {
                   "id": "t-dummy-9",
-                  "image": "/team/c2.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Priya Mehta 10",
                   "location": "Mumbai, India",
                   "rating": 5,
@@ -1144,7 +1144,7 @@
                 },
                 {
                   "id": "t-dummy-10",
-                  "image": "/team/c3.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Amit Patel 11",
                   "location": "Ahmedabad, India",
                   "rating": 5,
@@ -1152,7 +1152,7 @@
                 },
                 {
                   "id": "t-dummy-11",
-                  "image": "/team/c4.webp",
+                  "image": "/team/team-1.jpg",
                   "name": "Sneha Reddy 12",
                   "location": "Hyderabad, India",
                   "rating": 5,
@@ -1160,7 +1160,7 @@
                 },
                 {
                   "id": "t-dummy-12",
-                  "image": "/team/c1.webp",
+                  "image": "/team/team-2.jpg",
                   "name": "Rohit Sharma 13",
                   "location": "New Delhi, India",
                   "rating": 5,
@@ -1168,7 +1168,7 @@
                 },
                 {
                   "id": "t-dummy-13",
-                  "image": "/team/c2.webp",
+                  "image": "/team/team-3.jpg",
                   "name": "Priya Mehta 14",
                   "location": "Mumbai, India",
                   "rating": 5,

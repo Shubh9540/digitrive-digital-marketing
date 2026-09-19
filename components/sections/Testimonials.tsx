@@ -59,7 +59,7 @@ export const Testimonials = ({ data }: { data?: DigitalTestimonialsData }) => {
         </div>
 
         {/* Slider Container */}
-        <div className="relative flex items-center justify-center max-w-6xl mx-auto group">
+        <div className="relative flex items-center justify-center max-w-[1400px] w-full mx-auto group">
           
           {/* Prev Button */}
           <button 
@@ -79,36 +79,39 @@ export const Testimonials = ({ data }: { data?: DigitalTestimonialsData }) => {
                     key={testimonial.id} 
                     className="flex-[0_0_100%] md:flex-[0_0_50%] min-w-0 px-2 lg:px-4"
                   >
-                    <div className="bg-[#0a1930] rounded-xl p-6 lg:p-8 border border-gray-800 h-full flex flex-col xl:flex-row gap-6 items-start">
+                    <div className="bg-[#030e1d] rounded-2xl p-4 sm:p-6 border border-[#00e5ff]/20 h-full flex flex-col sm:flex-row gap-4 sm:gap-6 items-center">
                       {/* Avatar */}
-                      <div className="w-20 h-20 shrink-0 rounded-full overflow-hidden border-2 border-[#00e5ff]">
+                      <div className="w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 shrink-0 rounded-full overflow-hidden border-2 border-[#00e5ff]">
                         <Image 
                           src={testimonial.image} 
                           alt={testimonial.name}
-                          width={80}
-                          height={80}
+                          width={160}
+                          height={160}
                           className="w-full h-full object-cover"
                         />
                       </div>
                       
                       {/* Content */}
-                      <div className="flex-1">
+                      <div className="flex-1 text-center sm:text-left">
                         {/* Stars */}
-                        <div className="flex text-yellow-400 mb-3 text-sm">
+                        <div className="flex justify-center sm:justify-start text-[#ffc107] mb-3 text-sm">
                           {[...Array(testimonial.rating || 5)].map((_, i) => (
                             <FaStar key={i} />
                           ))}
                         </div>
                         
                         {/* Review */}
-                        <p className="text-gray-300 text-sm leading-relaxed mb-4 relative z-10">
-                          <span className="text-[#00e5ff] mr-2 inline-block"><FaQuoteLeft /></span>
+                        <p className="text-gray-300 text-sm leading-relaxed mb-5">
+                          <span className="text-[#00e5ff] mr-2 inline-block text-xl align-top"><FaQuoteLeft /></span>
                           {testimonial.reviewText}
                         </p>
                         
+                        {/* Divider Line */}
+                        <div className="w-8 h-[2px] bg-[#00e5ff] mb-3 mx-auto sm:mx-0"></div>
+                        
                         {/* Author Info */}
                         <div>
-                          <h4 className="text-white font-semibold text-base">{testimonial.name}</h4>
+                          <h4 className="text-white font-bold text-base">{testimonial.name}</h4>
                           <p className="text-[#00e5ff] text-sm">{testimonial.location}</p>
                         </div>
                       </div>

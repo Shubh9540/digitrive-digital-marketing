@@ -6,7 +6,7 @@ import {
   FaChartLine, FaArrowDown, FaDollarSign,
   FaTrophy, FaChartBar, FaPhone, FaCalendar,
   FaExternalLinkAlt, FaBriefcase, FaIndustry, FaClock,
-  FaCheckCircle
+  FaCheckCircle, FaRegBuilding, FaTag, FaRegCalendarAlt
 } from 'react-icons/fa';
 import { CaseStudyDetailData } from '@/types/templates.types';
 import { SocialGrowthSVG } from '@/components/ui/SocialGrowthSVG';
@@ -58,27 +58,29 @@ export const CaseStudyDetailContent = ({ data }: { data: CaseStudyDetailData }) 
                 {data.description}
               </p>
 
-              {/* Meta Badges */}
-              <div className="flex flex-wrap gap-4 mb-8">
-                <div className="flex items-center gap-2 bg-[#0d1e35] border border-gray-700/50 rounded-lg px-4 py-2">
-                  <FaBriefcase className="text-[var(--color-primary)] w-4 h-4" />
-                  <div>
-                    <p className="text-gray-500 text-xs">Client</p>
-                    <p className="text-white text-sm font-semibold">{data.client}</p>
+              {/* Meta Info */}
+              <div className="flex flex-wrap items-center gap-10 mb-10">
+                <div className="flex items-center gap-4">
+                  <FaRegBuilding className="text-[var(--color-primary)] w-8 h-8 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <span className="text-white font-semibold text-sm mb-0.5">Client</span>
+                    <span className="text-gray-300 text-sm">{data.client}</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 bg-[#0d1e35] border border-gray-700/50 rounded-lg px-4 py-2">
-                  <FaIndustry className="text-[var(--color-primary)] w-4 h-4" />
-                  <div>
-                    <p className="text-gray-500 text-xs">Industry</p>
-                    <p className="text-white text-sm font-semibold">{data.industry}</p>
+                
+                <div className="flex items-center gap-4">
+                  <FaTag className="text-[var(--color-primary)] w-8 h-8 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <span className="text-white font-semibold text-sm mb-0.5">Industry</span>
+                    <span className="text-gray-300 text-sm">{data.industry}</span>
                   </div>
                 </div>
-                <div className="flex items-center gap-2 bg-[#0d1e35] border border-gray-700/50 rounded-lg px-4 py-2">
-                  <FaClock className="text-[var(--color-primary)] w-4 h-4" />
-                  <div>
-                    <p className="text-gray-500 text-xs">Duration</p>
-                    <p className="text-white text-sm font-semibold">{data.duration}</p>
+                
+                <div className="flex items-center gap-4">
+                  <FaRegCalendarAlt className="text-[var(--color-primary)] w-8 h-8 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <span className="text-white font-semibold text-sm mb-0.5">Duration</span>
+                    <span className="text-gray-300 text-sm">{data.duration}</span>
                   </div>
                 </div>
               </div>

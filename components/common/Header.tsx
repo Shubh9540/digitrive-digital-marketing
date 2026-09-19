@@ -9,11 +9,19 @@ import { Button } from '@/components/ui/Button';
 
 export const Header = ({ data }: { data?: HeaderData }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
   if (!data) return null;
 
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setOpenMobileDropdown(null);
+  };
+  
+  const toggleDropdown = (id: string) => {
+    setOpenMobileDropdown(prev => prev === id ? null : id);
+  };
 
   return (
     <header className="w-full bg-[var(--color-bg-main)] border-b border-[var(--color-border)] sticky top-0 z-50">
@@ -127,13 +135,16 @@ export const Header = ({ data }: { data?: HeaderData }) => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#0d1620] border-t border-[var(--color-border)] px-4 pt-2 pb-6 shadow-2xl absolute top-20 left-0 right-0">
+        <div className="lg:hidden bg-[#0d1620] border-t border-[var(--color-border)] px-4 pt-2 pb-6 shadow-2xl absolute top-24 left-0 right-0 max-h-[calc(100vh-6rem)] overflow-y-auto">
           <nav className="flex flex-col space-y-2">
             {data.navLinks?.map((link) => {
               const isActive = pathname === link.url;
               return (
                 <div key={link.id} className="flex flex-col">
-                  <div className="flex justify-between items-center py-3 border-b border-[var(--color-border)]/50">
+                  <div 
+                    className="flex justify-between items-center py-3 border-b border-[var(--color-border)]/50 cursor-pointer"
+                    onClick={() => link.subLinks && link.subLinks.length > 0 ? toggleDropdown(link.id) : null}
+                  >
                     {link.subLinks && link.subLinks.length > 0 ? (
                       <span className={`text-base font-medium ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
                         {link.label}
@@ -148,12 +159,12 @@ export const Header = ({ data }: { data?: HeaderData }) => {
                       </Link>
                     )}
                     {link.subLinks && link.subLinks.length > 0 && (
-                      <FaChevronDown className="text-gray-400 w-3 h-3" />
+                      <FaChevronDown className={`text-gray-400 w-3 h-3 transition-transform duration-300 ${openMobileDropdown === link.id ? 'rotate-180' : ''}`} />
                     )}
                   </div>
                   
                   {/* Sublinks Mobile */}
-                  {link.subLinks && link.subLinks.length > 0 && (
+                  {link.subLinks && link.subLinks.length > 0 && openMobileDropdown === link.id && (
                     <div className="pl-4 py-2 flex flex-col space-y-3 bg-[#080d14] rounded-b">
                       {link.subLinks.map((subLink) => (
                         subLink.url ? (
