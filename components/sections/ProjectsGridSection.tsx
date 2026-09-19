@@ -24,7 +24,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
   };
 
   return (
-    <section className="bg-[var(--color-primary)] py-12 lg:py-16">
+    <section className="bg-[var(--color-bg-main)] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -40,7 +40,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
         {/* Grid */}
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8">
           {currentProjects.map((project) => (
-            <div key={project.id} className="group relative overflow-hidden rounded-2xl bg-[#08152e] border border-[#1a3861] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,255,0.1)] hover:border-[#00e5ff]/50 flex flex-col md:flex-row h-full">
+            <div key={project.id} className="group relative overflow-hidden rounded-2xl bg-[var(--color-bg-card)] border border-[#1a3861] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,255,0.1)] hover:border-[var(--color-primary)] flex flex-col md:flex-row h-full">
               {/* Image Container (Left Side on Desktop) */}
               <div className="relative w-full md:w-[45%] lg:w-[50%] h-64 md:h-auto overflow-hidden bg-[#051024] flex-shrink-0 p-6 flex items-center justify-center border-b md:border-b-0 md:border-r border-[#1a3861]">
                 <div className="relative w-full aspect-video rounded overflow-hidden shadow-2xl border border-gray-700/30">
