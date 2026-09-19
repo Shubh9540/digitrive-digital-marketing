@@ -24,7 +24,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
   };
 
   return (
-    <section className="bg-[var(--color-bg-main)] py-12 lg:py-12">
+    <section className="bg-[var(--color-primary)] py-12 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -38,38 +38,42 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8">
           {currentProjects.map((project) => (
-            <div key={project.id} className="group relative overflow-hidden rounded-2xl bg-[#0c1f40] border border-[#1a3861] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_rgba(0,229,255,0.15)]">
-              {/* Image */}
-              <div className="relative h-64 sm:h-80 w-full overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#02181e] via-transparent to-transparent z-10"></div>
-                <Image 
-                  src={project.image} 
-                  alt={project.title} 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                
-                {/* Category Badge */}
-                <div className="absolute top-6 left-6 z-20">
-                  <span className="bg-[#0c1f40]/80 backdrop-blur-md text-white text-xs font-semibold px-4 py-2 rounded-full border border-gray-600/50">
-                    {project.category}
-                  </span>
+            <div key={project.id} className="group relative overflow-hidden rounded-2xl bg-[#08152e] border border-[#1a3861] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(0,229,255,0.1)] hover:border-[#00e5ff]/50 flex flex-col md:flex-row h-full">
+              {/* Image Container (Left Side on Desktop) */}
+              <div className="relative w-full md:w-[45%] lg:w-[50%] h-64 md:h-auto overflow-hidden bg-[#051024] flex-shrink-0 p-6 flex items-center justify-center border-b md:border-b-0 md:border-r border-[#1a3861]">
+                <div className="relative w-full aspect-video rounded overflow-hidden shadow-2xl border border-gray-700/30">
+                  <Image 
+                    src={project.image} 
+                    alt={project.title} 
+                    fill 
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 relative z-20">
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#00e5ff] transition-colors">
+              {/* Content Container (Right Side on Desktop) */}
+              <div className="w-full md:w-[55%] lg:w-[50%] p-6 lg:p-8 flex flex-col justify-center relative z-20">
+                <span className="text-[#00e5ff] font-bold text-xs tracking-wider uppercase mb-3 block">
+                  {project.category}
+                </span>
+                
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-[#00e5ff] transition-colors leading-tight">
                   <Link href={project.url} className="before:absolute before:inset-0">
                     {project.title}
                   </Link>
                 </h3>
+
+                <p className="text-gray-400 text-sm mb-8 line-clamp-3">
+                  {project.description || "A modern digital solution designed to inspire exploration and boost engagement."}
+                </p>
                 
-                <div className="flex items-center text-[#00e5ff] font-medium text-sm group-hover:gap-2 transition-all">
-                  <span>View Details</span>
-                  <FaArrowRight className="ml-2 w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-4 group-hover:translate-x-0 transition-all duration-300" />
+                <div className="mt-auto flex items-center text-[#00e5ff] font-medium text-sm gap-2 transition-all">
+                  <span>Live Link</span>
+                  <div className="w-8 h-8 rounded-full border border-[#00e5ff] flex items-center justify-center transition-all duration-300 group-hover:bg-[#00e5ff] group-hover:text-black">
+                    <FaArrowRight className="w-3 h-3" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,7 +86,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
             <button 
               onClick={handlePrev}
               disabled={currentPage === 1}
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-[#0c1f40] text-white border border-[#1a3861] hover:bg-[#00e5ff] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 rounded-full flex items-center justify-center bg-[#08152e] text-white border border-[#1a3861] hover:bg-[#00e5ff] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <FaChevronLeft className="w-3 h-3" />
             </button>
@@ -94,7 +98,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-colors ${
                   currentPage === idx + 1 
                     ? 'bg-[#00e5ff] text-black' 
-                    : 'bg-[#0c1f40] text-white border border-[#1a3861] hover:bg-[#102a4c]'
+                    : 'bg-[#08152e] text-white border border-[#1a3861] hover:bg-[#102a4c]'
                 }`}
               >
                 {idx + 1}
@@ -104,7 +108,7 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
             <button 
               onClick={handleNext}
               disabled={currentPage === totalPages}
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-[#0c1f40] text-white border border-[#1a3861] hover:bg-[#00e5ff] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-10 h-10 rounded-full flex items-center justify-center bg-[#08152e] text-white border border-[#1a3861] hover:bg-[#00e5ff] hover:text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <FaChevronRight className="w-3 h-3" />
             </button>
@@ -115,3 +119,4 @@ export const ProjectsGridSection = ({ data }: { data?: ProjectsGridData }) => {
     </section>
   );
 };
+

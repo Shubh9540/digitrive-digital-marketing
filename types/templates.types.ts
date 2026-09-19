@@ -183,6 +183,7 @@ export interface ProjectsGridData {
     image: string;
     category: string;
     title: string;
+    description?: string;
     url: string;
   }[];
 }
