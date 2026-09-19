@@ -58,7 +58,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           <div className="flex flex-col lg:flex-row gap-10">
             {/* Left Sidebar (Sticky) */}
             <div className="w-full lg:w-1/3 xl:w-1/4">
-              <div className="sticky top-32">
+              <div className="sticky top-32 h-fit">
                 <ServiceDetailSidebar data={serviceData.sidebar} />
               </div>
             </div>

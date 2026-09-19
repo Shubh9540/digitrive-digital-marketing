@@ -49,7 +49,7 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
             
             {/* Left Sidebar (30% width) */}
-            <div className="w-full lg:w-1/3 flex-shrink-0 sticky top-24">
+            <div className="w-full lg:w-1/3 flex-shrink-0 sticky top-32 h-fit">
               <IndustryDetailSidebar data={industryData.sidebar} currentId={id} />
             </div>
             
