@@ -2261,6 +2261,190 @@
                   "buttonUrl": "#"
                 }
               }
+            },
+            "seo": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "SEO Services Overview",
+                "text1": "We provide top-notch Search Engine Optimization services to rank your website higher on Google.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
+            },
+            "digital-marketing": {
+              "heroImage": "/service/service-details.jpg",
+              "overview": {
+                "title": "Digital Marketing Overview",
+                "text1": "Our data-driven campaigns will boost your brand awareness and generate quality leads.",
+                "text2": "We create intuitive, beautiful, and user-centered designs that enhance user experience and drive business growth. Our UI/UX design solutions are tailored to meet your brand goals and customer needs."
+              },
+              "serviceCenter": {
+                "title": "Service Center",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit. Sed quis velit nisl. Sed faucibus dui sit amet nisi vestibulum, a lobortis arcu eleifend. Duis laoreet, arcu ut laoreet vulputate.",
+                "features": [
+                  {
+                    "id": "f1",
+                    "icon": "FaRegUser",
+                    "title": "User Research",
+                    "text": "We gather insights about your users to create meaningful and impactful experiences."
+                  },
+                  {
+                    "id": "f2",
+                    "icon": "FaBezierCurve",
+                    "title": "UI Design",
+                    "text": "Our designs are visually appealing, on-brand, and focused on user interaction."
+                  },
+                  {
+                    "id": "f3",
+                    "icon": "FaMobileAlt",
+                    "title": "Prototyping",
+                    "text": "Interactive prototypes help you visualize the product and validate ideas early stage."
+                  }
+                ],
+                "bottomGrid": [
+                  {
+                    "id": "b1",
+                    "image": "/service/service-d1.jpg",
+                    "title": "Strategy & Planning",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b2",
+                    "image": "/service/service-d2.jpg",
+                    "title": "Design & Development",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  },
+                  {
+                    "id": "b3",
+                    "image": "/service/service-d3.jpg",
+                    "title": "Testing & Optimization",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat sapien quis sapien tincidunt suscipit."
+                  }
+                ]
+              },
+              "sidebar": {
+                "services": [
+                  {
+                    "id": "app-development",
+                    "title": "App Development",
+                    "url": "/services/app-development"
+                  },
+                  {
+                    "id": "ui-ux-design",
+                    "title": "UI/UX Design",
+                    "url": "/services/ui-ux-design"
+                  },
+                  {
+                    "id": "website-design",
+                    "title": "Website Design",
+                    "url": "/services/website-design"
+                  },
+                  {
+                    "id": "web-development",
+                    "title": "Web Development",
+                    "url": "/services/web-development"
+                  },
+                  {
+                    "id": "e-commerce-development",
+                    "title": "E-commerce Development",
+                    "url": "/services/e-commerce-development"
+                  },
+                  {
+                    "id": "branding-identity",
+                    "title": "Branding Identity",
+                    "url": "/services/branding-identity"
+                  }
+                ],
+                "contact": {
+                  "title": "Contact with us for any advice",
+                  "phone": "+882 (123) 112-9999",
+                  "buttonText": "Download Brochure",
+                  "buttonUrl": "#"
+                }
+              }
             }
           }
         },
