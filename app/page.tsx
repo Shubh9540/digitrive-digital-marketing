@@ -32,7 +32,14 @@ export default function Home() {
       <CaseStudies data={sectionData.CaseStudies?.variants?.DigitalCaseStudies1} />
       <CounterSection data={sectionData.Counter?.variants?.DigitalCounter1} />
       <TeamSection data={sectionData.Team?.variants?.DigitalTeam1} />
-      <BlogSection data={sectionData.Blogs?.variants?.DigitalBlog1} />
+      <BlogSection data={(() => {
+        const blogData = sectionData.Blogs?.variants?.DigitalBlog1;
+        if (!blogData) return undefined;
+        return {
+          ...blogData,
+          blogs: blogData.blogs?.slice(0, 3) || []
+        };
+      })()} />
       
       {/* Footer is rendered at the very end */}
       <Footer data={commonData?.DigitalFooter} />
