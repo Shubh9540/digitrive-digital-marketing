@@ -84,20 +84,20 @@ export const Header = ({ data }: { data?: HeaderData }) => {
                   {/* Dropdown Menu (Desktop) */}
                   {link.subLinks && link.subLinks.length > 0 && (
                     <div className="absolute left-0 top-full mt-2 w-48 bg-[#0d1620] border border-[var(--color-border)] rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top-left group-hover:translate-y-2">
-                      <div className="py-10 lg:py-20">
+                      <div className="py-2">
                         {link.subLinks.map((subLink) => (
                           subLink.url ? (
                             <Link 
                               key={subLink.id} 
                               href={subLink.url}
-                              className="block px-4 py-10 lg:py-20 text-sm text-gray-300 hover:bg-[var(--color-primary)] hover:text-white transition-colors"
+                              className="block px-4 py-2 text-sm text-gray-300 hover:bg-[var(--color-primary)] hover:text-white transition-colors"
                             >
                               {subLink.label}
                             </Link>
                           ) : (
                             <span
                               key={subLink.id}
-                              className="block px-4 py-10 lg:py-20 text-sm text-gray-500 cursor-default select-none"
+                              className="block px-4 py-2 text-sm text-gray-500 cursor-default select-none"
                             >
                               {subLink.label}
                             </span>
@@ -135,7 +135,7 @@ export const Header = ({ data }: { data?: HeaderData }) => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-[#0d1620] border-t border-[var(--color-border)] px-4 pt-10 lg:pt-20 pb-6 shadow-2xl absolute top-24 left-0 right-0 max-h-[calc(100vh-6rem)] overflow-y-auto">
+        <div className="lg:hidden bg-[#0d1620] border-t border-[var(--color-border)] px-4 pt-4 pb-6 shadow-2xl absolute top-24 left-0 right-0 max-h-[calc(100vh-6rem)] overflow-y-auto">
           <nav className="flex flex-col space-y-2">
             {data.navLinks?.map((link) => {
               const isActive = pathname === link.url;
@@ -165,7 +165,7 @@ export const Header = ({ data }: { data?: HeaderData }) => {
                   
                   {/* Sublinks Mobile */}
                   {link.subLinks && link.subLinks.length > 0 && openMobileDropdown === link.id && (
-                    <div className="pl-4 py-10 lg:py-20 flex flex-col space-y-3 bg-[#080d14] rounded-b">
+                    <div className="pl-4 py-2 flex flex-col space-y-3 bg-[#080d14] rounded-b">
                       {link.subLinks.map((subLink) => (
                         subLink.url ? (
                           <Link 
