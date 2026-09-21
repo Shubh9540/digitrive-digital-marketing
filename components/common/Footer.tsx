@@ -20,7 +20,7 @@ export const Footer = ({ data }: { data?: DigitalFooterData }) => {
   if (!data) return null;
 
   return (
-    <footer className="bg-[#02181e] pt-12 pb-6 border-t border-gray-800/60">
+    <footer className="bg-[#02181e] pt-10 lg:pt-202 pb-6 border-t border-gray-800/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Content */}
@@ -92,7 +92,7 @@ export const Footer = ({ data }: { data?: DigitalFooterData }) => {
           </div>
 
           {/* Columns 2, 3, 4: Links */}
-          <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-0 lg:pl-10 pt-2">
+          <div className="lg:col-span-9 grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-0 lg:pl-10 pt-10 lg:pt-20">
             {data.columns.map((col, idx) => (
               <div 
                 key={col.id} 

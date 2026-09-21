@@ -1,24 +1,29 @@
-import React from 'react';
-import Image from 'next/image';
-import { FaRegUser, FaBezierCurve, FaMobileAlt } from 'react-icons/fa';
-
+import React from "react";
+import Image from "next/image";
+import { FaRegUser, FaBezierCurve, FaMobileAlt } from "react-icons/fa";
 
 const renderIcon = (iconName: string) => {
   switch (iconName) {
-    case 'FaRegUser': return <FaRegUser className="w-5 h-5" />;
-    case 'FaBezierCurve': return <FaBezierCurve className="w-5 h-5" />;
-    case 'FaMobileAlt': return <FaMobileAlt className="w-5 h-5" />;
-    default: return null;
+    case "FaRegUser":
+      return <FaRegUser className="w-5 h-5" />;
+    case "FaBezierCurve":
+      return <FaBezierCurve className="w-5 h-5" />;
+    case "FaMobileAlt":
+      return <FaMobileAlt className="w-5 h-5" />;
+    default:
+      return null;
   }
 };
 
 export const ServiceDetailPageContent = ({ data }: { data: any }) => {
   return (
     <div className="flex flex-col gap-10">
-      
       {/* Hero Image */}
-      <div className="w-full rounded-2xl overflow-hidden relative" style={{ height: '400px' }}>
-        <Image 
+      <div
+        className="w-full rounded-2xl overflow-hidden relative"
+        style={{ height: "400px" }}
+      >
+        <Image
           src={data.heroImage}
           alt={data.overview.title}
           fill
@@ -57,11 +62,16 @@ export const ServiceDetailPageContent = ({ data }: { data: any }) => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
           {data.serviceCenter.features.map((feature: any) => (
-            <div key={feature.id} className="bg-[#08152c] rounded-xl p-6 border border-[#102a4c] transition-colors hover:border-[#00e5ff]/50">
+            <div
+              key={feature.id}
+              className="bg-[#08152c] rounded-xl p-6 border border-[#102a4c] transition-colors hover:border-[#00e5ff]/50"
+            >
               <div className="w-12 h-12 rounded-full bg-[#0c1f40] flex items-center justify-center text-[#00e5ff] mb-4 border border-[#1a3861]">
                 {renderIcon(feature.icon)}
               </div>
-              <h3 className="text-lg font-bold text-white mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-bold text-white mb-2">
+                {feature.title}
+              </h3>
               <p className="text-sm text-gray-400 leading-relaxed">
                 {feature.text}
               </p>
@@ -74,7 +84,7 @@ export const ServiceDetailPageContent = ({ data }: { data: any }) => {
           {data.serviceCenter.bottomGrid.map((item: any) => (
             <div key={item.id} className="flex flex-col gap-4">
               <div className="w-full h-40 rounded-xl overflow-hidden relative">
-                <Image 
+                <Image
                   src={item.image}
                   alt={item.title}
                   fill
@@ -82,7 +92,9 @@ export const ServiceDetailPageContent = ({ data }: { data: any }) => {
                 />
               </div>
               <div>
-                <h3 className="text-md font-bold text-white mb-2">{item.title}</h3>
+                <h3 className="text-md font-bold text-white mb-2">
+                  {item.title}
+                </h3>
                 <p className="text-xs text-gray-400 leading-relaxed">
                   {item.text}
                 </p>
@@ -91,7 +103,6 @@ export const ServiceDetailPageContent = ({ data }: { data: any }) => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };

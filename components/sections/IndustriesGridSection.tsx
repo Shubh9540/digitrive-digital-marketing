@@ -3,36 +3,73 @@ import Image from "next/image";
 import Link from "next/link";
 import { IndustriesGridData } from "@/types/templates.types";
 
-import { 
-  FaArrowRight, FaUsers, FaChartBar, FaStar, FaShoppingCart, FaHeartbeat, 
-  FaBuilding, FaGraduationCap, FaPlane, FaUtensils, FaTshirt, FaMoneyBillWave, 
-  FaLaptopCode, FaIndustry, FaLeaf, FaCar, FaUsersCog, FaPlayCircle, FaHeart, FaBalanceScale 
+import {
+  FaArrowRight,
+  FaUsers,
+  FaChartBar,
+  FaStar,
+  FaShoppingCart,
+  FaHeartbeat,
+  FaBuilding,
+  FaGraduationCap,
+  FaPlane,
+  FaUtensils,
+  FaTshirt,
+  FaMoneyBillWave,
+  FaLaptopCode,
+  FaIndustry,
+  FaLeaf,
+  FaCar,
+  FaUsersCog,
+  FaPlayCircle,
+  FaHeart,
+  FaBalanceScale,
 } from "react-icons/fa";
 
 const renderIcon = (iconName: string, customClass?: string) => {
   const cls = customClass || "w-5 h-5";
 
   switch (iconName) {
-    case "FaShoppingCart": return <FaShoppingCart className={cls} />;
-    case "FaHeartbeat": return <FaHeartbeat className={cls} />;
-    case "FaBuilding": return <FaBuilding className={cls} />;
-    case "FaGraduationCap": return <FaGraduationCap className={cls} />;
-    case "FaPlane": return <FaPlane className={cls} />;
-    case "FaUtensils": return <FaUtensils className={cls} />;
-    case "FaTshirt": return <FaTshirt className={cls} />;
-    case "FaMoneyBillWave": return <FaMoneyBillWave className={cls} />;
-    case "FaLaptopCode": return <FaLaptopCode className={cls} />;
-    case "FaIndustry": return <FaIndustry className={cls} />;
-    case "FaLeaf": return <FaLeaf className={cls} />;
-    case "FaCar": return <FaCar className={cls} />;
-    case "FaUsersCog": return <FaUsersCog className={cls} />;
-    case "FaPlayCircle": return <FaPlayCircle className={cls} />;
-    case "FaHeart": return <FaHeart className={cls} />;
-    case "FaBalanceScale": return <FaBalanceScale className={cls} />;
-    case "FaUsers": return <FaUsers className={customClass || "w-8 h-8"} />;
-    case "FaChartBar": return <FaChartBar className={customClass || "w-8 h-8"} />;
-    case "FaStar": return <FaStar className={customClass || "w-8 h-8"} />;
-    default: return <FaStar className={cls} />;
+    case "FaShoppingCart":
+      return <FaShoppingCart className={cls} />;
+    case "FaHeartbeat":
+      return <FaHeartbeat className={cls} />;
+    case "FaBuilding":
+      return <FaBuilding className={cls} />;
+    case "FaGraduationCap":
+      return <FaGraduationCap className={cls} />;
+    case "FaPlane":
+      return <FaPlane className={cls} />;
+    case "FaUtensils":
+      return <FaUtensils className={cls} />;
+    case "FaTshirt":
+      return <FaTshirt className={cls} />;
+    case "FaMoneyBillWave":
+      return <FaMoneyBillWave className={cls} />;
+    case "FaLaptopCode":
+      return <FaLaptopCode className={cls} />;
+    case "FaIndustry":
+      return <FaIndustry className={cls} />;
+    case "FaLeaf":
+      return <FaLeaf className={cls} />;
+    case "FaCar":
+      return <FaCar className={cls} />;
+    case "FaUsersCog":
+      return <FaUsersCog className={cls} />;
+    case "FaPlayCircle":
+      return <FaPlayCircle className={cls} />;
+    case "FaHeart":
+      return <FaHeart className={cls} />;
+    case "FaBalanceScale":
+      return <FaBalanceScale className={cls} />;
+    case "FaUsers":
+      return <FaUsers className={customClass || "w-8 h-8"} />;
+    case "FaChartBar":
+      return <FaChartBar className={customClass || "w-8 h-8"} />;
+    case "FaStar":
+      return <FaStar className={customClass || "w-8 h-8"} />;
+    default:
+      return <FaStar className={cls} />;
   }
 };
 
@@ -44,7 +81,7 @@ export const IndustriesGridSection = ({
   if (!data) return null;
 
   return (
-    <section className="relative overflow-hidden bg-[#02131b] py-12 sm:py-16 lg:py-[72px]">
+    <section className="relative overflow-hidden bg-[#02131b] py-10 lg:py-200 lg:py-10 lg:py-2002 sm:py-10 lg:py-200 lg:py-10 lg:py-2006 lg:py-[72px]">
       {/* Subtle background glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -left-32 top-[-200px] h-[500px] w-[500px] rounded-full bg-cyan-500/[0.025] blur-[120px]" />

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { DigitalFaqPageData } from '@/types/templates.types';
-import { FaMinus, FaChevronDown, FaRegCommentDots } from 'react-icons/fa';
+import React, { useState } from "react";
+import { DigitalFaqPageData } from "@/types/templates.types";
+import { FaMinus, FaChevronDown, FaRegCommentDots } from "react-icons/fa";
 
 export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0); // First item open by default
@@ -14,9 +14,8 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
   };
 
   return (
-    <section className="bg-[#020914] py-16 lg:py-12 text-white font-sans">
+    <section className="bg-[#020914] py-10 lg:py-200 lg:py-10 lg:py-2000 lg:py-10 lg:py-200 lg:py-10 lg:py-2006 text-white font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-4 mb-4">
@@ -29,11 +28,11 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             {data.titlePart1}
-            <span className="text-[var(--color-primary)]">{data.titlePart2}</span>
+            <span className="text-[var(--color-primary)]">
+              {data.titlePart2}
+            </span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl">
-            {data.description}
-          </p>
+          <p className="text-gray-400 text-lg max-w-2xl">{data.description}</p>
         </div>
 
         {/* FAQ Grid */}
@@ -47,10 +46,11 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
               return (
                 <div
                   key={faq.id}
-                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${isActive
-                      ? 'border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]'
-                      : 'border-gray-800/60 bg-[#05101f] hover:border-gray-700'
-                    }`}
+                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${
+                    isActive
+                      ? "border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]"
+                      : "border-gray-800/60 bg-[#05101f] hover:border-gray-700"
+                  }`}
                   onClick={() => toggleAccordion(index)}
                 >
                   <div className="p-6 flex items-center justify-between gap-4">
@@ -60,20 +60,34 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
                           <FaRegCommentDots className="w-5 h-5" />
                         </div>
                       )}
-                      <h3 className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
+                      <h3
+                        className={`text-lg font-bold transition-colors duration-300 ${isActive ? "text-[var(--color-primary)]" : "text-white"}`}
+                      >
                         {faq.question}
                       </h3>
                     </div>
 
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isActive ? 'bg-[var(--color-primary)] text-black' : 'bg-gray-800/80 text-[var(--color-primary)]'
-                      }`}>
-                      {isActive ? <FaMinus className="w-4 h-4" /> : <FaChevronDown className="w-4 h-4" />}
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${
+                        isActive
+                          ? "bg-[var(--color-primary)] text-black"
+                          : "bg-gray-800/80 text-[var(--color-primary)]"
+                      }`}
+                    >
+                      {isActive ? (
+                        <FaMinus className="w-4 h-4" />
+                      ) : (
+                        <FaChevronDown className="w-4 h-4" />
+                      )}
                     </div>
                   </div>
 
                   <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${isActive ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'
-                      }`}
+                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${
+                      isActive
+                        ? "max-h-[500px] pb-6 opacity-100"
+                        : "max-h-0 pb-0 opacity-0"
+                    }`}
                   >
                     <p className="text-gray-400 text-base leading-relaxed pl-14">
                       {faq.answer}
@@ -93,10 +107,11 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
               return (
                 <div
                   key={faq.id}
-                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${isActive
-                      ? 'border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]'
-                      : 'border-gray-800/60 bg-[#05101f] hover:border-gray-700'
-                    }`}
+                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${
+                    isActive
+                      ? "border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]"
+                      : "border-gray-800/60 bg-[#05101f] hover:border-gray-700"
+                  }`}
                   onClick={() => toggleAccordion(index)}
                 >
                   <div className="p-6 flex items-center justify-between gap-4">
@@ -106,20 +121,34 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
                           <FaRegCommentDots className="w-5 h-5" />
                         </div>
                       )}
-                      <h3 className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
+                      <h3
+                        className={`text-lg font-bold transition-colors duration-300 ${isActive ? "text-[var(--color-primary)]" : "text-white"}`}
+                      >
                         {faq.question}
                       </h3>
                     </div>
 
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isActive ? 'bg-[var(--color-primary)] text-black' : 'bg-gray-800/80 text-[var(--color-primary)]'
-                      }`}>
-                      {isActive ? <FaMinus className="w-4 h-4" /> : <FaChevronDown className="w-4 h-4" />}
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${
+                        isActive
+                          ? "bg-[var(--color-primary)] text-black"
+                          : "bg-gray-800/80 text-[var(--color-primary)]"
+                      }`}
+                    >
+                      {isActive ? (
+                        <FaMinus className="w-4 h-4" />
+                      ) : (
+                        <FaChevronDown className="w-4 h-4" />
+                      )}
                     </div>
                   </div>
 
                   <div
-                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${isActive ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'
-                      }`}
+                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${
+                      isActive
+                        ? "max-h-[500px] pb-6 opacity-100"
+                        : "max-h-0 pb-0 opacity-0"
+                    }`}
                   >
                     <p className="text-gray-400 text-base leading-relaxed pl-14">
                       {faq.answer}
@@ -130,7 +159,6 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
             })}
           </div>
         </div>
-
       </div>
     </section>
   );

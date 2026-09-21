@@ -6,6 +6,7 @@ import { Header } from '@/components/common/Header';
 import { Breadcrumb } from '@/components/common/Breadcrumb';
 import { AboutUs } from '@/components/sections/AboutUs';
 import { WhyChooseUsSection } from '@/components/sections/WhyChooseUsSection';
+import { CounterSection } from '@/components/sections/CounterSection';
 import { Footer } from '@/components/common/Footer';
 
 export const metadata: Metadata = {
@@ -29,6 +30,7 @@ export default function AboutPage() {
       
       <Breadcrumb data={commonData?.breadcrumbs?.AboutBreadcrumb} />
       <AboutUs data={sectionData.AboutUs?.variants?.DigitalAbout1} hideButton={true} />
+      <CounterSection data={sectionData.Counter?.variants?.DigitalCounter1} />
       <WhyChooseUsSection data={sectionData.WhyChooseUs?.variants?.DigitalWhyChooseUs1} />
 
       <Footer data={commonData?.DigitalFooter} />

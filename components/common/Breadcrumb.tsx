@@ -21,7 +21,7 @@ export const Breadcrumb = ({ data }: { data?: BreadcrumbData }) => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center pt-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl lg:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
           {data.title}
         </h1>
         

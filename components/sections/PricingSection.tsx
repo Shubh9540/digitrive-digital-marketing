@@ -1,22 +1,45 @@
-import React from 'react';
-import { PricingData } from '@/types/templates.types';
-import { FaCheckCircle, FaCog, FaUsers, FaShieldAlt, FaHeadset, FaChartBar, FaPaperPlane, FaChartLine, FaCrown, FaBuilding, FaLocationArrow } from 'react-icons/fa';
-import Link from 'next/link';
+import React from "react";
+import { PricingData } from "@/types/templates.types";
+import {
+  FaCheckCircle,
+  FaCog,
+  FaUsers,
+  FaShieldAlt,
+  FaHeadset,
+  FaChartBar,
+  FaPaperPlane,
+  FaChartLine,
+  FaCrown,
+  FaBuilding,
+  FaLocationArrow,
+} from "react-icons/fa";
+import Link from "next/link";
 
 const renderIcon = (iconName: string, className?: string) => {
-  const IconProps = { className: className || 'w-6 h-6' };
+  const IconProps = { className: className || "w-6 h-6" };
   switch (iconName) {
-    case 'FaCog': return <FaCog {...IconProps} />;
-    case 'FaUsers': return <FaUsers {...IconProps} />;
-    case 'FaShieldAlt': return <FaShieldAlt {...IconProps} />;
-    case 'FaHeadset': return <FaHeadset {...IconProps} />;
-    case 'FaChartBar': return <FaChartBar {...IconProps} />;
-    case 'FaPaperPlane': return <FaPaperPlane {...IconProps} />;
-    case 'FaLocationArrow': return <FaLocationArrow {...IconProps} />;
-    case 'FaChartLine': return <FaChartLine {...IconProps} />;
-    case 'FaCrown': return <FaCrown {...IconProps} />;
-    case 'FaBuilding': return <FaBuilding {...IconProps} />;
-    default: return null;
+    case "FaCog":
+      return <FaCog {...IconProps} />;
+    case "FaUsers":
+      return <FaUsers {...IconProps} />;
+    case "FaShieldAlt":
+      return <FaShieldAlt {...IconProps} />;
+    case "FaHeadset":
+      return <FaHeadset {...IconProps} />;
+    case "FaChartBar":
+      return <FaChartBar {...IconProps} />;
+    case "FaPaperPlane":
+      return <FaPaperPlane {...IconProps} />;
+    case "FaLocationArrow":
+      return <FaLocationArrow {...IconProps} />;
+    case "FaChartLine":
+      return <FaChartLine {...IconProps} />;
+    case "FaCrown":
+      return <FaCrown {...IconProps} />;
+    case "FaBuilding":
+      return <FaBuilding {...IconProps} />;
+    default:
+      return null;
   }
 };
 
@@ -24,9 +47,8 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
   if (!data) return null;
 
   return (
-    <section className="bg-[#020914] py-16 lg:py-12">
+    <section className="bg-[#020914] py-10 lg:py-200 lg:py-10 lg:py-2000 lg:py-10 lg:py-200 lg:py-10 lg:py-2006">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Top Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="flex items-center gap-4 mb-4">
@@ -38,7 +60,10 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
             <span className="w-10 h-[2px] bg-gray-700"></span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            {data.titlePart1} <span className="text-[var(--color-primary)]">{data.titleHighlight}</span>
+            {data.titlePart1}{" "}
+            <span className="text-[var(--color-primary)]">
+              {data.titleHighlight}
+            </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed whitespace-pre-line">
             {data.description}
@@ -47,14 +72,21 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
 
         {/* Top Features Row */}
         <div className="flex flex-wrap justify-center gap-8 lg:gap-12 mb-16">
-          {data.topFeatures.map(feature => (
+          {data.topFeatures.map((feature) => (
             <div key={feature.id} className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full border border-[var(--color-primary)]/30 flex items-center justify-center bg-[var(--color-primary)]/5">
-                {renderIcon(feature.icon, 'w-5 h-5 text-[var(--color-primary)]')}
+                {renderIcon(
+                  feature.icon,
+                  "w-5 h-5 text-[var(--color-primary)]",
+                )}
               </div>
               <div className="flex flex-col">
-                <span className="text-white font-bold text-sm leading-snug">{feature.title}</span>
-                <span className="text-gray-400 text-xs">{feature.subtitle}</span>
+                <span className="text-white font-bold text-sm leading-snug">
+                  {feature.title}
+                </span>
+                <span className="text-gray-400 text-xs">
+                  {feature.subtitle}
+                </span>
               </div>
             </div>
           ))}
@@ -62,7 +94,6 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
 
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 relative">
-
           {data.plans.map((plan, index) => {
             const isPopular = plan.isPopular;
 
@@ -75,21 +106,24 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
               >
                 {/* Popular Badge */}
                 {isPopular && plan.popularBadgeText && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-black font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider z-10 whitespace-nowrap">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[var(--color-primary)] text-black font-bold text-xs px-4 py-10 lg:py-200 lg:py-10 lg:py-200.5 rounded-full uppercase tracking-wider z-10 whitespace-nowrap">
                     {plan.popularBadgeText}
                   </div>
                 )}
 
                 <div className="p-8 flex-1 flex flex-col items-center text-center">
-
                   {/* Icon */}
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 transition-all duration-300
+                  <div
+                    className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 transition-all duration-300
                     bg-[var(--color-primary)]/10 text-[var(--color-primary)] group-hover:shadow-[0_0_20px_var(--color-primary)] group-hover:bg-[var(--color-primary)]/20
-                  `}>
-                    {renderIcon(plan.icon, 'w-8 h-8')}
+                  `}
+                  >
+                    {renderIcon(plan.icon, "w-8 h-8")}
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-3">{plan.name}</h3>
+                  <h3 className="text-2xl font-bold text-white mb-3">
+                    {plan.name}
+                  </h3>
                   <p className="text-sm text-gray-400 mb-8 min-h-[40px] leading-relaxed">
                     {plan.description}
                   </p>
@@ -99,17 +133,21 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
                       {plan.price}
                     </span>
                     {plan.priceSuffix && (
-                      <span className="text-gray-400 text-sm ml-1">{plan.priceSuffix}</span>
+                      <span className="text-gray-400 text-sm ml-1">
+                        {plan.priceSuffix}
+                      </span>
                     )}
                   </div>
 
                   <div className="w-full h-[1px] bg-gray-800/60 mb-8"></div>
 
                   <ul className="flex flex-col gap-4 w-full text-left mb-8">
-                    {plan.features.map(feature => (
+                    {plan.features.map((feature) => (
                       <li key={feature.id} className="flex items-start gap-3">
                         <FaCheckCircle className="w-4 h-4 mt-1 text-[var(--color-primary)] flex-shrink-0" />
-                        <span className="text-sm text-gray-300 leading-snug">{feature.text}</span>
+                        <span className="text-sm text-gray-300 leading-snug">
+                          {feature.text}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -123,7 +161,6 @@ export const PricingSection = ({ data }: { data?: PricingData }) => {
                     {plan.buttonText}
                     <span className="text-lg">→</span>
                   </Link>
-
                 </div>
               </div>
             );

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { DigitalClientsData } from '@/types/templates.types';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import React, { useState } from "react";
+import { DigitalClientsData } from "@/types/templates.types";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const ClientsSection = ({ data }: { data?: DigitalClientsData }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,9 +18,8 @@ export const ClientsSection = ({ data }: { data?: DigitalClientsData }) => {
   };
 
   return (
-    <section className="bg-[#0b111f] py-12 lg:py-16 px-4">
+    <section className="bg-[#0b111f] py-10 lg:py-200 lg:py-10 lg:py-2002 lg:py-10 lg:py-200 lg:py-10 lg:py-2006 px-4">
       <div className="max-w-[1200px] mx-auto">
-
         {/* ── Header row ── */}
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mb-10">
           {/* Left: text */}
@@ -30,7 +29,8 @@ export const ClientsSection = ({ data }: { data?: DigitalClientsData }) => {
               {data.subtitle}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              {data.titlePart1} <span className="text-[#00c5c8]">{data.titleHighlight}</span>
+              {data.titlePart1}{" "}
+              <span className="text-[#00c5c8]">{data.titleHighlight}</span>
             </h2>
             <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
               {data.description}
@@ -82,8 +82,8 @@ export const ClientsSection = ({ data }: { data?: DigitalClientsData }) => {
                 onClick={() => goTo(page)}
                 className={`w-9 h-9 flex items-center justify-center rounded-full text-sm font-semibold transition-all ${
                   currentPage === page
-                    ? 'bg-[#00c5c8] text-white border border-[#00c5c8]'
-                    : 'border border-[#1a2a40] text-gray-400 hover:border-[#00c5c8] hover:text-[#00c5c8]'
+                    ? "bg-[#00c5c8] text-white border border-[#00c5c8]"
+                    : "border border-[#1a2a40] text-gray-400 hover:border-[#00c5c8] hover:text-[#00c5c8]"
                 }`}
               >
                 {page}
@@ -100,7 +100,6 @@ export const ClientsSection = ({ data }: { data?: DigitalClientsData }) => {
             </button>
           </div>
         )}
-
       </div>
     </section>
   );
