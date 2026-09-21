@@ -20,20 +20,20 @@ export const Breadcrumb = ({ data }: { data?: BreadcrumbData }) => {
       <div className="absolute inset-0 bg-[#020914]/80 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center pt-8">
-        <h1 className="text-4xl md:text-4xl lg:text-5xl lg:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+      <div className="relative z-10 flex flex-col items-center justify-center pt-8 w-full max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 text-center">
           {data.title}
         </h1>
         
-        <div className="flex items-center gap-2 text-sm md:text-base font-medium">
+        <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1 text-sm md:text-base font-medium text-center">
           {data.paths.map((path, index) => (
             <React.Fragment key={index}>
               {path.url ? (
-                <Link href={path.url} className="text-white hover:text-[var(--color-primary)] transition-colors">
+                <Link href={path.url} className="text-white hover:text-[var(--color-primary)] transition-colors whitespace-nowrap">
                   {path.label}
                 </Link>
               ) : (
-                <span className="text-white">
+                <span className="text-white whitespace-nowrap">
                   {path.label}
                 </span>
               )}

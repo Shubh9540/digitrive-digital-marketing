@@ -46,10 +46,10 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
       {/* Main Page Layout (Sidebar + Content) */}
       <section className="bg-[#020914] py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 items-start">
             
             {/* Left Sidebar (30% width) */}
-            <div className="w-full lg:w-1/3 flex-shrink-0 sticky top-32 h-fit">
+            <div className="w-full lg:w-1/3 flex-shrink-0 lg:sticky lg:top-32 h-fit">
               <IndustryDetailSidebar data={industryData.sidebar} currentId={id} />
             </div>
             

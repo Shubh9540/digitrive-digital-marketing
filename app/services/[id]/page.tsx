@@ -55,10 +55,10 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       <section className="bg-[var(--color-bg-main)] py-12 lg:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-10">
+          <div className="flex flex-col-reverse lg:flex-row gap-10">
             {/* Left Sidebar (Sticky) */}
             <div className="w-full lg:w-1/3 xl:w-1/4">
-              <div className="sticky top-32 h-fit">
+              <div className="lg:sticky lg:top-32 h-fit">
                 <ServiceDetailSidebar data={serviceData.sidebar} />
               </div>
             </div>
