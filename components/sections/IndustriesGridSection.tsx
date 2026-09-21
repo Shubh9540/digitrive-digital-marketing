@@ -167,15 +167,15 @@ export const IndustriesGridSection = ({
                 />
 
                 <div className="absolute inset-0 bg-black/45 transition-colors duration-300 group-hover:bg-black/25" />
-
-                {/* Icon */}
-                <div className="absolute bottom-[-22px] left-6 z-10 flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#061923] bg-[#00d9ff] text-[#02131b] shadow-lg">
-                  {renderIcon(ind.icon)}
-                </div>
               </div>
 
               {/* Card content */}
-              <div className="flex flex-1 flex-col p-6 pt-9">
+              <div className="relative flex flex-1 flex-col p-6 pt-9">
+                {/* Icon */}
+                <div className="absolute -top-6 left-6 z-10 flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#061923] bg-[#00d9ff] text-[#02131b] shadow-lg">
+                  {renderIcon(ind.icon)}
+                </div>
+
                 <h3 className="mb-3 text-xl font-bold text-white transition-colors group-hover:text-[#00d9ff]">
                   {ind.title}
                 </h3>
