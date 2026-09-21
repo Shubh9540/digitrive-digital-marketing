@@ -37,48 +37,98 @@ export const FaqSection = ({ data }: { data?: DigitalFaqPageData }) => {
         </div>
 
         {/* FAQ Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {data.faqs.map((faq, index) => {
-            const isActive = activeIndex === index;
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+          {/* Left Column */}
+          <div className="flex flex-col gap-6">
+            {data.faqs.map((faq, index) => {
+              if (index % 2 !== 0) return null;
+              const isActive = activeIndex === index;
 
-            return (
-              <div
-                key={faq.id}
-                className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${isActive
-                    ? 'border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]'
-                    : 'border-gray-800/60 bg-[#05101f] hover:border-gray-700'
-                  }`}
-                onClick={() => toggleAccordion(index)}
-              >
-                <div className="p-6 flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
-                    {isActive && (
-                      <div className="w-10 h-10 rounded-full border border-[var(--color-primary)] flex items-center justify-center flex-shrink-0 text-[var(--color-primary)]">
-                        <FaRegCommentDots className="w-5 h-5" />
-                      </div>
-                    )}
-                    <h3 className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
-                      {faq.question}
-                    </h3>
-                  </div>
-
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isActive ? 'bg-[var(--color-primary)] text-black' : 'bg-gray-800/80 text-[var(--color-primary)]'
-                    }`}>
-                    {isActive ? <FaMinus className="w-4 h-4" /> : <FaChevronDown className="w-4 h-4" />}
-                  </div>
-                </div>
-
+              return (
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${isActive ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'
+                  key={faq.id}
+                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${isActive
+                      ? 'border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]'
+                      : 'border-gray-800/60 bg-[#05101f] hover:border-gray-700'
                     }`}
+                  onClick={() => toggleAccordion(index)}
                 >
-                  <p className="text-gray-400 text-base leading-relaxed pl-14">
-                    {faq.answer}
-                  </p>
+                  <div className="p-6 flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                      {isActive && (
+                        <div className="w-10 h-10 rounded-full border border-[var(--color-primary)] flex items-center justify-center flex-shrink-0 text-[var(--color-primary)]">
+                          <FaRegCommentDots className="w-5 h-5" />
+                        </div>
+                      )}
+                      <h3 className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
+                        {faq.question}
+                      </h3>
+                    </div>
+
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isActive ? 'bg-[var(--color-primary)] text-black' : 'bg-gray-800/80 text-[var(--color-primary)]'
+                      }`}>
+                      {isActive ? <FaMinus className="w-4 h-4" /> : <FaChevronDown className="w-4 h-4" />}
+                    </div>
+                  </div>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${isActive ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'
+                      }`}
+                  >
+                    <p className="text-gray-400 text-base leading-relaxed pl-14">
+                      {faq.answer}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          {/* Right Column */}
+          <div className="flex flex-col gap-6">
+            {data.faqs.map((faq, index) => {
+              if (index % 2 === 0) return null;
+              const isActive = activeIndex === index;
+
+              return (
+                <div
+                  key={faq.id}
+                  className={`rounded-2xl border transition-all duration-300 overflow-hidden cursor-pointer h-fit ${isActive
+                      ? 'border-l-2 border-t-2 border-[var(--color-primary)] border-r-gray-800/60 border-b-gray-800/60 bg-[#05101f] shadow-[0_0_20px_rgba(0,229,255,0.05)]'
+                      : 'border-gray-800/60 bg-[#05101f] hover:border-gray-700'
+                    }`}
+                  onClick={() => toggleAccordion(index)}
+                >
+                  <div className="p-6 flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                      {isActive && (
+                        <div className="w-10 h-10 rounded-full border border-[var(--color-primary)] flex items-center justify-center flex-shrink-0 text-[var(--color-primary)]">
+                          <FaRegCommentDots className="w-5 h-5" />
+                        </div>
+                      )}
+                      <h3 className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-[var(--color-primary)]' : 'text-white'}`}>
+                        {faq.question}
+                      </h3>
+                    </div>
+
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300 ${isActive ? 'bg-[var(--color-primary)] text-black' : 'bg-gray-800/80 text-[var(--color-primary)]'
+                      }`}>
+                      {isActive ? <FaMinus className="w-4 h-4" /> : <FaChevronDown className="w-4 h-4" />}
+                    </div>
+                  </div>
+
+                  <div
+                    className={`overflow-hidden transition-all duration-500 ease-in-out px-6 ${isActive ? 'max-h-[500px] pb-6 opacity-100' : 'max-h-0 pb-0 opacity-0'
+                      }`}
+                  >
+                    <p className="text-gray-400 text-base leading-relaxed pl-14">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
       </div>

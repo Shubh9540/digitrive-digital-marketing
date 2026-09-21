@@ -48,49 +48,46 @@ export const TestimonialsPageContent = ({ data }: { data?: DigitalTestimonialsDa
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8 mb-16">
           {currentTestimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-[#05101f] border border-gray-800/60 rounded-xl p-6 lg:p-8 relative hover:border-[var(--color-primary)]/40 transition-colors duration-300 flex flex-col"
+              className="bg-[#030e1d] rounded-2xl p-6 lg:p-8 border border-gray-800/60 hover:border-[#00e5ff]/50 transition-colors duration-300 h-full flex flex-col sm:flex-row gap-6 lg:gap-8 items-center"
             >
-              {/* Top Row: Image & Stars */}
-              <div className="flex items-start gap-4 mb-6">
-                <div className="relative w-16 h-16 rounded-full overflow-hidden border border-gray-700/50 flex-shrink-0">
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex flex-col justify-center h-16 pt-2">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar
-                        key={i}
-                        className={`w-3.5 h-3.5 ${i < testimonial.rating ? 'text-[var(--color-primary)]' : 'text-gray-700'}`}
-                      />
-                    ))}
-                  </div>
-                </div>
+              {/* Avatar */}
+              <div className="w-28 h-28 sm:w-36 sm:h-36 shrink-0 rounded-full overflow-hidden border-2 border-[#00e5ff]">
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  width={144}
+                  height={144}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
-              {/* Quote Text */}
-              <div className="flex gap-4 mb-6 flex-grow">
-                <FaQuoteLeft className="text-[var(--color-primary)] w-4 h-4 mt-1 flex-shrink-0" />
-                <p className="text-gray-300 text-sm leading-relaxed">
+              {/* Content */}
+              <div className="flex-1 text-center sm:text-left">
+                {/* Stars */}
+                <div className="flex justify-center sm:justify-start text-[#ffc107] mb-3 text-sm gap-1">
+                  {[...Array(testimonial.rating || 5)].map((_, i) => (
+                    <FaStar key={i} />
+                  ))}
+                </div>
+
+                {/* Review */}
+                <p className="text-gray-300 text-sm lg:text-base leading-relaxed mb-5">
+                  <span className="text-[#00e5ff] mr-2 inline-block text-xl align-top"><FaQuoteLeft /></span>
                   {testimonial.reviewText || testimonial.text}
                 </p>
-              </div>
 
-              {/* Bottom Row: Name/Role & Large Quote Icon */}
-              <div className="flex items-end justify-between mt-auto">
+                {/* Divider Line */}
+                <div className="w-8 h-[2px] bg-[#00e5ff] mb-3 mx-auto sm:mx-0"></div>
+
+                {/* Author Info */}
                 <div>
-                  <h4 className="text-white font-semibold text-sm mb-1">{testimonial.name}</h4>
-                  <p className="text-[var(--color-primary)] text-xs">{testimonial.role}</p>
+                  <h4 className="text-white font-bold text-base lg:text-lg">{testimonial.name}</h4>
+                  <p className="text-[#00e5ff] text-sm">{testimonial.location || testimonial.role}</p>
                 </div>
-                <FaQuoteLeft className="text-gray-800/50 w-12 h-12" />
               </div>
             </div>
           ))}

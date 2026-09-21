@@ -1,154 +1,166 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { IndustriesGridData } from '@/types/templates.types';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { IndustriesGridData } from "@/types/templates.types";
+
 import { 
   FaArrowRight, FaUsers, FaChartBar, FaStar, FaShoppingCart, FaHeartbeat, 
   FaBuilding, FaGraduationCap, FaPlane, FaUtensils, FaTshirt, FaMoneyBillWave, 
   FaLaptopCode, FaIndustry, FaLeaf, FaCar, FaUsersCog, FaPlayCircle, FaHeart, FaBalanceScale 
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-const renderIcon = (iconName: string) => {
-  const cls = "w-5 h-5";
+const renderIcon = (iconName: string, customClass?: string) => {
+  const cls = customClass || "w-5 h-5";
+
   switch (iconName) {
-    case 'FaShoppingCart': return <FaShoppingCart className={cls} />;
-    case 'FaHeartbeat': return <FaHeartbeat className={cls} />;
-    case 'FaBuilding': return <FaBuilding className={cls} />;
-    case 'FaGraduationCap': return <FaGraduationCap className={cls} />;
-    case 'FaPlane': return <FaPlane className={cls} />;
-    case 'FaUtensils': return <FaUtensils className={cls} />;
-    case 'FaTshirt': return <FaTshirt className={cls} />;
-    case 'FaMoneyBillWave': return <FaMoneyBillWave className={cls} />;
-    case 'FaLaptopCode': return <FaLaptopCode className={cls} />;
-    case 'FaIndustry': return <FaIndustry className={cls} />;
-    case 'FaLeaf': return <FaLeaf className={cls} />;
-    case 'FaCar': return <FaCar className={cls} />;
-    case 'FaUsersCog': return <FaUsersCog className={cls} />;
-    case 'FaPlayCircle': return <FaPlayCircle className={cls} />;
-    case 'FaHeart': return <FaHeart className={cls} />;
-    case 'FaBalanceScale': return <FaBalanceScale className={cls} />;
-    case 'FaUsers': return <FaUsers className="w-8 h-8" />;
-    case 'FaChartBar': return <FaChartBar className="w-8 h-8" />;
-    case 'FaStar': return <FaStar className="w-8 h-8" />;
+    case "FaShoppingCart": return <FaShoppingCart className={cls} />;
+    case "FaHeartbeat": return <FaHeartbeat className={cls} />;
+    case "FaBuilding": return <FaBuilding className={cls} />;
+    case "FaGraduationCap": return <FaGraduationCap className={cls} />;
+    case "FaPlane": return <FaPlane className={cls} />;
+    case "FaUtensils": return <FaUtensils className={cls} />;
+    case "FaTshirt": return <FaTshirt className={cls} />;
+    case "FaMoneyBillWave": return <FaMoneyBillWave className={cls} />;
+    case "FaLaptopCode": return <FaLaptopCode className={cls} />;
+    case "FaIndustry": return <FaIndustry className={cls} />;
+    case "FaLeaf": return <FaLeaf className={cls} />;
+    case "FaCar": return <FaCar className={cls} />;
+    case "FaUsersCog": return <FaUsersCog className={cls} />;
+    case "FaPlayCircle": return <FaPlayCircle className={cls} />;
+    case "FaHeart": return <FaHeart className={cls} />;
+    case "FaBalanceScale": return <FaBalanceScale className={cls} />;
+    case "FaUsers": return <FaUsers className={customClass || "w-8 h-8"} />;
+    case "FaChartBar": return <FaChartBar className={customClass || "w-8 h-8"} />;
+    case "FaStar": return <FaStar className={customClass || "w-8 h-8"} />;
     default: return <FaStar className={cls} />;
   }
 };
 
-export const IndustriesGridSection = ({ data }: { data?: IndustriesGridData }) => {
+export const IndustriesGridSection = ({
+  data,
+}: {
+  data?: IndustriesGridData;
+}) => {
   if (!data) return null;
 
   return (
-    <section className="bg-[#020914] py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Top Section */}
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start mb-16">
-          
-          {/* Left: Title & Text */}
-          <div className="w-full lg:w-[45%] flex-shrink-0">
-            <div className="flex items-center gap-4 mb-6">
-              <p className="text-[var(--color-primary)] font-semibold text-sm tracking-[0.2em] uppercase">
+    <section className="relative overflow-hidden bg-[#02131b] py-12 sm:py-16 lg:py-[72px]">
+      {/* Subtle background glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-32 top-[-200px] h-[500px] w-[500px] rounded-full bg-cyan-500/[0.025] blur-[120px]" />
+
+        <div className="absolute right-[-150px] bottom-[-200px] h-[500px] w-[500px] rounded-full bg-cyan-500/[0.025] blur-[120px]" />
+      </div>
+
+      <div className="relative mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
+        {/* =====================================================
+            HERO / TOP CONTENT
+        ====================================================== */}
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.65fr_1fr] lg:items-center lg:gap-10">
+          {/* ================= LEFT ================= */}
+          <div className="max-w-[760px]">
+            {/* Eyebrow */}
+            <div className="mb-5 flex items-center gap-3 sm:mb-6">
+              <p className="text-[11px] font-bold uppercase tracking-[0.20em] text-[#00d9ff] sm:text-xs sm:tracking-[0.22em]">
                 {data.subtitle}
               </p>
-              <span className="w-20 h-[2px] bg-gray-700"></span>
+
+              <span className="h-[2px] w-14 bg-[#00d9ff] sm:w-[72px]" />
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-[1.2]">
-              {data.titlePart1} <br /> {data.titlePart2} <span className="text-[var(--color-primary)]">{data.titleHighlight}</span>
+
+            {/* Main Heading */}
+            <h2 className="max-w-[720px] text-[42px] font-extrabold leading-[0.98] tracking-[-0.035em] text-white sm:text-[52px] lg:text-[57px] xl:text-[60px]">
+              {data.titlePart1}
+              <br />
+              {data.titlePart2}{" "}
+              <span className="text-[#00d9ff]">{data.titleHighlight}</span>
             </h2>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
+
+            {/* Description */}
+            <p className="mt-6 max-w-[720px] text-[15px] font-normal leading-[1.65] text-[#d1d9dc] sm:text-[16px] lg:text-[17px]">
               {data.description}
             </p>
           </div>
 
-          {/* Right: Stats & Signature */}
-          <div className="w-full lg:w-[55%] flex flex-col mt-10 lg:mt-0">
-            
-            {/* Stats Row */}
-            <div className="flex flex-row items-start justify-between w-full mb-10">
+          {/* ================= RIGHT ================= */}
+          <div className="flex flex-col items-center justify-center lg:pl-4">
+            {/* Stats */}
+            <div className="grid grid-cols-3 items-start">
               {data.stats.map((stat, index) => (
-                <div 
-                  key={stat.id} 
-                  className={`flex flex-col items-start text-left flex-1 ${
-                    index !== 2 ? 'border-r border-gray-700/50' : ''
-                  } ${index === 1 ? 'pl-6 lg:pl-10' : index === 2 ? 'pl-6 lg:pl-10' : ''}`}
+                <div
+                  key={stat.id}
+                  className={`relative flex min-w-0 flex-col items-start px-4 first:pl-0 last:pr-0 sm:px-6 lg:px-7 ${index !== 0 ? "border-l border-[#176170]/70" : ""}`}
                 >
-                  <div className="text-[var(--color-primary)] mb-4">
-                    {renderIcon(stat.icon)}
+                  {/* Icon */}
+                  <div className="mb-2 flex h-8 items-center text-[#00d9ff] sm:h-9">
+                    {renderIcon(stat.icon, "w-7 h-7 sm:w-8 sm:h-8")}
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-2">{stat.value}</h3>
-                  <p className="text-gray-400 text-sm max-w-[120px] leading-relaxed">{stat.label}</p>
+
+                  {/* Number */}
+                  <h3 className="text-[27px] font-bold leading-none tracking-tight text-[#00d9ff] sm:text-[31px] lg:text-[32px]">
+                    {stat.value}
+                  </h3>
+
+                  {/* Label */}
+                  <p className="mt-2 max-w-[105px] text-[12px] leading-[1.4] text-[#d5dde0] sm:text-[13px]">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </div>
-
-            {/* Signature Text */}
-            {data.signatureText && (
-              <div className="relative mt-2 self-end text-right w-[80%] max-w-[350px]">
-                <div 
-                  className="text-[40px] text-[var(--color-primary)] leading-[1.2] -rotate-3" 
-                  style={{ fontFamily: "'Dancing Script', cursive" }}
-                >
-                  Your Growth <br />
-                  <span className="pl-16">Our Expertise</span>
-                </div>
-                {/* Underline SVG */}
-                <svg className="absolute -bottom-3 right-0 w-full h-3 text-[var(--color-primary)]" viewBox="0 0 200 20" preserveAspectRatio="none">
-                  <path d="M10,15 Q100,10 190,12" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                </svg>
-              </div>
-            )}
           </div>
         </div>
 
-        {/* Industries Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        {/* =====================================================
+            INDUSTRIES GRID
+        ====================================================== */}
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           {data.industries.map((ind) => (
-            <div 
+            <div
               key={ind.id}
-              className="bg-[#05101f] border border-gray-800/60 rounded-xl overflow-hidden group hover:border-[var(--color-primary)]/40 transition-colors duration-300 flex flex-col"
+              className="group flex flex-col overflow-hidden rounded-xl border border-[#15303a] bg-[#061923] transition-all duration-300 hover:-translate-y-1 hover:border-[#00d9ff]/50 hover:shadow-[0_15px_45px_rgba(0,217,255,0.08)]"
             >
-              {/* Image Container with Icon overlapping */}
-              <div className="relative h-48 w-full">
-                {/* Inner wrapper for image zoom effect so icon doesn't get clipped */}
-                <div className="absolute inset-0 overflow-hidden">
-                  <Image 
-                    src={ind.image} 
-                    alt={ind.title} 
-                    fill 
-                    className="object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
-                </div>
-                
-                {/* Overlapping Icon */}
-                <div className="absolute -bottom-6 left-6 w-12 h-12 rounded-full bg-[var(--color-primary)] border-4 border-[#05101f] flex items-center justify-center text-black shadow-lg z-10">
+              {/* Image */}
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={ind.image}
+                  alt={ind.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+
+                <div className="absolute inset-0 bg-black/45 transition-colors duration-300 group-hover:bg-black/25" />
+
+                {/* Icon */}
+                <div className="absolute bottom-[-22px] left-6 z-10 flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#061923] bg-[#00d9ff] text-[#02131b] shadow-lg">
                   {renderIcon(ind.icon)}
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 pt-10 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[var(--color-primary)] transition-colors">
+              {/* Card content */}
+              <div className="flex flex-1 flex-col p-6 pt-9">
+                <h3 className="mb-3 text-xl font-bold text-white transition-colors group-hover:text-[#00d9ff]">
                   {ind.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">
+
+                <p className="mb-6 flex-grow text-sm leading-relaxed text-gray-400">
                   {ind.description}
                 </p>
-                
-                <Link 
+
+                <Link
                   href={ind.url}
-                  className="flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm hover:text-white transition-colors mt-auto w-fit"
+                  className="flex w-fit items-center gap-2 text-sm font-semibold text-[#00d9ff] transition-colors hover:text-white"
                 >
-                  {ind.linkText} 
-                  <div className="w-8 h-8 rounded-full border border-[var(--color-primary)] flex items-center justify-center group-hover:bg-[var(--color-primary)] transition-colors text-[var(--color-primary)] group-hover:text-black">
-                    <FaArrowRight className="w-3 h-3" />
-                  </div>
+                  {ind.linkText}
+
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#00d9ff] text-[#00d9ff] transition-all duration-300 group-hover:bg-[#00d9ff] group-hover:text-[#02131b]">
+                    <FaArrowRight className="h-3 w-3" />
+                  </span>
                 </Link>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );
